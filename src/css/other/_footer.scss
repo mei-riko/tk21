@@ -1,0 +1,16 @@
+.footer{
+    background: $dark-blue;
+    color: $white;
+
+    padding: 40px 0 30px;
+
+    p{font-family:'Montserrat'; font-size: 12px;}
+    .text-small{font-size: 10px;}
+
+    .footer__link{
+        color: $light-grey;
+        &:hover{
+            color: $white;
+        }
+    }
+}

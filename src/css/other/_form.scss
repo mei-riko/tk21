@@ -8,7 +8,7 @@
         &:checked + .checkbox__label:after {
             content: '';
             display: block;
-            background-color: $red;
+            background-color: $blue;
 
             width: 5px;
             height: 5px;

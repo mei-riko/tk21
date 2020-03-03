@@ -12,3 +12,19 @@
 @import "other/button.scss";
 @import "other/pagination.scss";
 @import "other/footer.scss";
+
+@import "item/heading.scss";
+@import "item/list.scss";
+
+.content-area{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    .inside-area{
+        flex: 1 0 auto;
+    }
+    .footer{
+        flex: 0 0 auto;
+    }
+}

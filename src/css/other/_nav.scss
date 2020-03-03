@@ -1,0 +1,14 @@
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+
+    &_footer{
+        justify-content: center;
+        margin-bottom: 16px;
+        .nav__item{
+            font-size: 12px;
+            color: $light-grey;
+            padding: 0 10px 4px;
+        }
+    }
+}
