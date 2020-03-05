@@ -1,19 +1,21 @@
 header.header
-    .container.container_fluid
-        a.header__logo(href="/")
-            img(src="../img/logo.svg" title="")
-        .header__container
-            .header__nav
-                nav.nav.nav__header-top
-                    a.nav__item(href="#") О компании
-                    a.nav__item(href="#") Вакансии
-                    a.nav__item(href="#") Статьи
-                    a.nav__item(href="#") Контакты
-                nav.nav.nav__header
-                    a.nav__item(href="#") Каталог
-                    a.nav__item(href="#") Склад
-                    a.nav__item(href="#") Услуги
-                    a.nav__item(href="#") Проектирование
-            .header__contact
-                p.mb-0.text-grey г. Москва, ул. Правды 24
-                a.contact-phone(href="tel:*5025" title="Контактый телефон Телеком21 *5025") *5025
+    a.header__logo(href="/")
+        img.img-desktop(src="../img/logo.svg" title="")
+    .header__container
+        .header__nav
+            nav.nav.nav_header-top
+                a.nav__item(href="#") О компании
+                a.nav__item(href="#") Вакансии
+                a.nav__item(href="#") Статьи
+                a.nav__item.last(href="#") Контакты
+            nav.nav.nav_header
+                a.nav__item(href="#") Каталог
+                a.nav__item(href="#") Склад
+                a.nav__item(href="#") Услуги
+                a.nav__item.last(href="#") Проектирование
+        .header__contact
+            p.mb-0.text-grey.text-small.d-lg-none г. Москва, ул. Правды 24
+            a.contact-phone(href="tel:*5025" title="Контактый телефон Телеком21 *5025") *5025
+    a.header__email(href="mailto:#")
+    a.header__search(href="#")
+    .header__menu#mobile-nav

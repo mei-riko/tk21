@@ -1,0 +1,21 @@
+.heading{
+    color: $blue;
+    font-weight: bold;
+    margin-top: -8px;
+}
+.heading-label{
+    @extend .h6;
+    font-weight: bold;
+
+    color: $grey;
+    text-transform: uppercase;
+}
+.heading-image{
+    display: block;
+    color: $grey;
+    @extend .text-center;
+    @extend .text-small;
+}
+img + .heading-image{
+    margin-top: $padding;
+}

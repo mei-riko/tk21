@@ -37,34 +37,30 @@ $(document).ready(() =>{
 	});
 	
 	  // Mobile Navbar
-  $(".navbar-toggle#nav").on("click", function(){
-    if( !$(this).hasClass("navbar-toggle--active")){
-        $(this).addClass("navbar-toggle--active");
-        $(".navbar-mobile").addClass("navbar-mobile--active");
-        $(".navbar-mobile").slideDown();
+  $(".header__menu#mobile-nav").on("click", function(){
+    if( !$(this).hasClass("header__menu--active")){
+        $(this).addClass("header__menu--active");
+        $(".header__nav").addClass("header__nav--active");
     }else{
-        $(this).removeClass("navbar-toggle--active");
-        $(".navbar-mobile").removeClass("navbar-mobile--active");
-        $(".navbar-mobile").slideUp();
+        $(this).removeClass("header__menu--active");
+        $(".header__nav").removeClass("header__nav--active");
     }
   });
   $(document).mouseup(function (e){ // событие клика по веб-документу
-    let dropdownActive = $(".navbar-mobile.navbar-mobile--active"); // элемент
+    let dropdownActive = $(".header__nav.header__nav--active"); // элемент
       
     if (!dropdownActive.is(e.target) // клик был не по блоку
           && dropdownActive.has(e.target).length === 0 // и не по его дочерним элементам
-          && !$(".navbar-toggle#nav").is(e.target) ) { 
-              $(".navbar-toggle").removeClass("navbar-toggle--active");
-              dropdownActive.removeClass("navbar-mobile--active");
-              $(".navbar-mobile").slideUp();
+          && !$(".header__menu#mobile-nav").is(e.target) ) { 
+              $(".header__menu").removeClass("header__menu--active");
+              dropdownActive.removeClass("header__nav--active");
     }
   });
   // Hide Navigation on Desktop
   $(window).resize(function(){
     if ( $(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches ){
-      $(".navbar-toggle").removeClass("navbar-toggle--active");
-      $(".navbar-mobile.navbar-mobile--active").removeClass("navbar-mobile--active");
-      $(".navbar-mobile").slideUp();
+      $(".header__menu").removeClass("header__menu--active");
+      $(".header__nav.header__nav--active").removeClass("header__nav--active");
     }
   });
 });

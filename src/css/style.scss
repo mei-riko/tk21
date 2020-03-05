@@ -6,12 +6,13 @@
 @import "grid.scss";
 @import "position.scss";
 
+@import "other/breadcrumbs.scss";
+@import "other/button.scss";
+@import "other/footer.scss";
+@import "other/form.scss";
 @import "other/header.scss";
 @import "other/nav.scss";
-@import "other/form.scss";
-@import "other/button.scss";
 @import "other/pagination.scss";
-@import "other/footer.scss";
 
 @import "item/heading.scss";
 @import "item/list.scss";
@@ -23,6 +24,8 @@
     min-height: 100vh;
     .inside-area{
         flex: 1 0 auto;
+        position: relative;
+        overflow: hidden;
     }
     .footer{
         flex: 0 0 auto;

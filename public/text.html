@@ -10,26 +10,25 @@
   <body>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <div class="content-area">
-      <header class="header">
-        <div class="container container_fluid"><a class="header__logo" href="/"><img src="../img/logo.svg" title=""/></a>
+      <main class="inside-area">
+        <header class="header"><a class="header__logo" href="/"><img class="img-desktop" src="../img/logo.svg" title=""/></a>
           <div class="header__container">
             <div class="header__nav">
-              <nav class="nav nav__header-top"><a class="nav__item" href="#">О компании</a><a class="nav__item" href="#">Вакансии</a><a class="nav__item" href="#">Статьи</a><a class="nav__item" href="#">Контакты</a></nav>
-              <nav class="nav nav__header"><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Услуги</a><a class="nav__item" href="#">Проектирование</a></nav>
+              <nav class="nav nav_header-top"><a class="nav__item" href="#">О компании</a><a class="nav__item" href="#">Вакансии</a><a class="nav__item" href="#">Статьи</a><a class="nav__item last" href="#">Контакты</a></nav>
+              <nav class="nav nav_header"><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Услуги</a><a class="nav__item last" href="#">Проектирование</a></nav>
             </div>
             <div class="header__contact">
-              <p class="mb-0 text-grey">г. Москва, ул. Правды 24</p><a class="contact-phone" href="tel:*5025" title="Контактый телефон Телеком21 *5025">*5025</a>
+              <p class="mb-0 text-grey text-small d-lg-none">г. Москва, ул. Правды 24</p><a class="contact-phone" href="tel:*5025" title="Контактый телефон Телеком21 *5025">*5025</a>
             </div>
-          </div>
-        </div>
-      </header>
-      <main class="inside-area">
+          </div><a class="header__email" href="mailto:#"></a><a class="header__search" href="#"></a>
+          <div class="header__menu" id="mobile-nav"></div>
+        </header>
         <section class="container pt-60 pb-60 pt-md-30 pb-md-30">
           <div class="row">
-            <div class="col-2">
+            <div class="col-2 col-sm-12 col-md-3 mb-30">
               <p class="heading-label">Новости</p>
             </div>
-            <div class="col-8">
+            <div class="col-8 col-sm-12 col-md-9 col-lg-10">
               <h1 class="heading">Пример шаблона простой текстовой страницы</h1>
               <ul class="breadcrumbs">
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
@@ -48,7 +47,7 @@
               <blockquote class="blockquote">Over the past few years we have been so focused on building a great product – we have now done that, so it is time to re-introduce ourselves to the market with a fresh, exciting look. Our name has not changed, but our logo and website reflect a more professional, confident Igloo with ambitions to become the leading ETRM provider in Europe.</blockquote>
               <p>The Company already counts some of the largest European hedge funds and physical energy aggregators as clients but is tapping into the growing demand for fast, flexible, cloud-based trading software solutions given the digitalisation of the energy markets. Regarding this opportunity, Hugh Brunswick said, “We see first-hand the shift in the market to a higher frequency, shorter-tenor trading, with customers demanding fully-electronic and direct market access. Igloo is uniquely positioned to capitalize on this opportunity given its state-of-the-art technology and deep European energy market expertise.</p>
             </div>
-            <div class="col-2 text-right">
+            <div class="col-2 col-sm-12 col-lg-12 text-right text-sm-left mt-lg-30">
               <p class="text-grey text-bold mb-0">Опубликовано:</p>
               <p class="text-grey">12 марта 2020</p>
             </div>

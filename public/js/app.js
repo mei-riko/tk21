@@ -114,35 +114,31 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   });
 
   // Mobile Navbar
-  (0, _jquery2.default)(".navbar-toggle#nav").on("click", function () {
-    if (!(0, _jquery2.default)(this).hasClass("navbar-toggle--active")) {
-      (0, _jquery2.default)(this).addClass("navbar-toggle--active");
-      (0, _jquery2.default)(".navbar-mobile").addClass("navbar-mobile--active");
-      (0, _jquery2.default)(".navbar-mobile").slideDown();
+  (0, _jquery2.default)(".header__menu#mobile-nav").on("click", function () {
+    if (!(0, _jquery2.default)(this).hasClass("header__menu--active")) {
+      (0, _jquery2.default)(this).addClass("header__menu--active");
+      (0, _jquery2.default)(".header__nav").addClass("header__nav--active");
     } else {
-      (0, _jquery2.default)(this).removeClass("navbar-toggle--active");
-      (0, _jquery2.default)(".navbar-mobile").removeClass("navbar-mobile--active");
-      (0, _jquery2.default)(".navbar-mobile").slideUp();
+      (0, _jquery2.default)(this).removeClass("header__menu--active");
+      (0, _jquery2.default)(".header__nav").removeClass("header__nav--active");
     }
   });
   (0, _jquery2.default)(document).mouseup(function (e) {
     // событие клика по веб-документу
-    var dropdownActive = (0, _jquery2.default)(".navbar-mobile.navbar-mobile--active"); // элемент
+    var dropdownActive = (0, _jquery2.default)(".header__nav.header__nav--active"); // элемент
 
     if (!dropdownActive.is(e.target) // клик был не по блоку
     && dropdownActive.has(e.target).length === 0 // и не по его дочерним элементам
-    && !(0, _jquery2.default)(".navbar-toggle#nav").is(e.target)) {
-      (0, _jquery2.default)(".navbar-toggle").removeClass("navbar-toggle--active");
-      dropdownActive.removeClass("navbar-mobile--active");
-      (0, _jquery2.default)(".navbar-mobile").slideUp();
+    && !(0, _jquery2.default)(".header__menu#mobile-nav").is(e.target)) {
+      (0, _jquery2.default)(".header__menu").removeClass("header__menu--active");
+      dropdownActive.removeClass("header__nav--active");
     }
   });
   // Hide Navigation on Desktop
   (0, _jquery2.default)(window).resize(function () {
     if ((0, _jquery2.default)(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches) {
-      (0, _jquery2.default)(".navbar-toggle").removeClass("navbar-toggle--active");
-      (0, _jquery2.default)(".navbar-mobile.navbar-mobile--active").removeClass("navbar-mobile--active");
-      (0, _jquery2.default)(".navbar-mobile").slideUp();
+      (0, _jquery2.default)(".header__menu").removeClass("header__menu--active");
+      (0, _jquery2.default)(".header__nav.header__nav--active").removeClass("header__nav--active");
     }
   });
 });
