@@ -2545,6 +2545,14 @@ img + .heading-image {
   background: #0b172f url(../img/search-white.svg) no-repeat center/24px;
 }
 
+@media all and (max-width: 768px) {
+  .header .header__menu {
+    background: #0b172f url("../img/menu-white.svg") no-repeat center/32px;
+    border-left: 1px solid #132750;
+    border-bottom: 1px solid #132750;
+  }
+}
+
 .content-area {
   display: -ms-flexbox;
   display: flex;

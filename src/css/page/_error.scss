@@ -47,3 +47,13 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .header{
+        .header__menu{
+            background: $dark-blue url("../img/menu-white.svg") no-repeat center / 32px;
+            border-left: 1px solid lighten($color: $dark-blue, $amount: 8%);
+            border-bottom: 1px solid lighten($color: $dark-blue, $amount: 8%);
+        }
+    }
+}
