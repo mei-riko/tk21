@@ -1,9 +1,6 @@
 .btn{
     outline: none;
-    
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    border: none;
 
     padding: 10px 20px;
     border-radius: 24px;
@@ -17,10 +14,24 @@
     &_default{
         color: $blue;
         background: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
 
         &:hover{
             color: $dark-blue;
             background: $light-grey;
+        }
+    }
+
+    &_send{
+        background-color: $blue;
+        color: $white;
+        padding-bottom: 12px;
+        letter-spacing: .5px;
+
+        &:hover{
+            background-color: darken($blue,5%);
         }
     }
 }

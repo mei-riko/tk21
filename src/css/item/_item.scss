@@ -1,0 +1,15 @@
+.item{
+    &_info{
+        padding: 40px 50px;
+        background-color: $white;
+        border-radius: 20px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .item{
+        &_info{
+            padding: 24px 30px;
+            border-radius: 14px;
+        }
+    }
+}

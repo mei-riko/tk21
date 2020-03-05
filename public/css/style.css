@@ -1925,9 +1925,7 @@ a.link-inverse:hover {
 
 .btn {
   outline: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  border: none;
   padding: 10px 20px;
   border-radius: 24px;
   transition: .4s;
@@ -1940,11 +1938,25 @@ a.link-inverse:hover {
 .btn_default {
   color: #17398a;
   background: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .btn_default:hover {
   color: #0b172f;
   background: #e5e4f1;
+}
+
+.btn_send {
+  background-color: #17398a;
+  color: #ffffff;
+  padding-bottom: 12px;
+  letter-spacing: .5px;
+}
+
+.btn_send:hover {
+  background-color: #133074;
 }
 
 .footer {
@@ -1970,6 +1982,49 @@ a.link-inverse:hover {
   color: #ffffff;
 }
 
+.form-input {
+  position: relative;
+  border: 1px solid #eef0f5;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  padding: 16px 24px;
+  background-color: #eef0f5;
+}
+
+.form-input.error {
+  border-color: #cf6b4b;
+  color: #cf6b4b;
+}
+
+.form-input.error::-webkit-input-placeholder {
+  color: #cf6b4b;
+}
+
+.form-input.error:-ms-input-placeholder {
+  color: #cf6b4b;
+}
+
+.form-input.error::-ms-input-placeholder {
+  color: #cf6b4b;
+}
+
+.form-input.error::placeholder {
+  color: #cf6b4b;
+}
+
+.form-input_full {
+  width: 100%;
+}
+
+.form-input_full + .form-input_full {
+  margin-top: 15px;
+}
+
+.form-input + .checkbox {
+  margin-top: 15px;
+}
+
 .checkbox {
   display: -ms-flexbox;
   display: flex;
@@ -1987,27 +2042,31 @@ a.link-inverse:hover {
   content: '';
   display: block;
   background-color: #17398a;
-  width: 5px;
-  height: 5px;
+  border-radius: 4px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  left: 4px;
-  top: 3px;
+  left: 5px;
+  top: 5px;
 }
 
 .checkbox__label {
   position: relative;
   margin: 0;
   padding-left: 28px;
-  line-height: 12px;
+  line-height: 20px;
+  color: #878d9b;
   cursor: pointer;
 }
 
 .checkbox__label:before {
   content: '';
   display: block;
-  border: 1px solid #e5e4f1;
-  width: 13px;
-  height: 13px;
+  border: 1px solid #eef0f5;
+  border-radius: 4px;
+  background: #eef0f5;
+  width: 20px;
+  height: 20px;
   position: absolute;
   left: 0;
   top: 0;
@@ -2015,6 +2074,7 @@ a.link-inverse:hover {
 
 .checkbox__link {
   text-decoration: underline;
+  color: #878d9b;
 }
 
 .checkbox_large .checkbox__label {
@@ -2107,7 +2167,7 @@ a.link-inverse:hover {
   height: 60px;
 }
 
-.header .header__logo .img-mobile {
+.header .header__logo .img-desktop.white {
   display: none;
 }
 
@@ -2488,6 +2548,54 @@ img + .heading-image {
   margin-top: 15px;
 }
 
+.heading-contact {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #17398a;
+  text-transform: uppercase;
+}
+
+.heading-contact_location {
+  padding-left: 24px;
+  background: url("../img/map-marker-blue.svg") no-repeat -2px center/18px;
+}
+
+.heading-contact_phone {
+  padding-left: 24px;
+  background: url("../img/phone-blue.svg") no-repeat 0px center/15px;
+}
+
+.heading-contact_email {
+  padding-left: 24px;
+  background: url("../img/gmail-blue.svg") no-repeat 0px center/15px;
+}
+
+.item_info {
+  padding: 40px 50px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+@media all and (max-width: 768px) {
+  .item_info {
+    padding: 24px 30px;
+    border-radius: 14px;
+  }
+}
+
+.map {
+  position: relative;
+  background: #0b172f;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .error-page {
   background: #0b172f url("../img/error-bg.jpg") no-repeat center/cover;
   color: #ffffff;
@@ -2505,6 +2613,10 @@ img + .heading-image {
 
 .error-page .header .header__logo .img-desktop:not(.white) {
   display: none;
+}
+
+.error-page .header .header__logo .img-desktop.white {
+  display: block;
 }
 
 .error-page .header .header__container {
@@ -2546,7 +2658,7 @@ img + .heading-image {
 }
 
 @media all and (max-width: 768px) {
-  .header .header__menu {
+  .error-page .header .header__menu {
     background: #0b172f url("../img/menu-white.svg") no-repeat center/32px;
     border-left: 1px solid #132750;
     border-bottom: 1px solid #132750;

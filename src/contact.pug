@@ -3,7 +3,7 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Text Page
+        title Contact Page
 
         link(href='./css/style.css', rel='stylesheet')
 
@@ -12,34 +12,40 @@ html(lang="ru")
         .content-area
             main.inside-area
                 include chunks/header.pug
+                section.map
+                    #map
+                    .container
+                        .row
+                            .col-5.col-md-8.col-sm-12
+                                .item.item_info.mt-30.mb-30
+                                    h1.h3.text-bold Контакты
+                                    p Есть вопросы? Отправьте нам сообщение, и&nbsp;мы обязательно ответим как&nbsp;можно скорее
+                                    p.heading-contact.heading-contact_location.mb-0 Как нас найти
+                                    p Москва, ул. Правды, д.24, стр. 4, эт. 8, пом. I, ком. 32
+                                    p.heading-contact.heading-contact_phone.mb-0 Телефон
+                                    p
+                                        a(href="tel:88009131214") 8 800 913-12-14
+                                    p.heading-contact.heading-contact_email.mb-0 E-mail
+                                    p
+                                        a(href="mailto:mail@mail.ru") mail@mail.ru
                 section.container.pt-60.pb-60.pt-md-30.pb-md-30
-                    .row
-                        .col-2.col-sm-12.col-md-3.mb-30
-                            p.heading-label Новости
-                        .col-8.col-sm-12.col-md-9.col-lg-10
-                            h1.heading Пример шаблона простой текстовой страницы
-                            ul.breadcrumbs
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") Главная
-                                li.breadcrumbs__item
-                                    a.breadcrumbs__link(href="#") Новости
-                                li.breadcrumbs__item Заголовок страницы
-                            p Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. 
-                            p Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. 
-                            p
-                                img.img-fluid(src="../img/demo-img.png" alt="" title="")
-                                span.heading-image Подпись под фото
-                            h2.h2 Заголовок h2
-                            h3.h3 Заголовок h3
-                            h4.h4 Заголовок h4
-                            h5.h5 Заголовок h5
-                            h6.h6 Заголовок h6
-                            p The primary use of proceeds of the capital raise will go towards aggressively expanding Igloo’s sales and marketing efforts. Related to the rebrand, Harrison said:
-                            blockquote.blockquote Over the past few years we have been so focused on building a great product – we have now done that, so it is time to re-introduce ourselves to the market with a fresh, exciting look. Our name has not changed, but our logo and website reflect a more professional, confident Igloo with ambitions to become the leading ETRM provider in Europe.
-                            p The Company already counts some of the largest European hedge funds and physical energy aggregators as clients but is tapping into the growing demand for fast, flexible, cloud-based trading software solutions given the digitalisation of the energy markets. Regarding this opportunity, Hugh Brunswick said, “We see first-hand the shift in the market to a higher frequency, shorter-tenor trading, with customers demanding fully-electronic and direct market access. Igloo is uniquely positioned to capitalize on this opportunity given its state-of-the-art technology and deep European energy market expertise.
-                        .col-2.col-sm-12.col-lg-12.text-right.text-sm-left.mt-lg-30
-                            p.text-grey.text-bold.mb-0 Опубликовано:
-                            p.text-grey 12 марта 2020
+                    .row.justify-content-center
+                        .col-6.col-sm-12.col-md-10.col-lg-8.text-center
+                            p.h1.text-bold Воспользуйтесь формой, чтобы задать вопрос
+                            p Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций
+                            form.form(action="")
+                                input.form-input.form-input_full(type="text" placeholder="Имя")
+                                input.form-input.form-input_full.error(type="email" placeholder="E-mail*")
+                                input.form-input.form-input_full.phone(type="tel" placeholder="Контактный телефон")
+                                textarea.form-input.form-input_full(name="", rows="10", resize="no")
+                                .form__agree.checkbox.justify-content-center
+                                    input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                                    label.checkbox__label(for="agree") согласен с 
+                                        a.checkbox__link(href="/policy.pdf" target="_blank") обработкой персональных данных
+                                button.btn.btn_send.mt-30() Отправить сообщение 
             include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
+        
+        script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkS1YFi2KvkMaaudj8A56Ova53LzyEsr4&callback=initMap")
+        script(src="./js/maps.js")
         script(src="./js/app.min.js")

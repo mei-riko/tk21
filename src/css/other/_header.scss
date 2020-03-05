@@ -15,9 +15,9 @@
         .img-desktop{
             width: 300px;
             height: 60px;
-        }
-        .img-mobile{
-            display: none;
+            &.white{
+                display: none;
+            }
         }
     }
     .header__container{

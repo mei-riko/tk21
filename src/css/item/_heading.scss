@@ -19,3 +19,23 @@
 img + .heading-image{
     margin-top: $padding;
 }
+
+.heading-contact{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: $blue;
+    text-transform: uppercase;
+
+    &_location{
+        padding-left: 24px;
+        background: url("../img/map-marker-blue.svg") no-repeat -2px center / 18px;
+    }
+    &_phone{
+        padding-left: 24px;
+        background: url("../img/phone-blue.svg") no-repeat 0px center / 15px;
+    }
+    &_email{
+        padding-left: 24px;
+        background: url("../img/gmail-blue.svg") no-repeat 0px center / 15px;
+    }
+}
