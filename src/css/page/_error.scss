@@ -1,0 +1,49 @@
+.error-page{
+    background: $dark-blue url("../img/error-bg.jpg") no-repeat center / cover;
+    color: $white;
+    .header{
+        background: $dark-blue;
+        color: $white;
+        .header__logo{
+            border-right: 1px solid lighten($color: $dark-blue, $amount: 8%);
+            border-bottom: 1px solid lighten($color: $dark-blue, $amount: 8%);
+            .img-desktop:not(.white){
+                display: none;
+            }
+        }
+        .header__container{
+            border-right: 1px solid lighten($color: $dark-blue, $amount: 8%);
+            border-bottom: 1px solid lighten($color: $dark-blue, $amount: 8%);
+        }
+        .header__nav{
+            background-color: $dark-blue;
+            border-bottom: 1px solid lighten($color: $dark-blue, $amount: 8%);
+            .nav{
+                .nav__item{
+                    color: $white;
+                    &:hover{
+                        color: $light-grey;
+                    }
+                }
+            }
+        }
+        .header__contact{
+            .contact-phone{
+                background-image: url("../img/mobile-phone-white.svg");
+                color: $white;
+                &:hover{
+                    color: $light-grey;
+                }
+            }
+        }
+        .header__email{
+            border-right: 1px solid lighten($color: $dark-blue, $amount: 8%);
+            border-bottom: 1px solid lighten($color: $dark-blue, $amount: 8%);
+            background: $dark-blue url(../img/gmail-white.svg) no-repeat center/24px;
+        }
+        .header__search{
+            border-bottom: 1px solid lighten($color: $dark-blue, $amount: 8%);
+            background: $dark-blue url(../img/search-white.svg) no-repeat center/24px;
+        }
+    }
+}

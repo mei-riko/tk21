@@ -1,0 +1,26 @@
+.btn{
+    outline: none;
+    
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    padding: 10px 20px;
+    border-radius: 24px;
+
+    transition: .4s;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    &_default{
+        color: $blue;
+        background: $white;
+
+        &:hover{
+            color: $dark-blue;
+            background: $light-grey;
+        }
+    }
+}

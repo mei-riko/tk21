@@ -1923,6 +1923,30 @@ a.link-inverse:hover {
   margin-top: 30px;
 }
 
+.btn {
+  outline: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 24px;
+  transition: .4s;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn_default {
+  color: #17398a;
+  background: #ffffff;
+}
+
+.btn_default:hover {
+  color: #0b172f;
+  background: #e5e4f1;
+}
+
 .footer {
   background: #0b172f;
   color: #ffffff;
@@ -2462,6 +2486,63 @@ a.link-inverse:hover {
 
 img + .heading-image {
   margin-top: 15px;
+}
+
+.error-page {
+  background: #0b172f url("../img/error-bg.jpg") no-repeat center/cover;
+  color: #ffffff;
+}
+
+.error-page .header {
+  background: #0b172f;
+  color: #ffffff;
+}
+
+.error-page .header .header__logo {
+  border-right: 1px solid #132750;
+  border-bottom: 1px solid #132750;
+}
+
+.error-page .header .header__logo .img-desktop:not(.white) {
+  display: none;
+}
+
+.error-page .header .header__container {
+  border-right: 1px solid #132750;
+  border-bottom: 1px solid #132750;
+}
+
+.error-page .header .header__nav {
+  background-color: #0b172f;
+  border-bottom: 1px solid #132750;
+}
+
+.error-page .header .header__nav .nav .nav__item {
+  color: #ffffff;
+}
+
+.error-page .header .header__nav .nav .nav__item:hover {
+  color: #e5e4f1;
+}
+
+.error-page .header .header__contact .contact-phone {
+  background-image: url("../img/mobile-phone-white.svg");
+  color: #ffffff;
+}
+
+.error-page .header .header__contact .contact-phone:hover {
+  color: #e5e4f1;
+}
+
+.error-page .header .header__email {
+  border-right: 1px solid #132750;
+  border-bottom: 1px solid #132750;
+  background: #0b172f url(../img/gmail-white.svg) no-repeat center/24px;
+}
+
+.error-page .header .header__search {
+  border-bottom: 1px solid #132750;
+  background: #0b172f url(../img/search-white.svg) no-repeat center/24px;
 }
 
 .content-area {

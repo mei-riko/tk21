@@ -6,7 +6,7 @@ html(lang="ru")
         base(href="")
 
         link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet")
-        title Basic Page
+        title 404
         meta(name="description" content="")
         meta(name="keywords" content="")
         meta(name="robots" content="")
@@ -16,8 +16,16 @@ html(lang="ru")
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
-        include chunks/header.pug
-
-        include chunks/footer.pug
+        .content-area
+            main.inside-area.error-page
+                include chunks/header.pug
+                section.container.pt-60.pb-60.text-center
+                    img.img-fluid(src="../img/404.svg" alt="" title="")
+                    h1.h6.mb-0.text-white Ошибка 404
+                    p Извините, страница удалена или не существует
+                    p
+                        a.btn.btn_default(href="/") Вернуться на главную 
+                     
+            include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js")
