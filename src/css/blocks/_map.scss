@@ -1,6 +1,6 @@
 .map{
     position: relative;
-    background: $dark-blue;
+    background: none;
 }
 #map{
     position: absolute;
@@ -8,4 +8,21 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -1;
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .map{
+        background: $dark-blue;
+    }
+    #map{
+        position: relative;
+        height: 320px;
+        z-index: 1;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    #map{
+        height: 260px;
+    }
 }

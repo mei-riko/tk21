@@ -2585,7 +2585,7 @@ img + .heading-image {
 
 .map {
   position: relative;
-  background: #0b172f;
+  background: none;
 }
 
 #map {
@@ -2594,6 +2594,24 @@ img + .heading-image {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
+}
+
+@media all and (max-width: 768px) {
+  .map {
+    background: #0b172f;
+  }
+  #map {
+    position: relative;
+    height: 320px;
+    z-index: 1;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #map {
+    height: 260px;
+  }
 }
 
 .error-page {

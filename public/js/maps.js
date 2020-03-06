@@ -1,8 +1,14 @@
 function initMap() {
-    var myLatLng = {lat: 55.78940912, lng: 37.58343029};
+    var Position;
+    if ( $(window).width() > 768 || !window.matchMedia('screen and (max-width: 768px)').matches ){
+        Position = {lat: 55.78940912, lng: 37.576};
+    }else{
+        Position = {lat: 55.78940912, lng: 37.58343029};
+    }
+    var Office = {lat: 55.78940912, lng: 37.58343029};
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: myLatLng,
+        zoom: 15,
+        center: Position,
         styles:[
             {
                 "featureType": "all",
@@ -135,9 +141,11 @@ function initMap() {
             }
         ]
     });
-
+    image = '../img/sign.png';
     var marker = new google.maps.Marker({
-        position: myLatLng,
+        position: Office,
         map: map,
+        icon: image,
+        animation: google.maps.Animation.DROP
     });
 }
