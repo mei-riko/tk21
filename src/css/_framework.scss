@@ -38,6 +38,10 @@ p {
         margin-bottom: 0;
     }
 }
+.lead{
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
 ol, ul{
     padding: 0;
     margin-bottom: 2*$padding;
@@ -57,6 +61,39 @@ a{
             color: $link-color;
         }
     }
+    &.link-cta{
+        position: relative;
+        padding-right: 30px;
+        transition: .4s;
+
+        &:before{
+            content:'';
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+
+            position: absolute;
+            left: -30px;
+            top: calc(-50% - 4px);
+
+            transition: .4s;
+        }
+        &_light{
+            color: $white;
+            background: url("../img/arrow-right-circle-white.svg") no-repeat right center / 20px;
+            &:before{
+                background-color: rgba( 255,255,255,0.3);
+            }
+            &:hover{
+                text-decoration: none;
+                padding-right: 34px;
+                &:before{
+                    background-color: rgba( 255,255,255,0.2);
+                }
+            }
+        }
+    }
 }
 .p-relative{position: relative;}
 .p-sticky{position: sticky; top: 0; left: 0; z-index: 101; background: $white;}
@@ -67,8 +104,19 @@ a{
 .text-white{color: $white;}
 .text-black{color: $black;}
 .text-grey{color: $grey;}
+.text-blue{color: $blue;}
+
+.bg-gradient{
+    background: $blue linear-gradient( 0deg, rgb(21,47,176) 0%, rgb(18,55,131) 100%);
+    color: $white;  
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6{
+        color: $white;        
+    }
+}
 
 .text-uppercase{text-transform: uppercase;}
+.text-light{font-weight: 300;}
 .text-bold,strong,b{font-weight: 700;}
 .text-small,small,.small{font-size: 12px; line-height: 16px;}
 
@@ -81,6 +129,9 @@ a{
     height: auto;
     margin: 0 auto;
     max-width: 100%;
+}
+.img-logo{
+    max-width: calc(100% - 30px);
 }
 
 .img-border{
@@ -123,6 +174,7 @@ a{
 .mt-60{margin-top: 60px;}
 
 .mb-0{margin-bottom: 0px;}
+.mb-15{margin-bottom: 15px;}
 .mb-30{margin-bottom: 30px;}
 .mb-60{margin-bottom: 60px;}
 
@@ -165,6 +217,10 @@ a{
     .text-lg-right{text-align: right;}
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .h1,h1{font-size: 2.25rem;}
+    .h2,h2{font-size: 2rem;}
+    .h3,h3{font-size: 1.75rem;}
+
     .d-md-none{display: none;}
     
     .mt-md-0{margin-top: 0px;}
@@ -189,6 +245,10 @@ a{
     .text-md-left{text-align: left;}
     .text-md-center{text-align: center;}
     .text-md-right{text-align: right;}
+
+    .img-logo{
+        max-width: 100%;
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .d-sm-none{display: none;}

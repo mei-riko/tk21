@@ -1,0 +1,30 @@
+.list{
+    &_statictic{
+        display: flex;
+        flex-wrap: wrap;
+        .list__item{
+            padding: 2*$padding;
+            border:1px solid $white;
+            height: 100%;
+            margin-left: -1px;
+        }
+        .list__title{
+            font-family: "Montserrat";
+            font-size: 52px;
+            line-height: 1;
+        }
+        .list__subtitle{
+            font-family: "Montserrat";
+            font-weight: bold;
+            text-transform: uppercase;
+
+            & + .list__intro{
+                margin-top: 10px;
+            }
+        }
+        .list__intro{
+            font-size: 12px;
+            font-weight:300;
+        }
+    }
+}

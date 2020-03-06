@@ -1,8 +1,24 @@
 .item{
+    padding: 60px 50px;
+    border-radius: 20px;
+    .item__intro{
+        width: 860px;
+        margin: 0 auto;
+        max-width: 100%;
+
+        & + .gallery_logo{
+            margin-top: 20px;
+        }
+    }
     &_info{
-        padding: 40px 50px;
         background-color: $white;
-        border-radius: 20px;
+    }
+    &_info-grey{
+        @extend .item_info;
+        background-color: $light-grey;
+    }
+    &_default{
+        @extend .bg-gradient;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){

@@ -384,6 +384,11 @@ p:last-child {
   margin-bottom: 0;
 }
 
+.lead {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
 ol, ul {
   padding: 0;
   margin-bottom: 30px;
@@ -406,6 +411,42 @@ a.link-inverse {
 
 a.link-inverse:hover {
   color: #232323;
+}
+
+a.link-cta {
+  position: relative;
+  padding-right: 30px;
+  transition: .4s;
+}
+
+a.link-cta:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  position: absolute;
+  left: -30px;
+  top: calc(-50% - 4px);
+  transition: .4s;
+}
+
+a.link-cta_light {
+  color: #ffffff;
+  background: url("../img/arrow-right-circle-white.svg") no-repeat right center/20px;
+}
+
+a.link-cta_light:before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+a.link-cta_light:hover {
+  text-decoration: none;
+  padding-right: 34px;
+}
+
+a.link-cta_light:hover:before {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .p-relative {
@@ -442,8 +483,27 @@ a.link-inverse:hover {
   color: #878d9b;
 }
 
+.text-blue {
+  color: #17398a;
+}
+
+.bg-gradient, .item_default {
+  background: #17398a linear-gradient(0deg, #152fb0 0%, #123783 100%);
+  color: #ffffff;
+}
+
+.bg-gradient h1, .item_default h1, .bg-gradient h2, .item_default h2, .bg-gradient h3, .item_default h3, .bg-gradient h4, .item_default h4, .bg-gradient h5, .item_default h5, .bg-gradient h6, .item_default h6,
+.bg-gradient .h1,
+.item_default .h1, .bg-gradient .h2, .item_default .h2, .bg-gradient .h3, .item_default .h3, .bg-gradient .h4, .item_default .h4, .bg-gradient .h5, .item_default .h5, .bg-gradient .h6, .item_default .h6, .bg-gradient .heading-label, .item_default .heading-label {
+  color: #ffffff;
+}
+
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-light {
+  font-weight: 300;
 }
 
 .text-bold, strong, b {
@@ -472,6 +532,10 @@ a.link-inverse:hover {
   height: auto;
   margin: 0 auto;
   max-width: 100%;
+}
+
+.img-logo {
+  max-width: calc(100% - 30px);
 }
 
 .img-border {
@@ -521,6 +585,10 @@ a.link-inverse:hover {
 
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 .mb-30 {
@@ -621,6 +689,15 @@ a.link-inverse:hover {
 }
 
 @media all and (max-width: 768px) {
+  .h1, h1 {
+    font-size: 2.25rem;
+  }
+  .h2, h2 {
+    font-size: 2rem;
+  }
+  .h3, h3 {
+    font-size: 1.75rem;
+  }
   .d-md-none {
     display: none;
   }
@@ -674,6 +751,9 @@ a.link-inverse:hover {
   }
   .text-md-right {
     text-align: right;
+  }
+  .img-logo {
+    max-width: 100%;
   }
 }
 
@@ -2527,6 +2607,24 @@ a.link-inverse:hover {
   }
 }
 
+.gallery .gallery__item {
+  padding: 0 10px;
+}
+
+.gallery_logo {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.gallery_logo .gallery__item {
+  margin-top: 20px;
+  height: 80px;
+}
+
+.gallery_logo .gallery__item .img-fluid {
+  max-height: 100%;
+}
+
 .heading {
   color: #17398a;
   font-weight: bold;
@@ -2570,14 +2668,66 @@ img + .heading-image {
   background: url("../img/gmail-blue.svg") no-repeat 0px center/15px;
 }
 
-.item_info {
-  padding: 40px 50px;
-  background-color: #ffffff;
+.list_statictic {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.list_statictic .list__item {
+  padding: 30px;
+  border: 1px solid #ffffff;
+  height: 100%;
+  margin-left: -1px;
+}
+
+.list_statictic .list__title {
+  font-family: "Montserrat";
+  font-size: 52px;
+  line-height: 1;
+}
+
+.list_statictic .list__subtitle {
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list_statictic .list__subtitle + .list__intro {
+  margin-top: 10px;
+}
+
+.list_statictic .list__intro {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.item {
+  padding: 60px 50px;
   border-radius: 20px;
 }
 
+.item .item__intro {
+  width: 860px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.item .item__intro + .gallery_logo {
+  margin-top: 20px;
+}
+
+.item_info, .item_info-grey {
+  background-color: #ffffff;
+}
+
+.item_info-grey {
+  background-color: #e5e4f1;
+}
+
 @media all and (max-width: 768px) {
-  .item_info {
+  .item_info, .item_info-grey {
     padding: 24px 30px;
     border-radius: 14px;
   }
