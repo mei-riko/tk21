@@ -1,0 +1,116 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        base(href="")
+
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet")
+        title Storage
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+        meta(name="robots" content="")
+        link(rel="canonical" href="")
+
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        .content-area
+            main.inside-area
+                include chunks/header.pug
+                section.pt-60.pb-60.pt-md-30.pb-md-30.bg-storage
+                    .container
+                        .row.justify-content-center
+                            .col-9.col-md-12.col-lg-12.text-center
+                                h1.text-bold.text-white.h2 IT-оборудование на складе в наличии
+                                p.text-white Телеком XXI предлагает большой выбор IT-оборудования и готовых решений для интеграции в рабочие процессы компаний любого масштаба. Внедряемые технологии aпомогают оптимизировать бизнес-процессы и производство. Наши менеджеры будут рады проконсультировать вас и оказать помощь в выборе необходимых товаров.
+                            .col-6.col-md-12.col-lg-10.mt-30
+                                p.blockquote-icon В разделе представлено IT-оборудование в наличии, которое возможно поставить в течение 2-3 рабочих дней.
+                section.storage
+                    .storage__filter
+                        .container
+                            .storage__row
+                                .filter-group
+                                    select.filter.filter_select(data-title="type")
+                                        option
+                                        option.filter__item Коммутатор
+                                        option.filter__item Хранение данных
+                                    select.filter.filter_select(data-title="vendor")
+                                        option
+                                        option.filter__item Rostelecom
+                                        option.filter__item Huawei
+                                        option.filter__item D-Link
+                                .filter-group
+                                    .filter.filter_check
+                                        .filter__item.filter__item--active Показать все
+                                        .filter__item По 50 товаров
+                    .storage__table
+                        .container
+                            .table
+                                .table__header
+                                    .table__row.row.no-gutters
+                                        .table__item.col-7.col-sm-6 Устройство
+                                        .table__item.col-2.col-sm-3 Вендор
+                                        .table__item.col-3.col-sm-3 Цена
+                                .table__content
+                                    .table__row.row.no-gutters
+                                        .table__item.col-7.col-sm-6
+                                            span Коммутатор модульной конфигурации Huawei S9300
+                                        .table__item.col-2.col-sm-3
+                                            img.img-fluid(src="../img/logo1.png")
+                                        .table__item.col-3.col-sm-3
+                                            span.text-bold 12200 руб.
+                                    .table__row.row.no-gutters
+                                        .table__item.col-7.col-sm-6
+                                            span Актуальные решения  для хранения, управления  и защиты данных
+                                        .table__item.col-2.col-sm-3
+                                            img.img-fluid(src="../img/logo2.png")
+                                        .table__item.col-3.col-sm-3
+                                            span.text-bold 12200 руб.
+                                    .table__row.row.no-gutters
+                                        .table__item.col-7.col-sm-6
+                                            span ThinkSystem DE Series:  Гибридный массив хранения  данных
+                                        .table__item.col-2.col-sm-3
+                                            img.img-fluid(src="../img/logo1.png")
+                                        .table__item.col-3.col-sm-3
+                                            span.text-bold 12200 руб.
+                            ul.pagination
+                                li.pagination__item
+                                    a.pagination__link.active(href="#") 1
+                                li.pagination__item
+                                    a.pagination__link(href="#") 2
+                                li.pagination__item
+                                    a.pagination__link(href="#") 3
+                section.container.pt-60.pt-md-30.pb-30
+                    .row.justify-content-center
+                        .col-5.col-lg-6.col-md-10.col-sm-12.mb-md-30
+                            .item.item_column.bg-lighter-blue
+                                p.h3.text-bold.mb-30 Нужна информация?
+                                p.text-grey.mb-15 Обратитесь к экспертам компаниии Телеком XXI
+                                p.heading-contact.heading-contact_phone.mb-0 Телефон
+                                p
+                                    a(href="tel:88009131214") 8 800 913-12-14
+                                p.heading-contact.heading-contact_email.mb-0 E-mail
+                                p
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+                                p.heading-contact.heading-contact_location.mb-0 Как нас найти
+                                p Москва, ул. Правды, д.24, стр. 4, эт. 8, пом. I, ком. 32
+                        .col-5.col-lg-6.col-md-10.col-sm-12
+                            .item.item_column.bg-light-blue
+                                p.h3.text-bold.mb-30 Задайте вопрос
+                                form.form.text-center(action="")
+                                    input.form-input.form-input_full(type="text" placeholder="Имя")
+                                    input.form-input.form-input_full.phone(type="tel" placeholder="Контактный телефон")
+                                    .form__agree.checkbox.justify-content-center.text-left
+                                        input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+                                        label.checkbox__label(for="agree") согласен 
+                                            a.checkbox__link(href="/policy.pdf" target="_blank") c обработкой персональных данных
+                                    button.btn.btn_send.mt-30() Получить консультацию 
+            include chunks/footer.pug
+        script(src="./js/jquery.inputmask.js")
+
+        link(href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet")
+        script(src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js")
+
+        script(src="./js/app.min.js")

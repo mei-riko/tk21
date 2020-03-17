@@ -113,6 +113,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
   });
 
+  // Filter
+  (0, _jquery2.default)('.filter.filter_select[data-title=type]').select2({
+    placeholder: "Тип оборудования",
+    theme: 'default filter filter_select not-last',
+    width: '100%'
+  });
+  (0, _jquery2.default)('.filter.filter_select[data-title=vendor]').select2({
+    placeholder: "Производитель",
+    theme: 'default filter filter_select mt-sm-15',
+    width: '100%'
+  });
+
   // Mobile Navbar
   (0, _jquery2.default)(".header__menu#mobile-nav").on("click", function () {
     if (!(0, _jquery2.default)(this).hasClass("header__menu--active")) {
@@ -142,6 +154,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
   });
 });
+
+function newFunction() {
+  return '1';
+}
 
 /***/ }),
 /* 1 */

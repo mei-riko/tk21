@@ -1,6 +1,9 @@
 .map{
-    position: relative;
     background: none;
+    .item{
+        position: relative;
+        z-index: 11;
+    }
 }
 #map{
     position: absolute;
@@ -8,7 +11,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'md')){

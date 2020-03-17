@@ -1,0 +1,20 @@
+.pagination{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .pagination__item{
+        padding: 4px;
+    }
+    .pagination__link{
+        color: $grey;
+        font-weight: bold;
+        padding: 4px;
+        &.active{
+            color: $blue;
+        }
+    }
+}

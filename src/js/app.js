@@ -35,8 +35,20 @@ $(document).ready(() =>{
 		  return false;
 	  }
 	});
-	
-	  // Mobile Navbar
+  
+  // Filter
+  $('.filter.filter_select[data-title=type]').select2({
+    placeholder: "Тип оборудования",
+    theme: 'default filter filter_select not-last',
+    width: '100%'
+  });
+  $('.filter.filter_select[data-title=vendor]').select2({
+    placeholder: "Производитель",
+    theme: 'default filter filter_select mt-sm-15',
+    width: '100%'
+  });
+  
+  // Mobile Navbar
   $(".header__menu#mobile-nav").on("click", function(){
     if( !$(this).hasClass("header__menu--active")){
         $(this).addClass("header__menu--active");
@@ -64,3 +76,7 @@ $(document).ready(() =>{
     }
   });
 });
+
+function newFunction() {
+  return '1';
+}

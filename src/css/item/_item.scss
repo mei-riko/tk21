@@ -1,6 +1,7 @@
 .item{
-    padding: 60px 50px;
+    padding: 40px 50px;
     border-radius: 20px;
+    
     .item__intro{
         width: 860px;
         margin: 0 auto;
@@ -10,6 +11,7 @@
             margin-top: 20px;
         }
     }
+
     &_info{
         background-color: $white;
     }
@@ -20,9 +22,18 @@
     &_default{
         @extend .bg-gradient;
     }
+    &_column{
+        height: 100%;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .item{
+        padding: 30px 35px;
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .item{
+        padding: 30px;
         &_info{
             padding: 24px 30px;
             border-radius: 14px;

@@ -114,6 +114,11 @@ a{
         color: $white;        
     }
 }
+.bg-storage{
+    background: $dark-blue url("../img/bg-storage.jpg") no-repeat center / cover;
+}
+.bg-lighter-blue{background-color: $light-blue;}
+.bg-light-blue{background-color: #dbe0ed;}
 
 .text-uppercase{text-transform: uppercase;}
 .text-light{font-weight: 300;}
@@ -166,6 +171,13 @@ a{
         height: 30px;
 
         background: url("../img/arrow-right.svg") no-repeat center / contain;
+    }
+
+    &-icon{
+        border-radius: 10px;
+        padding: 24px 40px 24px 90px;
+        color: $dark-blue;
+        background: $light-grey url("../img/clock-light.svg") no-repeat 30px center / 34px;
     }
 }
 
@@ -267,6 +279,7 @@ a{
     .text-sm-small{font-size: 12px;}
 
     .mt-sm-0{margin-top: 0;}
+    .mt-sm-15{margin-top: 15px;}
     .mt-sm-30{margin-top: 30px;}
     .mt-sm-60{margin-top: 60px;}
 
@@ -300,6 +313,12 @@ a{
             bottom: 6px;
             width: 8px;
             height: 8px;
+        }
+
+        &-icon{
+            padding: 20px 20px 20px 50px;
+            color: #0b172f;
+            background: $light-grey url(../img/clock-light.svg) no-repeat 12px center/24px;
         }
     }
 }

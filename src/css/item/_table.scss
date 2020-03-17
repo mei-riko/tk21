@@ -1,0 +1,40 @@
+.table{
+    .table__header{
+        .table__item{
+            font-size: 12px;
+            font-weight: bold;
+            color: #bcbec2;
+            text-transform: uppercase;
+
+            padding: 14px 20px;
+        }
+    }
+    .table__content{
+        .table__row{
+            font-size: 14px;
+            line-height: 1.2;
+            align-items: center;
+            transition: .4s;
+            .table__item{
+                .img-fluid{
+                    filter: grayscale(1);
+                    transition: .4s;
+                }
+            }
+            &:hover{
+                background-color: $light-blue;
+                .table__item{
+                    .img-fluid{
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+    .table__row{
+        border-bottom: 1px solid $light-grey;
+        .table__item{
+            padding: 14px 20px;
+        }
+    }
+}

@@ -14,12 +14,15 @@
 @import "other/nav.scss";
 @import "other/pagination.scss";
 
+@import "item/filter.scss";
 @import "item/gallery.scss";
 @import "item/heading.scss";
-@import "item/list.scss";
 @import "item/item.scss";
+@import "item/list.scss";
+@import "item/table.scss";
 
 @import "blocks/map.scss";
+@import "blocks/storage.scss";
 
 @import "page/error.scss";
 
