@@ -886,6 +886,15 @@ a.link-cta_light:hover:before {
   margin-left: auto;
 }
 
+.container-fluid {
+  width: 100%;
+  max-width: 1760px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -2120,6 +2129,10 @@ a.link-cta_light:hover:before {
   color: #cf6b4b;
 }
 
+.form-input + .checkbox {
+  margin-top: 15px;
+}
+
 .form-input_full {
   width: 100%;
 }
@@ -2128,7 +2141,8 @@ a.link-cta_light:hover:before {
   margin-top: 15px;
 }
 
-.form-input + .checkbox {
+.form .error + .checkbox,
+.form .error + .form-input {
   margin-top: 15px;
 }
 
@@ -2837,6 +2851,12 @@ img + .heading-image {
   }
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .list_statictic {
   display: -ms-flexbox;
   display: flex;
@@ -2870,6 +2890,40 @@ img + .heading-image {
 .list_statictic .list__intro {
   font-size: 12px;
   font-weight: 300;
+}
+
+.list_networks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.list_networks .list__item {
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  max-width: 100%;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.list_networks .list__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #ffffff no-repeat center/contain;
+}
+
+.list_networks .list__link_facebook {
+  background-image: url("../img/facebook.svg");
+}
+
+.list_networks .list__link_vk {
+  background-image: url("../img/vk.svg");
+}
+
+.list_networks .list__link_google {
+  background-image: url("../img/google-plus.svg");
 }
 
 .table .table__header .table__item {
@@ -2927,6 +2981,11 @@ img + .heading-image {
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+
+#mapSmall {
+  width: 100%;
+  height: 350px;
 }
 
 @media all and (max-width: 768px) {

@@ -12,6 +12,7 @@
 
         background-color: $light-blue;
 
+        // For MODx error class
         &.error{
             border-color: $error;
             color: $error;
@@ -19,20 +20,24 @@
                 color: $error;
             }
         }
-
+        // Offset form agree
+        & + .checkbox{
+            margin-top: $padding;
+        }
+        // Full Block
         &_full{
             width: 100%;
             & + .form-input_full{
                 margin-top: $padding;
             }
         }
-
-        & + .checkbox{
-            margin-top: $padding;
-        }
+    }
+    // Offset for MODx error blocks
+    .error + .checkbox,
+    .error + .form-input{
+        margin-top: $padding;
     }
 }
-
 
 .checkbox{
     display: flex;
@@ -106,10 +111,10 @@
     }
 }
 
+// MODx Alert
 .jGrowl {
     font-family: "Noto Sans"
 }
-
 .jGrowl#jGrowl {
     top: 50%;
     left: 50%;

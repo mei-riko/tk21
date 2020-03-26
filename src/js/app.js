@@ -12,21 +12,21 @@ $(document).ready(() =>{
 	
 	// Input mask
 	if( $('.phone').length > 0 ) {
-	$(".phone").inputmask({
-	  mask: "8 999 999 99 99",
-	  placeholder: " ",
-	  showMaskOnHover: true,
-	  onincomplete: function(){ 
-		$(this).closest("form").addClass('error-phone'); 
-		$(this).addClass('error'); 
-		$(this).siblings(".error_phone").addClass('error').html('Укажите корректный номер'); 
-	  }, 
-	  oncomplete: function(){ 
-		  $(this).closest("form").removeClass('error-phone'); 
-		  $(this).removeClass('error'); 
-		  $(this).siblings(".error_phone").removeClass('error').html(''); 
-	  },
-	})
+    $(".phone").inputmask({
+      mask: "8 999 999 99 99",
+      placeholder: " ",
+      showMaskOnHover: true,
+      onincomplete: function(){ 
+      $(this).closest("form").addClass('error-phone'); 
+      $(this).addClass('error'); 
+      $(this).siblings(".error_phone").addClass('error').html('Укажите корректный номер'); 
+      }, 
+      oncomplete: function(){ 
+        $(this).closest("form").removeClass('error-phone'); 
+        $(this).removeClass('error'); 
+        $(this).siblings(".error_phone").removeClass('error').html(''); 
+      },
+    })
 	}
 	$('input.phone').on('keydown', function(event) {
 	  if (event.keyCode === 13 && !$(this).inputmask("isComplete") ) {
@@ -37,17 +37,18 @@ $(document).ready(() =>{
 	});
   
   // Filter
-  $('.filter.filter_select[data-title=type]').select2({
-    placeholder: "Тип оборудования",
-    theme: 'default filter filter_select not-last',
-    width: '100%'
-  });
-  $('.filter.filter_select[data-title=vendor]').select2({
-    placeholder: "Производитель",
-    theme: 'default filter filter_select mt-sm-15',
-    width: '100%'
-  });
-  
+  if( $('.filter').length > 0 ){
+    $('.filter.filter_select[data-title=type]').select2({
+      placeholder: "Тип оборудования",
+      theme: 'default filter filter_select not-last',
+      width: '100%'
+    });
+    $('.filter.filter_select[data-title=vendor]').select2({
+      placeholder: "Производитель",
+      theme: 'default filter filter_select mt-sm-15',
+      width: '100%'
+    });
+  }
   // Mobile Navbar
   $(".header__menu#mobile-nav").on("click", function(){
     if( !$(this).hasClass("header__menu--active")){
