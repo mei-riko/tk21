@@ -57,10 +57,50 @@
             }
         }
     }
+    &_link{
+        position: relative;
+        display: inline-block;
+
+        border: 1px solid $light-grey;
+        border-radius: 30px;
+        outline: none;
+        
+        line-height: 18px;
+        padding: 14px 50px 14px 30px;
+        height: auto;
+
+        &:after{
+            content: '';
+            display: block;
+
+            position: absolute;
+            top: calc(50% - 10px);
+            right: 15px;
+            
+            width: 20px;
+            height: 20px;
+
+            background: url("../img/arrow-down-light.svg") no-repeat center / 20px;
+
+            transition: .4s;
+        }
+
+        &[data-dir=desc]{
+            &:after{
+                transform: rotate(0);
+            }
+        }
+        &[data-dir=asc]{
+            &:after{
+                transform: rotate(180deg);
+            }
+        }
+    }
 
     // Group
     &-group{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
 
         .select2.filter{
@@ -68,5 +108,21 @@
                 margin-left: 10px;
             }
         }
+
+        .filter{
+            max-width: calc(50% - 15px);
+        }
     }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    // .filter{
+    //     // Group
+    //     &-group{
+    //         flex-wrap: wrap;
+    //         .filter{
+    //             max-width: 100%;
+    //         }
+    //     }
+    // }
 }

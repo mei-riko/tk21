@@ -11,9 +11,11 @@
         text-decoration: none;
     }
 
+
     &_default{
         color: $blue;
         background: $white;
+
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -23,15 +25,24 @@
             background: $light-grey;
         }
     }
-
     &_send{
-        background-color: $blue;
         color: $white;
+        background-color: $blue;
+
         padding-bottom: 12px;
         letter-spacing: .5px;
 
         &:hover{
+            color: $white;
             background-color: darken($blue,5%);
+        }
+    }
+
+    // Offset
+    &_large{
+        padding: 14px 36px;
+        &.btn_send{
+            padding-bottom: 16px;
         }
     }
 }

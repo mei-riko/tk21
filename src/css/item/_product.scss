@@ -1,0 +1,38 @@
+.product{
+    width: 100%;
+    margin-bottom: 30px;
+
+    .product__image{
+        max-width: 100%;
+    }
+    .product__info{
+        @extend .text-small;
+        @extend .text-grey;
+
+        white-space: nowrap;
+        overflow: hidden;
+        .sep{
+            margin: 0 4px;
+        }
+
+        & + .product__title{
+            margin-top: $padding/2;
+        }
+    }
+    .product__title{
+        font-size: 16px;
+        font-weight: 700;
+        color: $dark-blue;
+        line-height: 1.2;
+        transition: .4s;
+    }
+}
+a.product{
+    &:hover{
+        text-decoration: none;
+        .product__title{
+            text-decoration: underline;
+            color: $blue;
+        }
+    }
+}

@@ -113,6 +113,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
   });
 
+  // Show Btn
+  (0, _jquery2.default)("#categoryShow").on("click", function () {
+    if ((0, _jquery2.default)(this).hasClass("active")) {
+      (0, _jquery2.default)(this).removeClass("active");
+      (0, _jquery2.default)(".catalog .catalog__category").slideUp();
+      (0, _jquery2.default)(this).html("Показать категории");
+    } else {
+      (0, _jquery2.default)(this).addClass("active");
+      (0, _jquery2.default)(".catalog .catalog__category").slideDown();
+      (0, _jquery2.default)(this).html("Скрыть категории");
+    }
+  });
+
   // Filter
   if ((0, _jquery2.default)('.filter').length > 0) {
     (0, _jquery2.default)('.filter.filter_select[data-title=type]').select2({

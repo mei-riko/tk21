@@ -1,0 +1,89 @@
+.catalog{
+    // Elements
+    .catalog__title{
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .catalog__count{
+        font-size: 14px;
+        font-weight: 300;
+        white-space: nowrap;
+    }
+    .catalog__intro{
+        padding: 20px 0 0;
+    }
+    // Blocks
+    .catalog__header{
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 3px solid $light-grey;
+        .filter.not-last {
+            margin-right: 15px;
+        }
+        .filter_select {
+            margin-right: 15px;
+        }
+    }
+    .catalog__category{
+        padding: 20px 0;
+        .catalog__category__item{
+            display: block;
+            border-radius: 10px;
+            padding: 8px 14px;
+
+            &--active{
+                @extend .bg-gradient;
+                cursor: default;
+                &:hover, &:focus{
+                    text-decoration: none;
+                }
+            }
+
+            & + .catalog__category__item{
+                margin-top: 6px;
+            }
+        }
+
+        &-btn{
+            display: none;
+            border-radius: 10px;
+            padding: 8px 14px;
+            background: $light-grey;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .catalog{
+        .catalog__header{
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .catalog{
+        .catalog__header{
+            .filter{
+                &_select {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+                // Group
+                &-group{
+                    flex-wrap: wrap;
+                    .filter{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .catalog__category{
+            display: none;
+            &-btn{
+                display: block;
+                margin-top: 20px;
+            }
+        }
+    }
+}

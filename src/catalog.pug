@@ -5,7 +5,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         base(href="")
 
-        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet")
         title Catalog
         meta(name="description" content="")
         meta(name="keywords" content="")
@@ -20,31 +20,139 @@ html(lang="ru")
             main.inside-area
                 include chunks/header.pug
                 section.container.pt-60.pb-60.pt-md-30.pb-md-30
-                    .row.justify-content-center.text-center
+                    .row.justify-content-center
                         .col-9.col-md-12.col-lg-12
-                            h1.text-bold Поставка телекоммуникационного и&nbsp;сетевого оборудования
-                            p.text-light Телеком XXI - это поставка и запуск сетевого оборудования. Спектр реализуемой продукции 
+                            h1.text-bold.text-center Поставка телекоммуникационного и&nbsp;сетевого оборудования
+                            p.text-light.text-center Телеком XXI - это поставка и запуск сетевого оборудования. Спектр реализуемой продукции 
                                 | включает все необходимое для построения сети связи. Мы работаем с ведущими вендорами: мировыми лидерами по производству и поставке сетевого оборудования, поэтому гарантируем высокое качество и актуальность внедряемых решений. 
-                            .row.justify-content-center
-                                .col-3.col-md-6
+                        .col-10.col-md-12.col-lg-12
+                            .row.justify-content-center.mt-60.mb-60.mt-sm-30.mb-sm-30
+                                .col-3.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-6
+                                .col-3.col-md-4.col-sm-6.mb-30
+                                    .item.item_logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                .col-3.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-6
+                                .col-3.col-md-4.col-sm-6.mb-30
+                                    .item.item_logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                .col-3.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-6
+                                .col-3.col-md-4.col-sm-6.mb-30
+                                    .item.item_logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                .col-3.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-6
-                                    .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-6
-                                    .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-6
-                                    .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-6
-                                    .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
+                                .col-3.col-md-4.col-sm-6.mb-30
+                                    .item.item_logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                .col-12.text-center
+                                    a.link-inverse.link-underline(href="#") Все производители
+                            .item.item_default.item_sale(style="background-image: url('../img/demo-sale.png'); background-size: 125px; background-position-x: calc(100% - 200px); background-position-y: 100%; ")
+                                p.item__title Бесплатный стоечный шкаф
+                                p.item__content Специальное предложение действительно при покупке товаров на сумму от 40 000 р.!
+                                .item__cta
+                                    a.btn.btn_send.btn_large(href="#") Узнать об акции
+            section.container-fluid.catalog
+                .row.no-gutters.catalog__header
+                    .col-8.col-md-12.mb-md-30.col-lg-6
+                        h1.h4.text-bold.mb-0.catalog__title Каталог товаров
+                        span.catalog__count 121 товар
+                    .col-4.col-md-12.col-lg-6
+                        .filter-group
+                            select.filter.filter_select.not-last(data-title="vendor")
+                                option
+                                option.filter__item Rostelecom
+                                option.filter__item Huawei
+                                option.filter__item D-Link
+                            a.filter.filter_link(href="#" data-dir="desc") Цена
+                .row
+                    .col-2.col-sm-12.col-md-5.col-lg-4.col-xl-3
+                        .catalog__category-btn#categoryShow Показать категории 
+                        .catalog__category
+                            a.catalog__category__item(href="#") Категория 1
+                            a.catalog__category__item.catalog__category__item--active(href="#") Категория 2
+                            a.catalog__category__item(href="#") Категория 3
+                            a.catalog__category__item(href="#") Категория 4
+                            a.catalog__category__item(href="#") Категория 5
+                            a.catalog__category__item(href="#") Категория 6
+                            a.catalog__category__item(href="#") Категория 7
+                            a.catalog__category__item(href="#") Категория 8
+                            a.catalog__category__item(href="#") Категория 9
+                    .col-10.col-sm-12.col-md-7.col-lg-8.col-xl-9
+                        p.catalog__intro Lorem ipsum dolor sit amet. Maiores alias consequatur aut reiciendis. Voluptatem sequi nesciunt, neque porro quisquam est, qui ratione. Assumenda est, qui dolorem eum iure. Cum soluta nobis est laborum et aut fugit, sed. Minima veniam, quis nostrum exercitationem ullam corporis suscipit. Magnam aliquam quaerat voluptatem sequi nesciunt, neque porro quisquam est, omnis iste. Quidem rerum necessitatibus saepe eveniet. Ex ea commodi autem quibusdam et aut perferendis doloribus asperiores repellat. libero.
+                        .catalog__items.row
+                            .col-3.col-md-12.col-lg-6.col-xl-4
+                                a.product(href="#")
+                                    img.product__image(src="../img/demo-product.png")
+                                    .product__info
+                                        span.text-bold Huawei
+                                        span.sep /
+                                        span.text-light Унифицированные коммуникации для всех
+                                    .product__title Коммутатор модульной конфигурации Huawei S9300
+                            .col-3.col-md-12.col-lg-6.col-xl-4
+                                a.product(href="#")
+                                    img.product__image(src="../img/demo-product.png")
+                                    .product__info
+                                        span.text-bold D-Link
+                                        span.sep /
+                                        span.text-light Телефония
+                                    .product__title Телефония D-Link S9300
+                            .col-3.col-md-12.col-lg-6.col-xl-4
+                                a.product(href="#")
+                                    img.product__image(src="../img/demo-product.png")
+                                    .product__info
+                                        span.text-bold Huawei
+                                        span.sep /
+                                        span.text-light Унифицированные коммуникации
+                                    .product__title Коммутатор модульной конфигурации Huawei S9300
+                            .col-3.col-md-12.col-lg-6.col-xl-4
+                                a.product(href="#")
+                                    img.product__image(src="../img/demo-product.png")
+                                    .product__info
+                                        span.text-bold D-Link
+                                        span.sep /
+                                        span.text-light Телефония
+                                    .product__title Коммутатор телефонии S9300
+                            .col-3.col-md-12.col-lg-6.col-xl-4
+                                a.product(href="#")
+                                    img.product__image(src="../img/demo-product.png")
+                                    .product__info
+                                        span.text-bold Huawei
+                                        span.sep /
+                                        span.text-light Унифицированные коммуникации для всех
+                                    .product__title Коммутатор модульной конфигурации Huawei S9300
+                            .col-3.col-md-12.col-lg-6.col-xl-4
+                                a.product(href="#")
+                                    img.product__image(src="../img/demo-product.png")
+                                    .product__info
+                                        span.text-bold D-Link
+                                        span.sep /
+                                        span.text-light Телефония
+                                    .product__title Телефония D-Link S9300
+                            .col-3.col-md-12.col-lg-6.col-xl-4
+                                a.product(href="#")
+                                    img.product__image(src="../img/demo-product.png")
+                                    .product__info
+                                        span.text-bold Huawei
+                                        span.sep /
+                                        span.text-light Унифицированные коммуникации
+                                    .product__title Коммутатор модульной конфигурации Huawei S9300
+                            .col-3.col-md-12.col-lg-6.col-xl-4
+                                a.product(href="#")
+                                    img.product__image(src="../img/demo-product.png")
+                                    .product__info
+                                        span.text-bold D-Link
+                                        span.sep /
+                                        span.text-light Телефония
+                                    .product__title Коммутатор телефонии S9300
+                        ul.pagination
+                            li.pagination__item
+                                a.pagination__link.active(href="#") 1
+                            li.pagination__item
+                                a.pagination__link(href="#") 2
+                            li.pagination__item
+                                a.pagination__link(href="#") 3
             section.container-fluid.pt-60.pt-md-30.pb-30
                     .row.justify-content-center
-                        .col-4.col-lg-6.col-md-10.col-sm-12.mb-lg-30
+                        .col-4.col-xl-6.col-md-10.col-sm-12.mb-xl-30
                             .item.item_column.bg-lighter-blue
                                 p.h3.text-bold.mb-30 Контакты
                                 p.text-grey.mb-15 Есть вопросы? Обратитесь к экспертам компаниии Телеком 21 век
@@ -63,7 +171,7 @@ html(lang="ru")
                                         a.list__link.list__link_vk(href="#")
                                     li.list__item
                                         a.list__link.list__link_google(href="#")
-                        .col-4.col-lg-6.col-md-10.col-sm-12.mb-lg-30
+                        .col-4.col-xl-6.col-md-10.col-sm-12.mb-xl-30
                             .item.item_column.bg-light-blue
                                 p.h3.text-bold.mb-30 Задайте вопрос
                                 form.form.text-center(action="")
@@ -74,15 +182,18 @@ html(lang="ru")
                                         input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
                                         label.checkbox__label(for="agree") согласен 
                                             a.checkbox__link(href="/policy.pdf" target="_blank") c обработкой персональных данных
-                                    button.btn.btn_send.mt-30() Получить консультацию 
-                        .col-4.col-lg-12.col-md-10.col-sm-12
+                                    button.btn.btn_send.btn_large.mt-30() Получить консультацию 
+                        .col-4.col-xl-12.col-md-10.col-sm-12
                             .item.item_column.bg-lighter-blue
                                 p.h3.text-bold.mb-30 Головной офис
                                 .map#mapSmall
             include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
-        
+
         script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkS1YFi2KvkMaaudj8A56Ova53LzyEsr4&callback=initMap")
         script(src="./js/mapsSmall.js")
+
+        link(href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet")
+        script(src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js")
 
         script(src="./js/app.min.js")

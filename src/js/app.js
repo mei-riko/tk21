@@ -36,6 +36,20 @@ $(document).ready(() =>{
 	  }
 	});
   
+  // Show Btn
+  $("#categoryShow").on("click", function(){
+    if( $(this).hasClass("active") ){
+      $(this).removeClass("active");
+      $(".catalog .catalog__category").slideUp();
+      $(this).html("Показать категории");
+    }else{
+      $(this).addClass("active");
+      $(".catalog .catalog__category").slideDown();
+      $(this).html("Скрыть категории");
+    }
+    
+  });
+
   // Filter
   if( $('.filter').length > 0 ){
     $('.filter.filter_select[data-title=type]').select2({
