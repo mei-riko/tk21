@@ -6,35 +6,260 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <base href=""/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/>
-    <title>Basic Page</title>
+    <title>Index Page</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="robots" content=""/>
     <link rel="canonical" href=""/>
+    <link href="./css/slick.css" rel="stylesheet"/>
+    <link href="./css/slick-theme.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
   </head>
   <body>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <header class="header"><a class="header__logo" href="/"><img class="img-desktop" src="../img/logo.svg" title=""/><img class="img-desktop white" src="../img/logo-white.svg" title=""/></a>
-      <div class="header__container">
-        <div class="header__nav">
-          <nav class="nav nav_header-top"><a class="nav__item" href="#">О компании</a><a class="nav__item" href="#">Вакансии</a><a class="nav__item" href="#">Статьи</a><a class="nav__item last" href="#">Контакты</a></nav>
-          <nav class="nav nav_header"><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Услуги</a><a class="nav__item last" href="#">Проектирование</a></nav>
+    <div class="content-area">
+      <main class="inside-area">
+        <header class="header"><a class="header__logo" href="/"><img class="img-desktop" src="../img/logo.svg" title=""/><img class="img-desktop white" src="../img/logo-white.svg" title=""/></a>
+          <div class="header__container">
+            <div class="header__nav">
+              <nav class="nav nav_header-top"><a class="nav__item" href="#">О компании</a><a class="nav__item" href="#">Вакансии</a><a class="nav__item" href="#">Статьи</a><a class="nav__item last" href="#">Контакты</a></nav>
+              <nav class="nav nav_header"><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Услуги</a><a class="nav__item last" href="#">Проектирование</a></nav>
+            </div>
+            <div class="header__contact">
+              <p class="mb-0 text-grey text-small d-lg-none">г. Москва, ул. Правды 24</p><a class="contact-phone" href="tel:*5025" title="Контактый телефон Телеком21 *5025">*5025</a>
+            </div>
+          </div><a class="header__email" href="mailto:#"></a><a class="header__search" href="#"></a>
+          <div class="header__menu" id="mobile-nav"></div>
+        </header>
+        <section class="container pt-60 pt-md-30 pb-60 pb-md-30">
+          <div class="item item_info text-center">
+            <p class="h5 text-uppercase text-bold mb-15">Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями</p>
+            <p class="item__intro">Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.</p>
+            <div class="gallery gallery_logo d-flex align-items-center justify-content-between justify-content-md-center">
+              <div class="gallery__item"><img class="img-fluid" src="../img/logo1.png" atl="" title=""/></div>
+              <div class="gallery__item"><img class="img-fluid" src="../img/logo2.png" atl="" title=""/></div>
+              <div class="gallery__item"><img class="img-fluid" src="../img/logo3.png" atl="" title=""/></div>
+              <div class="gallery__item"><img class="img-fluid" src="../img/logo4.png" atl="" title=""/></div>
+              <div class="gallery__item"><img class="img-fluid" src="../img/logo5.jpg" atl="" title=""/></div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-gradient">
+          <div class="container pt-60 pt-md-30 pb-60 pb-md-30">
+            <p class="portfolio-title text-center">Последние реализованные проекты</p>
+            <div class="slider slider_portfolio" id="portfolioIndex">
+              <div class="portfolio-item">
+                <div class="portfolio-item__logo" style="background-image: url('../img/logo/huawei-color.png');"></div>
+                <div class="portfolio-item__title">Анализ, поставка и внедрение оборудования для развития сети связи</div>
+                <div class="portfolio-item__info">2019 | г. Казань</div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-item__logo" style="background-image: url('../img/logo/d-link.png');"></div>
+                <div class="portfolio-item__title">Модернизация и поставка электрооборудования</div>
+                <div class="portfolio-item__info">2019 | по России</div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-item__logo" style="background-image: url('../img/logo/huawei-color.png');"></div>
+                <div class="portfolio-item__title">Комплексные поставки оборудования сетей связи и ЦОД</div>
+                <div class="portfolio-item__info">2019 | г. Казань</div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-item__logo" style="background-image: url('../img/logo/d-link.png');"></div>
+                <div class="portfolio-item__title">Поставка и инсталляция оборудования</div>
+                <div class="portfolio-item__info">2019 | г. Москва</div>
+              </div>
+              <div class="portfolio-item">
+                <div class="portfolio-item__logo" style="background-image: url('../img/logo/huawei-color.png');"></div>
+                <div class="portfolio-item__title">Поставка и внедрение оборудования для развития сети связи</div>
+                <div class="portfolio-item__info">2019 | г. Санкт-Петербург</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container-fluid pt-60 pt-md-30 pb-60 pb-md-30">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="content-index">
+                <p class="h3 text-bold content-index__title">Принципы работы Телеком XXI</p>
+                <p>Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="list list_statictic row no-gutters">
+                <div class="col-3 col-sm-12">
+                  <div class="list__item text-center">
+                    <div class="list__title text-blue">15</div>
+                    <div class="list__subtitle">минут</div>
+                    <div class="list__intro">для ответа на вашу заявку</div>
+                  </div>
+                </div>
+                <div class="col-3 col-sm-12">
+                  <div class="list__item text-center">
+                    <div class="list__title text-blue">3</div>
+                    <div class="list__subtitle">дня</div>
+                    <div class="list__intro">на поставку оборудования</div>
+                  </div>
+                </div>
+                <div class="col-3 col-sm-12">
+                  <div class="list__item text-center">
+                    <div class="list__title text-blue">24</div>
+                    <div class="list__subtitle">часа</div>
+                    <div class="list__intro">доступна техподдержка</div>
+                  </div>
+                </div>
+                <div class="col-3 col-sm-12">
+                  <div class="list__item text-center">
+                    <div class="list__title text-blue">365</div>
+                    <div class="list__subtitle">дней</div>
+                    <div class="list__intro">демонстрируем профессионализм</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-60 mt-md-30">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-6">
+                  <div class="preview preview_page"><img class="preview__icon" src="../img/border-none.svg"/>
+                    <div class="preview__title">Подготовительные работы</div>
+                    <div class="preview__intro"><a class="btn" href="#">Подробнее</a></div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="preview preview_page"><img class="preview__icon" src="../img/border-outside.svg"/>
+                    <div class="preview__title">Строительство и монтаж</div>
+                    <div class="preview__intro"><a class="btn" href="#">Подробнее</a></div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="preview preview_page"><img class="preview__icon" src="../img/border-inside.svg"/>
+                    <div class="preview__title">Поставка оборудования</div>
+                    <div class="preview__intro"><a class="btn" href="#">Подробнее</a></div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="preview preview_page"><img class="preview__icon" src="../img/border-all.svg"/>
+                    <div class="preview__title">Техническая поддержка</div>
+                    <div class="preview__intro"><a class="btn" href="#">Подробнее</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <p class="h1 text-bold">Комплексность, как&nbsp;способ экономии ресурсов</p>
+              <p>Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. </p>
+              <p class="blockquote-icon blockquote-icon_wallet">Снижают расходы временные и денежные. Требуется меньше людей для отслеживания проекта. </p>
+            </div>
+          </div>
+        </section>
+        <section class="container-fluid">
+          <div class="item item_default item_large">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-4 col-md-12">
+                <p class="h5 text-uppercase text-bold mb-15">Вместе мы создаем будущее!</p>
+                <p class="lead text-light">Предоставление инновационных совместных решений для обеспечения более эффективного способа работы наших клиентов.</p>
+                <p><a class="link-cta link-cta_light" href="#">Посмотреть каталог</a></p>
+              </div>
+              <div class="col-7 col-md-12 mt-md-30">
+                <div class="row align-items-center justify-content-between justify-content-md-center">
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo img-logo_small" src="../img/logo/alslogo.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo img-logo_small" src="../img/logo/huawei.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo img-logo_small" src="../img/logo/AcmePacket.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo img-logo_small" src="../img/logo/800px-Inspur_logo.svg.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo img-logo_small" src="../img/logo/D-Link-Logo.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo img-logo_small" src="../img/logo/Polycom_logo.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-md-30"><img class="img-fluid img-logo img-logo_small" src="../img/logo/logo-ip.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-md-30"><img class="img-fluid img-logo img-logo_small" src="../img/logo/Lenovo-new-logo-2015-1024x768.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6"><img class="img-fluid img-logo img-logo_small" src="../img/logo/1280px-Eaton_Corporation_logo.svg.png" atl="" title=""/></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container-fluid pt-60 pt-md-30 pb-60 pb-md-30">
+          <div class="item item_news">
+            <p class="item__title">Актуальные новости</p>
+            <div class="link-cta-group"><a class="link-cta link-cta_dark link-cta_back" href="#">Назад</a><a class="link-cta link-cta_dark" href="#">Вперед</a></div>
+            <div class="slider slider_news" id="newsIndex">
+              <div class="preview preview_news">
+                <p class="preview__title">1 Анализ и внедрение оборудования для развития сети связи</p>
+                <p class="preview__intro">The Company already counts some of the largest European hedge funds and physical energy aggregators as clients but is tapping into the growing demand for fast, flexible, cloud-based trading software solutions given the digitalisation of the energy marke....</p>
+                <p class="preview__info">2019 | г. Москва</p>
+              </div>
+              <div class="preview preview_news">
+                <p class="preview__title">2 Анализ и внедрение оборудования</p>
+                <p class="preview__intro">The Company already counts some of the largest European hedge funds and physical energy aggregators as clients but is tapping into the growing demand for fast, flexible, cloud-based trading software solutions given the digitalisation of the energy marke....</p>
+                <p class="preview__info">2019 | г. Москва</p>
+              </div>
+              <div class="preview preview_news">
+                <p class="preview__title">3 Анализ и внедрение оборудования для развития сети связи</p>
+                <p class="preview__intro">The Company already counts some of the largest European hedge funds and physical energy aggregators as clients but is tapping into the growing demand for fast, flexible, cloud-based trading software solutions given the digitalisation of the energy marke....</p>
+                <p class="preview__info">2019 | г. Москва</p>
+              </div>
+              <div class="preview preview_news">
+                <p class="preview__title">4 Анализ оборудования для развития сети связи</p>
+                <p class="preview__intro">The Company already counts some of the largest European hedge funds and physical energy aggregators as clients but is tapping into the growing demand for fast, flexible, cloud-based trading software solutions given the digitalisation of the energy marke....</p>
+                <p class="preview__info">2019 | г. Москва</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container-fluid pb-30">
+          <div class="row justify-content-center">
+            <div class="col-4 col-xl-6 col-md-10 col-sm-12 mb-xl-30">
+              <div class="item item_column bg-lighter-blue">
+                <p class="h3 text-bold mb-30">Контакты</p>
+                <p class="text-grey mb-15">Есть вопросы? Обратитесь к экспертам компаниии Телеком 21 век</p>
+                <p class="heading-contact heading-contact_phone mb-0">Телефон</p>
+                <p><a href="tel:88009131214">8 800 913-12-14</a></p>
+                <p class="heading-contact heading-contact_email mb-0">E-mail</p>
+                <p><a href="mailto:mail@mail.ru">mail@mail.ru</a></p>
+                <p class="heading-contact heading-contact_location mb-0">Как нас найти</p>
+                <p>Москва, ул. Правды, д.24, стр. 4, эт. 8, пом. I, ком. 32</p>
+                <ul class="list list_networks">
+                  <li class="list__item"><a class="list__link list__link_facebook" href="#"></a></li>
+                  <li class="list__item"><a class="list__link list__link_vk" href="#"></a></li>
+                  <li class="list__item"><a class="list__link list__link_google" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4 col-xl-6 col-md-10 col-sm-12 mb-xl-30">
+              <div class="item item_column bg-light-blue">
+                <p class="h3 text-bold mb-30">Задайте вопрос</p>
+                <form class="form text-center" action="">
+                  <input class="form-input form-input_full" type="text" placeholder="Имя"/>
+                  <input class="form-input form-input_full phone" type="tel" placeholder="Контактный телефон"/>
+                  <textarea class="form-input form-input_full" name="" rows="3" placeholder="Пишите здесь..."></textarea>
+                  <div class="form__agree checkbox justify-content-center text-left">
+                    <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
+                    <label class="checkbox__label" for="agree">согласен <a class="checkbox__link" href="/policy.pdf" target="_blank">c обработкой персональных данных</a></label>
+                  </div>
+                  <button class="btn btn_send btn_large mt-30">Получить консультацию </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-4 col-xl-12 col-md-10 col-sm-12">
+              <div class="item item_column bg-lighter-blue">
+                <p class="h3 text-bold mb-30">Головной офис</p>
+                <div class="map" id="mapSmall"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <nav class="nav nav_footer"><a class="nav__item" href="#">Политика конфиденциальности</a><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Открытые вакансии</a><a class="nav__item" href="#">Услуги</a><a class="nav__item" href="#">Проектирование</a></nav>
+          <p class="mb-0 text-bold text-center">© 2007-2019. Все права защищены</p>
+          <p class="text-small text-center text-light-grey">Сайт разработан <a class="footer__link" href="https://websoho.ru" title="Сайт студией «SOHO»">студией «SOHO»</a></p>
         </div>
-        <div class="header__contact">
-          <p class="mb-0 text-grey text-small d-lg-none">г. Москва, ул. Правды 24</p><a class="contact-phone" href="tel:*5025" title="Контактый телефон Телеком21 *5025">*5025</a>
-        </div>
-      </div><a class="header__email" href="mailto:#"></a><a class="header__search" href="#"></a>
-      <div class="header__menu" id="mobile-nav"></div>
-    </header>
-    <footer class="footer">
-      <div class="container">
-        <nav class="nav nav_footer"><a class="nav__item" href="#">Политика конфиденциальности</a><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Открытые вакансии</a><a class="nav__item" href="#">Услуги</a><a class="nav__item" href="#">Проектирование</a></nav>
-        <p class="mb-0 text-bold text-center">© 2007-2019. Все права защищены</p>
-        <p class="text-small text-center text-light-grey">Сайт разработан <a class="footer__link" href="https://websoho.ru" title="Сайт студией «SOHO»">студией «SOHO»</a></p>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="./js/jquery.inputmask.js"></script>
+    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkS1YFi2KvkMaaudj8A56Ova53LzyEsr4&amp;callback=initMap"></script>
+    <script src="./js/mapsSmall.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/app.min.js"></script>
   </body>
 </html>

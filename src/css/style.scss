@@ -19,15 +19,16 @@
 @import "item/heading.scss";
 @import "item/item.scss";
 @import "item/list.scss";
+@import "item/preview.scss";
 @import "item/product.scss";
 @import "item/table.scss";
 
 @import "blocks/catalog.scss";
 @import "blocks/map.scss";
+@import "blocks/slider.scss";
 @import "blocks/storage.scss";
 
 @import "page/error.scss";
-
 
 .content-area{
     display: flex;

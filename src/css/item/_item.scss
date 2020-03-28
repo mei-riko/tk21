@@ -25,6 +25,9 @@
             background-color: $light-grey;
         }   
     }
+    &_news{
+        border: 1px solid $light-grey;
+    }
     &_logo{
         width: 100%;
         height: 80px;

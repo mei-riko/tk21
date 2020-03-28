@@ -125,7 +125,49 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       (0, _jquery2.default)(this).html("Скрыть категории");
     }
   });
-
+  // Slider
+  if ((0, _jquery2.default)('.slider').length > 0) {
+    var $slickPortfolio = (0, _jquery2.default)('.slider#portfolioIndex');
+    $slickPortfolio.slick({
+      slidesToShow: 4,
+      arrows: false,
+      dots: true,
+      autoplay: true,
+      responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      }, {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }]
+    });
+    var $slickNews = (0, _jquery2.default)('.slider#newsIndex');
+    $slickNews.slick({
+      slidesToShow: 3,
+      arrows: false,
+      dots: true,
+      autoplay: true,
+      responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }, {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+    });
+  }
   // Filter
   if ((0, _jquery2.default)('.filter').length > 0) {
     (0, _jquery2.default)('.filter.filter_select[data-title=type]').select2({

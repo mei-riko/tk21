@@ -67,6 +67,8 @@ a{
         text-decoration: underline;
     }
     &.link-cta{
+        font-size: 1rem;
+        line-height: 1.8;
         position: relative;
         padding-right: 30px;
         transition: .4s;
@@ -84,22 +86,73 @@ a{
 
             transition: .4s;
         }
+        &:hover{
+            text-decoration: none;
+            padding-right: 34px;
+        }
+        &_dark{
+            color: $grey;
+            background: url("../img/arrow-right-circle.svg") no-repeat right center / 20px;
+            &:before{
+                background-color: rgba(23, 57, 138,0.15);
+            }
+            &:hover{
+                &:before{
+                    background-color: rgba(23, 57, 138,0.1);
+                }
+            }
+        }
         &_light{
             color: $white;
             background: url("../img/arrow-right-circle-white.svg") no-repeat right center / 20px;
             &:before{
-                background-color: rgba( 255,255,255,0.3);
+                background-color: rgba(255,255,255,0.3);
             }
             &:hover{
-                text-decoration: none;
-                padding-right: 34px;
                 &:before{
                     background-color: rgba( 255,255,255,0.2);
                 }
             }
         }
+        &_back{
+            padding-right: 0px;
+            padding-left: 30px;
+            &:before{
+                right: -30px;
+                left: auto;
+            }
+            &:hover{
+                padding-right: 0px;
+                padding-left: 34px;
+            }
+            &.link-cta_dark{
+                background: url("../img/arrow-left-circle.svg") no-repeat left center / 20px;
+            }
+            &.link-cta_light{
+                background: url("../img/arrow-left-circle-white.svg") no-repeat left center / 20px;
+            }
+        }
     }
 }
+
+// Blocks
+.link-cta-group{
+    display: flex;
+    flex-wrap: nowrap;
+    .link-cta{
+        &:hover{
+            padding-right: 30px;
+        }
+        &_back{
+            margin-right: 70px;
+            &:hover{
+                padding-right: 0px;
+                padding-left: 30px;
+            }
+         }
+    }
+}
+
 .p-relative{position: relative;}
 .p-sticky{position: sticky; top: 0; left: 0; z-index: 101; background: $white;}
 
