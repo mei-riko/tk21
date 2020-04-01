@@ -4,7 +4,7 @@
 
     background: $dark-blue url("../img/index-bg.jpg") no-repeat center / cover;
     color: $white;
-    padding: 60px;
+    padding: 120px 60px;
 
     position: relative;
 
@@ -16,12 +16,6 @@
         text-align: center;
         flex: 0 0 490px;
         max-width: 100%;
-
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-
-        // transform: translateX(-50%) translateY(-50%);
     }
     .content-cta__title{
         font-size: 32px;
@@ -29,27 +23,36 @@
         color: $white;
     }
     .content-cta__service{
-        // position: absolute;
-        // top: 60px;
-
         flex: 0 0 calc( 50% - 245px );
-        max-width: 100%;
+        max-width: calc( 50% - 245px);
 
         display: flex;
-        // flex-wrap: wrap;
-        // align-items: stretch;
+        height: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
 
         .content-item{
             width: 360px;
             max-width: 100%;
         }
         &_left{
-            justify-content: flex-end;
-            // right: calc(50% + 230px);
+            align-items: flex-end;
             text-align: right;
             .content-item{
                 padding-right: 80px;
                 padding-left: 0px;
+
+                &_1{
+                    transform: translateX(80px);
+                }
+                &_2{
+                    transform: translateX(-80px);
+                }
+                &_3{
+                    transform: translateX(80px);
+                }
+
             }
             .content-item-circle{
                 left: auto;
@@ -57,8 +60,18 @@
             }
         }
         &_right{
-            justify-content: flex-start;
-            // left: calc(50% + 230px);
+            align-items: flex-start;
+            .content-item{
+                &_4{
+                    transform: translateX(-80px);
+                }
+                &_5{
+                    transform: translateX(80px);
+                }
+                &_6{
+                    transform: translateX(-80px);
+                }
+            }
         }
     }
 }

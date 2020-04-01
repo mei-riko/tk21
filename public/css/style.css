@@ -3525,7 +3525,7 @@ a.product:hover .product__title {
   height: calc(100vh - 140px);
   background: #0b172f url("../img/index-bg.jpg") no-repeat center/cover;
   color: #ffffff;
-  padding: 60px;
+  padding: 120px 60px;
   position: relative;
 }
 
@@ -3549,9 +3549,16 @@ a.product:hover .product__title {
 .content-cta .content-cta__service {
   -ms-flex: 0 0 calc( 50% - 245px);
   flex: 0 0 calc( 50% - 245px);
-  max-width: 100%;
+  max-width: calc( 50% - 245px);
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .content-cta .content-cta__service .content-item {
@@ -3560,8 +3567,8 @@ a.product:hover .product__title {
 }
 
 .content-cta .content-cta__service_left {
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   text-align: right;
 }
 
@@ -3570,14 +3577,44 @@ a.product:hover .product__title {
   padding-left: 0px;
 }
 
+.content-cta .content-cta__service_left .content-item_1 {
+  -webkit-transform: translateX(80px);
+  transform: translateX(80px);
+}
+
+.content-cta .content-cta__service_left .content-item_2 {
+  -webkit-transform: translateX(-80px);
+  transform: translateX(-80px);
+}
+
+.content-cta .content-cta__service_left .content-item_3 {
+  -webkit-transform: translateX(80px);
+  transform: translateX(80px);
+}
+
 .content-cta .content-cta__service_left .content-item-circle {
   left: auto;
   right: 0;
 }
 
 .content-cta .content-cta__service_right {
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.content-cta .content-cta__service_right .content-item_4 {
+  -webkit-transform: translateX(-80px);
+  transform: translateX(-80px);
+}
+
+.content-cta .content-cta__service_right .content-item_5 {
+  -webkit-transform: translateX(80px);
+  transform: translateX(80px);
+}
+
+.content-cta .content-cta__service_right .content-item_6 {
+  -webkit-transform: translateX(-80px);
+  transform: translateX(-80px);
 }
 
 .content-index {
