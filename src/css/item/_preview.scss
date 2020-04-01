@@ -45,3 +45,40 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .preview{
+        &_page{
+            padding: 15px 0;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .preview{
+        &_page{
+            text-align: left;
+
+            position: relative;
+            padding-left: 60px;
+
+
+            .preview__icon{
+                position: absolute;
+                left: 0;
+                top: 15px;
+            }
+            .preview__title{
+                width: 100%;
+                margin: 0;
+            }
+            .preview__intro{
+                .btn{
+                    padding: 0;
+                    text-decoration: underline;
+                    text-transform: none;
+                    background: none;
+                }
+            }
+        }
+    }
+}

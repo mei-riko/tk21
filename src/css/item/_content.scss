@@ -13,18 +13,21 @@
 
     .content-item__title{
         font-family: "Montserrat";
-        color: $white;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 800;
+
+        display: block;
+
+        color: $white;
         margin: 0;
-        &:hover{
-            color: #8da9fa;
-            text-decoration: none;
-        }
     }
     .content-item__options{
+        display: inline-block;
         color: $white;
         font-weight: 300;
+
+        padding-right: 30px;
+        background: url("../img/fullscreen-white.svg") no-repeat center right / 20px;
     }
 
     &-circle {
@@ -57,6 +60,7 @@
 
     &:hover,
     &.active{
+        text-decoration: none;
         .content-item-circle{
             transform: scale(0.75);
             svg{
@@ -64,6 +68,14 @@
                     opacity: 1;
                 }
             }
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .content-item{
+        .content-item__title{
+            font-size: 18px;
         }
     }
 }

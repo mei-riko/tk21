@@ -14,6 +14,8 @@ html(lang="ru")
 
         link(href='./css/slick.css', rel='stylesheet')
         link(href='./css/slick-theme.css', rel='stylesheet')
+        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
+
         link(href='./css/style.css', rel='stylesheet')
 
     body
@@ -21,58 +23,60 @@ html(lang="ru")
         .content-area
             main.inside-area
                 include chunks/header.pug
-                header.content-cta
+                section.content-cta
                     .container-fluid
-                        .row.align-items-center
+                        .row.align-items-center.justify-content-center
+                            .col.content-cta__content.d-mobile
+                                h1.content-cta__title Системная интеграция и&nbsp;телекоммуникационное оборудование
+                                p.content-cta__desc Весь комплекс услуг по обеспечению разными видами связи любых инженерных объектов и сооружений
                             .col.content-cta__service.content-cta__service_left
-                                .content-item.content-item_1
+                                a.content-item.content-item_1(href="")
                                     .content-item-circle
                                         span.circle
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
-                                    a.content-item__title(href="#") Заголовок 1
+                                    .content-item__title Поставка
                                     .content-item__options краткое описание
-                                .content-item.content-item_2
+                                a.content-item.content-item_2(href="")
                                     .content-item-circle
                                         span.circle
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
-                                    a.content-item__title(href="#") Заголовок 2
+                                    .content-item__title Подбор
                                     .content-item__options краткое описание
-                                .content-item.content-item_3
+                                a.content-item.content-item_3(href="")
                                     .content-item-circle
                                         span.circle
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
-                                    a.content-item__title(href="#") Заголовок 3
+                                    .content-item__title Экономия
                                     .content-item__options краткое описание
-                            .col.content-cta__content
+                            .col.content-cta__content.d-lg-none
                                 h1.content-cta__title Системная интеграция и&nbsp;телекоммуникационное оборудование
                                 p.content-cta__desc Весь комплекс услуг по обеспечению разными видами связи любых инженерных объектов и сооружений
                             .col.content-cta__service.content-cta__service_right
-                                .content-item.content-item_4
+                                a.content-item.content-item_4(href="")
                                     .content-item-circle
                                         span.circle
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
-                                    a.content-item__title(href="#") Заголовок 4
+                                    .content-item__title Консультации
                                     .content-item__options краткое описание
-                                .content-item.content-item_5
+                                a.content-item.content-item_5(href="")
                                     .content-item-circle
                                         span.circle
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
-                                    a.content-item__title(href="#") Заголовок 5
+                                    .content-item__title Решение
                                     .content-item__options краткое описание
-                                .content-item.content-item_6
+                                a.content-item.content-item_6(href="")
                                     .content-item-circle
                                         span.circle
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
-                                    a.content-item__title(href="#") Заголовок 6
+                                    .content-item__title Система
                                     .content-item__options краткое описание
-                                
                 section.container-fluid.pt-60.pt-md-30.pb-60.pb-md-30
                     .row.justify-content-center
-                        .col-10
-                            .item.item_info.text-center
-                                p.h4.text-uppercase.text-bold.mb-15 Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями
+                        .col-10.col-md-12
+                            .item.item_info.item_mobile.text-center
+                                p.h4.text-uppercase.text-bold.mb-30 Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями
                                 p.item__intro.lead Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.
-                                .gallery.gallery_logo.d-flex.align-items-center.justify-content-between.justify-content-md-center
+                                .gallery.gallery_logo.d-flex.align-items-center.justify-content-between.justify-content-lg-center
                                     .gallery__item
                                         img.img-fluid(src="../img/logo1.png" atl="" title="")
                                     .gallery__item
@@ -113,67 +117,67 @@ html(lang="ru")
                                     .portfolio-item__title Поставка и внедрение оборудования для развития сети связи
                                     .portfolio-item__info 2019 | г. Санкт-Петербург
                 section.container-fluid.pt-60.pt-md-0.pb-60.pb-md-30
-                    .row.align-items-center.pt-30
-                        .col-6
-                            .content-index
+                    .row.align-items-center.pt-30.justify-content-center
+                        .col-6.col-sm-12.col-md-10
+                            .content-index.text-md-center
                                 p.h2.text-bold.content-index__title Принципы работы Телеком XXI
                                 p.content-index__intro Компания Телеком XXI предоставляет полный спектр услуг, направленных 
                                     | на&nbsp;достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что 
                                     | заказ на&nbsp;комплексные работы сокращают издержки.
-                        .col-6
+                        .col-6.col-sm-12.col-md-10
                             .list.list_statictic.row.no-gutters
-                                .col-3.col-sm-12
+                                .col-3.col-xl-6
                                     .list__item.text-center
                                         .list__title.text-blue 15
                                         .list__subtitle минут
                                         .list__intro для ответа на&nbsp;вашу&nbsp;заявку
-                                .col-3.col-sm-12
+                                .col-3.col-xl-6
                                     .list__item.text-center
                                         .list__title.text-blue 3
                                         .list__subtitle дня
                                         .list__intro на поставку оборудования
-                                .col-3.col-sm-12
+                                .col-3.col-xl-6
                                     .list__item.text-center
                                         .list__title.text-blue 24
                                         .list__subtitle часа
                                         .list__intro доступна техподдержка
-                                .col-3.col-sm-12
+                                .col-3.col-xl-6
                                     .list__item.text-center
                                         .list__title.text-blue 365
                                         .list__subtitle дней
                                         .list__intro демонстрируем профессионализм
-                    .row.align-items-center.mt-60.mt-md-30
-                        .col-6
+                    .row.align-items-center.mt-60.mt-md-30.flex-lg-column-reverse.justify-content-center
+                        .col-6.col-sm-12.col-lg-8.mt-sm-30
                             .row
-                                .col-6
+                                .col-6.col-sm-12
                                     .preview.preview_page
                                         img.preview__icon(src="../img/border-none.svg")
                                         .preview__title Подготовительные работы
                                         .preview__intro
                                             a.btn(href="#") Подробнее
-                                .col-6
+                                .col-6.col-sm-12
                                     .preview.preview_page
                                         img.preview__icon(src="../img/border-outside.svg")
                                         .preview__title Строительство и монтаж
                                         .preview__intro
                                             a.btn(href="#") Подробнее
-                                .col-6
+                                .col-6.col-sm-12
                                     .preview.preview_page
                                         img.preview__icon(src="../img/border-inside.svg")
                                         .preview__title Поставка оборудования
                                         .preview__intro
                                             a.btn(href="#") Подробнее
-                                .col-6
+                                .col-6.col-sm-12
                                     .preview.preview_page
                                         img.preview__icon(src="../img/border-all.svg")
                                         .preview__title Техническая поддержка
                                         .preview__intro
                                             a.btn(href="#") Подробнее
-                        .col-5
-                            .content-index
+                        .col-5.col-sm-12.col-lg-10
+                            .content-index.text-lg-center
                                 p.h1.h1-lead.text-bold Комплексность, как&nbsp;способ экономии ресурсов
                                 p Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. 
-                                p.blockquote-icon.blockquote-icon_wallet Снижают расходы временные и денежные. Требуется меньше людей для отслеживания проекта. 
+                                p.blockquote-icon.blockquote-icon_wallet.text-left Снижают расходы временные и денежные. Требуется меньше людей для отслеживания проекта. 
                 section.container-fluid
                     .item.item_default.item_large
                         .row.align-items-center.justify-content-around
@@ -181,7 +185,27 @@ html(lang="ru")
                                 p.h5.text-uppercase.text-bold.mb-15 Вместе мы создаем будущее!
                                 p.lead.text-light Предоставление инновационных совместных решений для обеспечения более эффективного способа работы наших клиентов.
                                 p
-                                    a.link-cta.link-cta_light(href="#") Посмотреть каталог
+                                    a.link-cta.link-cta_light.link-cta_catalog(href="#") Посмотреть каталог
+                            .col-7.col-md-12.mt-md-30
+                                .row.align-items-center.justify-content-between.justify-content-md-center
+                                    .col-4.col-sm-6.col-md-4.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/alslogo.png" atl="" title="")
+                                    .col-4.col-sm-6.col-md-4.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/huawei.png" atl="" title="")
+                                    .col-4.col-sm-6.col-md-4.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/AcmePacket.png" atl="" title="")
+                                    .col-4.col-sm-6.col-md-4.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/800px-Inspur_logo.svg.png" atl="" title="")
+                                    .col-4.col-sm-6.col-md-4.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/D-Link-Logo.png" atl="" title="")
+                                    .col-4.col-sm-6.col-md-4.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/Polycom_logo.png" atl="" title="")
+                                    .col-4.col-md-6.mb-md-30
+                                        img.img-fluid.img-logo(src="../img/logo/logo-ip.png" atl="" title="")
+                                    .col-4.col-md-6.mb-md-30
+                                        img.img-fluid.img-logo(src="../img/logo/Lenovo-new-logo-2015-1024x768.png" atl="" title="")
+                                    .col-4.col-md-6
+                                        img.img-fluid.img-logo(src="../img/logo/1280px-Eaton_Corporation_logo.svg.png" atl="" title="")
                 section.container-fluid.pt-60.pt-md-30.pb-60.pb-md-30
                     .item.item_news
                         .item__row
@@ -242,5 +266,5 @@ html(lang="ru")
         script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkS1YFi2KvkMaaudj8A56Ova53LzyEsr4&callback=initMap")
         script(src="./js/mapsSmall.js")
         script(src="./js/slick.min.js")
-        
+        script(src="./js/jquery.fancybox.min.js")        
         script(src="./js/app.min.js")

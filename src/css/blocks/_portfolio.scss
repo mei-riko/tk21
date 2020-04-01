@@ -38,3 +38,14 @@
         font-weight: 300;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .portfolio-title{
+        font-size: 16px;
+    }
+    .portfolio-item{
+        .portfolio-item__logo{
+            height: 60px;
+        }
+    }
+}

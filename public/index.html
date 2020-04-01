@@ -13,6 +13,7 @@
     <link rel="canonical" href=""/>
     <link href="./css/slick.css" rel="stylesheet"/>
     <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <link href="./css/jquery.fancybox.min.css" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
   </head>
   <body>
@@ -31,51 +32,47 @@
           </div><a class="header__email" href="mailto:#"></a><a class="header__search" href="#"></a>
           <div class="header__menu" id="mobile-nav"></div>
         </header>
-        <header class="content-cta">
+        <section class="content-cta">
           <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col content-cta__service content-cta__service_left">
-                <div class="content-item content-item_1">
-                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div><a class="content-item__title" href="#">Заголовок 1</a>
-                  <div class="content-item__options">краткое описание</div>
-                </div>
-                <div class="content-item content-item_2">
-                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div><a class="content-item__title" href="#">Заголовок 2</a>
-                  <div class="content-item__options">краткое описание</div>
-                </div>
-                <div class="content-item content-item_3">
-                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div><a class="content-item__title" href="#">Заголовок 3</a>
-                  <div class="content-item__options">краткое описание</div>
-                </div>
-              </div>
-              <div class="col content-cta__content">
-                <h1 class="content-cta__title">1Системная интеграция и&nbsp;телекоммуникационное оборудование</h1>
+            <div class="row align-items-center justify-content-center">
+              <div class="col content-cta__content d-mobile">
+                <h1 class="content-cta__title">Системная интеграция и&nbsp;телекоммуникационное оборудование</h1>
                 <p class="content-cta__desc">Весь комплекс услуг по обеспечению разными видами связи любых инженерных объектов и сооружений</p>
               </div>
-              <div class="col content-cta__service content-cta__service_right">
-                <div class="content-item content-item_4">
-                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div><a class="content-item__title" href="#">Заголовок 4</a>
-                  <div class="content-item__options">краткое описание</div>
-                </div>
-                <div class="content-item content-item_5">
-                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div><a class="content-item__title" href="#">Заголовок 5</a>
-                  <div class="content-item__options">краткое описание</div>
-                </div>
-                <div class="content-item content-item_6">
-                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div><a class="content-item__title" href="#">Заголовок 6</a>
-                  <div class="content-item__options">краткое описание</div>
-                </div>
+              <div class="col content-cta__service content-cta__service_left"><a class="content-item content-item_1" href="">
+                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div>
+                  <div class="content-item__title">Поставка</div>
+                  <div class="content-item__options">краткое описание</div></a><a class="content-item content-item_2" href="">
+                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div>
+                  <div class="content-item__title">Подбор</div>
+                  <div class="content-item__options">краткое описание</div></a><a class="content-item content-item_3" href="">
+                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div>
+                  <div class="content-item__title">Экономия</div>
+                  <div class="content-item__options">краткое описание</div></a></div>
+              <div class="col content-cta__content d-lg-none">
+                <h1 class="content-cta__title">Системная интеграция и&nbsp;телекоммуникационное оборудование</h1>
+                <p class="content-cta__desc">Весь комплекс услуг по обеспечению разными видами связи любых инженерных объектов и сооружений</p>
               </div>
+              <div class="col content-cta__service content-cta__service_right"><a class="content-item content-item_4" href="">
+                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div>
+                  <div class="content-item__title">Консультации</div>
+                  <div class="content-item__options">краткое описание</div></a><a class="content-item content-item_5" href="">
+                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div>
+                  <div class="content-item__title">Решение</div>
+                  <div class="content-item__options">краткое описание</div></a><a class="content-item content-item_6" href="">
+                  <div class="content-item-circle"><span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg></span></div>
+                  <div class="content-item__title">Система</div>
+                  <div class="content-item__options">краткое описание</div></a></div>
             </div>
           </div>
-        </header>
+        </section>
         <section class="container-fluid pt-60 pt-md-30 pb-60 pb-md-30">
           <div class="row justify-content-center">
-            <div class="col-10">
-              <div class="item item_info text-center">
-                <p class="h4 text-uppercase text-bold mb-15">Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями</p>
+            <div class="col-10 col-md-12">
+              <div class="item item_info item_mobile text-center">
+                <p class="h4 text-uppercase text-bold mb-30">Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями</p>
                 <p class="item__intro lead">Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.</p>
-                <div class="gallery gallery_logo d-flex align-items-center justify-content-between justify-content-md-center">
+                <div class="gallery gallery_logo d-flex align-items-center justify-content-between justify-content-lg-center">
                   <div class="gallery__item"><img class="img-fluid" src="../img/logo1.png" atl="" title=""/></div>
                   <div class="gallery__item"><img class="img-fluid" src="../img/logo2.png" atl="" title=""/></div>
                   <div class="gallery__item"><img class="img-fluid" src="../img/logo3.png" atl="" title=""/></div>
@@ -129,9 +126,9 @@
           </div>
         </section>
         <section class="container-fluid pt-60 pt-md-0 pb-60 pb-md-30">
-          <div class="row align-items-center pt-30">
-            <div class="col-6">
-              <div class="content-index">
+          <div class="row align-items-center pt-30 justify-content-center">
+            <div class="col-6 col-sm-12 col-md-10">
+              <div class="content-index text-md-center">
                 <p class="h2 text-bold content-index__title">Принципы работы Телеком XXI</p>
                 <p class="content-index__intro">
                   Компания Телеком XXI предоставляет полный спектр услуг, направленных на&nbsp;достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что 
@@ -139,30 +136,30 @@
                 </p>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-sm-12 col-md-10">
               <div class="list list_statictic row no-gutters">
-                <div class="col-3 col-sm-12">
+                <div class="col-3 col-xl-6">
                   <div class="list__item text-center">
                     <div class="list__title text-blue">15</div>
                     <div class="list__subtitle">минут</div>
                     <div class="list__intro">для ответа на&nbsp;вашу&nbsp;заявку</div>
                   </div>
                 </div>
-                <div class="col-3 col-sm-12">
+                <div class="col-3 col-xl-6">
                   <div class="list__item text-center">
                     <div class="list__title text-blue">3</div>
                     <div class="list__subtitle">дня</div>
                     <div class="list__intro">на поставку оборудования</div>
                   </div>
                 </div>
-                <div class="col-3 col-sm-12">
+                <div class="col-3 col-xl-6">
                   <div class="list__item text-center">
                     <div class="list__title text-blue">24</div>
                     <div class="list__subtitle">часа</div>
                     <div class="list__intro">доступна техподдержка</div>
                   </div>
                 </div>
-                <div class="col-3 col-sm-12">
+                <div class="col-3 col-xl-6">
                   <div class="list__item text-center">
                     <div class="list__title text-blue">365</div>
                     <div class="list__subtitle">дней</div>
@@ -172,28 +169,28 @@
               </div>
             </div>
           </div>
-          <div class="row align-items-center mt-60 mt-md-30">
-            <div class="col-6">
+          <div class="row align-items-center mt-60 mt-md-30 flex-lg-column-reverse justify-content-center">
+            <div class="col-6 col-sm-12 col-lg-8 mt-sm-30">
               <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-sm-12">
                   <div class="preview preview_page"><img class="preview__icon" src="../img/border-none.svg"/>
                     <div class="preview__title">Подготовительные работы</div>
                     <div class="preview__intro"><a class="btn" href="#">Подробнее</a></div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12">
                   <div class="preview preview_page"><img class="preview__icon" src="../img/border-outside.svg"/>
                     <div class="preview__title">Строительство и монтаж</div>
                     <div class="preview__intro"><a class="btn" href="#">Подробнее</a></div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12">
                   <div class="preview preview_page"><img class="preview__icon" src="../img/border-inside.svg"/>
                     <div class="preview__title">Поставка оборудования</div>
                     <div class="preview__intro"><a class="btn" href="#">Подробнее</a></div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12">
                   <div class="preview preview_page"><img class="preview__icon" src="../img/border-all.svg"/>
                     <div class="preview__title">Техническая поддержка</div>
                     <div class="preview__intro"><a class="btn" href="#">Подробнее</a></div>
@@ -201,11 +198,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-5">
-              <div class="content-index">
+            <div class="col-5 col-sm-12 col-lg-10">
+              <div class="content-index text-lg-center">
                 <p class="h1 h1-lead text-bold">Комплексность, как&nbsp;способ экономии ресурсов</p>
                 <p>Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. </p>
-                <p class="blockquote-icon blockquote-icon_wallet">Снижают расходы временные и денежные. Требуется меньше людей для отслеживания проекта. </p>
+                <p class="blockquote-icon blockquote-icon_wallet text-left">Снижают расходы временные и денежные. Требуется меньше людей для отслеживания проекта. </p>
               </div>
             </div>
           </div>
@@ -216,7 +213,20 @@
               <div class="col-4 col-md-12">
                 <p class="h5 text-uppercase text-bold mb-15">Вместе мы создаем будущее!</p>
                 <p class="lead text-light">Предоставление инновационных совместных решений для обеспечения более эффективного способа работы наших клиентов.</p>
-                <p><a class="link-cta link-cta_light" href="#">Посмотреть каталог</a></p>
+                <p><a class="link-cta link-cta_light link-cta_catalog" href="#">Посмотреть каталог</a></p>
+              </div>
+              <div class="col-7 col-md-12 mt-md-30">
+                <div class="row align-items-center justify-content-between justify-content-md-center">
+                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/alslogo.png" atl="" title=""/></div>
+                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/huawei.png" atl="" title=""/></div>
+                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/AcmePacket.png" atl="" title=""/></div>
+                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/800px-Inspur_logo.svg.png" atl="" title=""/></div>
+                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/D-Link-Logo.png" atl="" title=""/></div>
+                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/Polycom_logo.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-md-30"><img class="img-fluid img-logo" src="../img/logo/logo-ip.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-md-30"><img class="img-fluid img-logo" src="../img/logo/Lenovo-new-logo-2015-1024x768.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6"><img class="img-fluid img-logo" src="../img/logo/1280px-Eaton_Corporation_logo.svg.png" atl="" title=""/></div>
+                </div>
               </div>
             </div>
           </div>
@@ -301,6 +311,7 @@
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkS1YFi2KvkMaaudj8A56Ova53LzyEsr4&amp;callback=initMap"></script>
     <script src="./js/mapsSmall.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js">       </script>
     <script src="./js/app.min.js"></script>
   </body>
 </html>

@@ -15,7 +15,6 @@
         }
     }
 
-    
     &_default{
         @extend .bg-gradient;
         .btn.btn_send{
@@ -160,6 +159,10 @@
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .item{
         padding: 30px;
+        .link-cta_catalog{
+            margin-left: 30px;
+        }
+        
         &_info{
             padding: 24px 30px;
             border-radius: 14px;
@@ -172,10 +175,17 @@
         &_logo{
             height: 60px;
         }
+        &_large{
+            padding: 40px 35px;
+            .img-logo{
+                margin: 5px auto;
+            }
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .item{
+        
         &_sale{
             .item__title{
                 margin-bottom: 0;
@@ -189,6 +199,19 @@
             .item__content{
                 margin: 15px auto 30px;
             }
+        }
+        &_news{
+            .item__row{margin-top: 0;}
+        }
+        &_mobile{
+            padding: 0;
+            .item__intro,
+            .lead{
+                font-size: 1rem;
+            }
+        }
+        &_column{
+            height: auto;
         }
     }
 }

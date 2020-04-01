@@ -14,3 +14,13 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .gallery{
+        &_logo{
+            .gallery__item{
+                height: 50px;
+            }
+        }
+    }
+}

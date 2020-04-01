@@ -59,3 +59,14 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .list{
+        &_statictic{
+            .list__item{
+                padding: 15px;
+                height: auto;
+            }
+        }
+    }
+}
