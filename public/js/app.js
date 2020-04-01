@@ -132,7 +132,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       slidesToShow: 4,
       arrows: false,
       dots: true,
-      autoplay: true,
+
+      autoplay: false,
       responsive: [{
         breakpoint: 992,
         settings: {
@@ -150,8 +151,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     var $slickNews = (0, _jquery2.default)('.slider#newsIndex');
     $slickNews.slick({
       slidesToShow: 3,
+      slidesToScroll: 1,
       arrows: false,
-      dots: true,
+      dots: false,
       autoplay: true,
       responsive: [{
         breakpoint: 992,
@@ -168,15 +170,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       }]
     });
   }
+  (0, _jquery2.default)("#arrowPrevNews").on("click", function () {
+    (0, _jquery2.default)('.slider#newsIndex').slick('slickPrev');
+  });
+  (0, _jquery2.default)("#arrowNextNews").on("click", function () {
+    (0, _jquery2.default)('.slider#newsIndex').slick('slickNext');
+  });
+
   // Filter
   if ((0, _jquery2.default)('.filter').length > 0) {
     (0, _jquery2.default)('.filter.filter_select[data-title=type]').select2({
-      placeholder: "Тип оборудования",
+      placeholder: "Устройство",
       theme: 'default filter filter_select not-last',
       width: '100%'
     });
     (0, _jquery2.default)('.filter.filter_select[data-title=vendor]').select2({
-      placeholder: "Производитель",
+      placeholder: "Вендор",
       theme: 'default filter filter_select mt-sm-15',
       width: '100%'
     });
@@ -210,10 +219,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
   });
 });
-
-function newFunction() {
-  return '1';
-}
 
 /***/ }),
 /* 1 */

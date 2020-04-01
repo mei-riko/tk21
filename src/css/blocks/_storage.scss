@@ -14,6 +14,21 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
+
+        .filter-group{
+            flex-wrap: nowrap;
+            .filter{
+                &_select{
+                    max-width: 100%;
+                }
+            }
+        }
+        .filter{
+            &_check{
+                margin-left: 15px;
+            }
+        }
     }
     .storage__table{
         .table{
@@ -31,6 +46,10 @@
                 min-width: 540px;
             }
         }
+        .img-logo{
+            margin-left: 0;
+            width: 120px;
+        }
         .pagination{
             width: 960px;
             max-width: 100%;
@@ -43,7 +62,7 @@
         .storage__filter{
             .filter-group{
                 max-width: 100%;
-                & + .filter-group{
+                & + .filter_check{
                     margin-top: 20px;
                 }
             }

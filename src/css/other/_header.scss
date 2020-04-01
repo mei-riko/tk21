@@ -31,9 +31,16 @@
 
     }
     .header__nav{
+        flex: 2;
         padding: 40px;
     }
     .header__contact{
+        flex: 1;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
         padding: 40px;
         .contact-phone{
             font-size: 26px;

@@ -5,7 +5,7 @@ $(document).ready(() =>{
            scrollTop: $($(this).attr("href")).offset().top + "px"
         }, {
            duration: 500,
-           easing: "swing"
+           easing  : "swing"
         });
         return false;
     });
@@ -13,10 +13,10 @@ $(document).ready(() =>{
 	// Input mask
 	if( $('.phone').length > 0 ) {
     $(".phone").inputmask({
-      mask: "8 999 999 99 99",
-      placeholder: " ",
+      mask           : "8 999 999 99 99",
+      placeholder    : " ",
       showMaskOnHover: true,
-      onincomplete: function(){ 
+      onincomplete   : function(){ 
       $(this).closest("form").addClass('error-phone'); 
       $(this).addClass('error'); 
       $(this).siblings(".error_phone").addClass('error').html('Укажите корректный номер'); 
@@ -54,21 +54,22 @@ $(document).ready(() =>{
     let $slickPortfolio = $('.slider#portfolioIndex');
     $slickPortfolio.slick({
         slidesToShow: 4,
-        arrows: false,
-        dots: true,
-        autoplay: true,
+        arrows      : false,
+        dots        : true,
+        
+        autoplay  : false,
         responsive: [
           {
             breakpoint: 992,
-            settings: {
-              slidesToShow: 3,
+            settings  : {
+              slidesToShow  : 3,
               slidesToScroll: 2,
             }
           },
           {
             breakpoint: 576,
-            settings: {
-              slidesToShow: 2,
+            settings  : {
+              slidesToShow  : 2,
               slidesToScroll: 2,
             }
           }
@@ -76,39 +77,47 @@ $(document).ready(() =>{
     });
     let $slickNews = $('.slider#newsIndex');
     $slickNews.slick({
-        slidesToShow: 3,
-        arrows: false,
-        dots: true,
-        autoplay: true,
-        responsive: [
+        slidesToShow  : 3,
+        slidesToScroll: 1,
+        arrows        : false,
+        dots          : false,
+        autoplay      : true,
+        responsive    : [
           {
             breakpoint: 992,
-            settings: {
-              slidesToShow: 2,
+            settings  : {
+              slidesToShow  : 2,
               slidesToScroll: 1,
             }
           },
           {
             breakpoint: 576,
-            settings: {
-              slidesToShow: 1,
+            settings  : {
+              slidesToShow  : 1,
               slidesToScroll: 1,
             }
           }
         ]
     });
   }
+  $("#arrowPrevNews").on("click", function(){
+    $('.slider#newsIndex').slick('slickPrev');
+  });
+  $("#arrowNextNews").on("click", function(){
+    $('.slider#newsIndex').slick('slickNext');
+  });
+
   // Filter
   if( $('.filter').length > 0 ){
     $('.filter.filter_select[data-title=type]').select2({
-      placeholder: "Тип оборудования",
-      theme: 'default filter filter_select not-last',
-      width: '100%'
+      placeholder: "Устройство",
+      theme      : 'default filter filter_select not-last',
+      width      : '100%'
     });
     $('.filter.filter_select[data-title=vendor]').select2({
-      placeholder: "Производитель",
-      theme: 'default filter filter_select mt-sm-15',
-      width: '100%'
+      placeholder: "Вендор",
+      theme      : 'default filter filter_select mt-sm-15',
+      width      : '100%'
     });
   }
   // Mobile Navbar
@@ -122,10 +131,10 @@ $(document).ready(() =>{
     }
   });
   $(document).mouseup(function (e){ // событие клика по веб-документу
-    let dropdownActive = $(".header__nav.header__nav--active"); // элемент
+    let dropdownActive = $(".header__nav.header__nav--active");  // элемент
       
     if (!dropdownActive.is(e.target) // клик был не по блоку
-          && dropdownActive.has(e.target).length === 0 // и не по его дочерним элементам
+          && dropdownActive.has(e.target).length === 0  // и не по его дочерним элементам
           && !$(".header__menu#mobile-nav").is(e.target) ) { 
               $(".header__menu").removeClass("header__menu--active");
               dropdownActive.removeClass("header__nav--active");
@@ -139,7 +148,3 @@ $(document).ready(() =>{
     }
   });
 });
-
-function newFunction() {
-  return '1';
-}

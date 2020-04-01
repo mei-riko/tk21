@@ -1,3 +1,38 @@
 .slick-slide{
     height: auto;
+    outline: none;
+    &:hover,
+    &:focus{
+        outline: none;
+    }
+}
+
+.slider{
+    .slider__item{
+        padding: 0 15px;
+        &:hover,
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &_portfolio{
+        &.slick-dotted.slick-slider{
+            margin-bottom: 40px;
+            .slick-dots{
+                bottom: -40px;
+                li button{
+                    display: inline-block;
+                    &:before{
+                        font-size: 40px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &_news{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }

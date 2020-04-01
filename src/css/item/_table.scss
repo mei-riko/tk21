@@ -17,6 +17,7 @@
             transition: .4s;
             .table__item{
                 .img-fluid{
+                    opacity: .6;
                     filter: grayscale(1);
                     transition: .4s;
                 }
@@ -25,6 +26,7 @@
                 background-color: $light-blue;
                 .table__item{
                     .img-fluid{
+                        opacity: 1;
                         filter: grayscale(0);
                     }
                 }
@@ -34,7 +36,7 @@
     .table__row{
         border-bottom: 1px solid $light-grey;
         .table__item{
-            padding: 14px 20px;
+            padding: 18px 20px;
         }
     }
 }

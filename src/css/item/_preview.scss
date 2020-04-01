@@ -1,0 +1,47 @@
+.preview{
+    &_page{
+        padding: 30px;
+        text-align: center;
+        .preview__icon{
+            width: 44px;
+            height: auto;
+        }
+        .preview__title{
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            width: 200px;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+        .preview__intro{
+            .btn{
+                background: $light-blue;
+                color: rgb(184, 189, 202);
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 10px 30px;
+                &:hover{
+                    color: darken(rgb(184, 189, 202), 10);
+                    background: $light-grey;
+                }
+            }
+        }
+    }
+    &_news{
+        padding: 0 20px;
+        .preview__title{
+            @extend .h5;
+            font-weight: 700;
+            margin-bottom: $padding/2;
+        }
+        .preview__intro{
+            font-weight: 300;
+            margin-bottom: $padding/2;
+        }
+        .preview__info{
+            font-weight: 300;
+        }
+    }
+}

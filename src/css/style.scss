@@ -14,6 +14,7 @@
 @import "other/nav.scss";
 @import "other/pagination.scss";
 
+@import "item/content.scss";
 @import "item/filter.scss";
 @import "item/gallery.scss";
 @import "item/heading.scss";
@@ -24,7 +25,9 @@
 @import "item/table.scss";
 
 @import "blocks/catalog.scss";
+@import "blocks/content.scss";
 @import "blocks/map.scss";
+@import "blocks/portfolio.scss";
 @import "blocks/slider.scss";
 @import "blocks/storage.scss";
 

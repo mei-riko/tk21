@@ -5,7 +5,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         base(href="")
 
-        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet")
         title Index Page
         meta(name="description" content="")
         meta(name="keywords" content="")
@@ -21,58 +21,112 @@ html(lang="ru")
         .content-area
             main.inside-area
                 include chunks/header.pug
-                section.container.pt-60.pt-md-30.pb-60.pb-md-30
-                    .item.item_info.text-center
-                        p.h5.text-uppercase.text-bold.mb-15 Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями
-                        p.item__intro Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.
-                        .gallery.gallery_logo.d-flex.align-items-center.justify-content-between.justify-content-md-center
-                            .gallery__item
-                                img.img-fluid(src="../img/logo1.png" atl="" title="")
-                            .gallery__item
-                                img.img-fluid(src="../img/logo2.png" atl="" title="")
-                            .gallery__item
-                                img.img-fluid(src="../img/logo3.png" atl="" title="")
-                            .gallery__item
-                                img.img-fluid(src="../img/logo4.png" atl="" title="")
-                            .gallery__item
-                                img.img-fluid(src="../img/logo5.jpg" atl="" title="")
-                section.bg-gradient
-                    .container.pt-60.pt-md-30.pb-60.pb-md-30
-                        p.portfolio-title.text-center Последние реализованные проекты
-                        .slider.slider_portfolio#portfolioIndex
-                            .portfolio-item
-                                .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
-                                .portfolio-item__title Анализ, поставка и внедрение оборудования для развития сети связи
-                                .portfolio-item__info 2019 | г. Казань
-                            .portfolio-item
-                                .portfolio-item__logo(style="background-image: url('../img/logo/d-link.png');")
-                                .portfolio-item__title Модернизация и поставка электрооборудования
-                                .portfolio-item__info 2019 | по России
-                            .portfolio-item
-                                .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
-                                .portfolio-item__title Комплексные поставки оборудования сетей связи и ЦОД
-                                .portfolio-item__info 2019 | г. Казань
-                            .portfolio-item
-                                .portfolio-item__logo(style="background-image: url('../img/logo/d-link.png');")
-                                .portfolio-item__title Поставка и инсталляция оборудования
-                                .portfolio-item__info 2019 | г. Москва
-                            .portfolio-item
-                                .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
-                                .portfolio-item__title Поставка и внедрение оборудования для развития сети связи
-                                .portfolio-item__info 2019 | г. Санкт-Петербург
+                header.content-cta
+                    .container-fluid
+                        .row.align-items-center
+                            .col.content-cta__service.content-cta__service_left
+                                .content-item.content-item_1
+                                    .content-item-circle
+                                        span.circle
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
+                                    a.content-item__title(href="#") Заголовок 1
+                                    .content-item__options краткое описание
+                                .content-item.content-item_2
+                                    .content-item-circle
+                                        span.circle
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
+                                    a.content-item__title(href="#") Заголовок 2
+                                    .content-item__options краткое описание
+                                .content-item.content-item_3
+                                    .content-item-circle
+                                        span.circle
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
+                                    a.content-item__title(href="#") Заголовок 3
+                                    .content-item__options краткое описание
+                            .col.content-cta__content
+                                h1.content-cta__title Системная интеграция и&nbsp;телекоммуникационное оборудование
+                                p.content-cta__desc Весь комплекс услуг по обеспечению разными видами связи любых инженерных объектов и сооружений
+                            .col.content-cta__service.content-cta__service_right
+                                .content-item.content-item_4
+                                    .content-item-circle
+                                        span.circle
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
+                                    a.content-item__title(href="#") Заголовок 4
+                                    .content-item__options краткое описание
+                                .content-item.content-item_5
+                                    .content-item-circle
+                                        span.circle
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
+                                    a.content-item__title(href="#") Заголовок 5
+                                    .content-item__options краткое описание
+                                .content-item.content-item_6
+                                    .content-item-circle
+                                        span.circle
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
+                                    a.content-item__title(href="#") Заголовок 6
+                                    .content-item__options краткое описание
+                                
                 section.container-fluid.pt-60.pt-md-30.pb-60.pb-md-30
-                    .row.align-items-center
+                    .row.justify-content-center
+                        .col-10
+                            .item.item_info.text-center
+                                p.h4.text-uppercase.text-bold.mb-15 Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями
+                                p.item__intro.lead Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.
+                                .gallery.gallery_logo.d-flex.align-items-center.justify-content-between.justify-content-md-center
+                                    .gallery__item
+                                        img.img-fluid(src="../img/logo1.png" atl="" title="")
+                                    .gallery__item
+                                        img.img-fluid(src="../img/logo2.png" atl="" title="")
+                                    .gallery__item
+                                        img.img-fluid(src="../img/logo3.png" atl="" title="")
+                                    .gallery__item
+                                        img.img-fluid(src="../img/logo4.png" atl="" title="")
+                                    .gallery__item
+                                        img.img-fluid(src="../img/logo5.jpg" atl="" title="")
+                section.bg-gradient
+                    .container-fluid.pt-30.pb-30
+                        p.portfolio-title.text-center.text-light Последние реализованные проекты
+                        .slider.slider_portfolio#portfolioIndex
+                            .slider__item
+                                .portfolio-item
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                    .portfolio-item__title Анализ, поставка и внедрение оборудования для развития сети связи
+                                    .portfolio-item__info 2019 | г. Казань
+                            .slider__item
+                                .portfolio-item
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/d-link.png');")
+                                    .portfolio-item__title Модернизация и поставка электрооборудования
+                                    .portfolio-item__info 2019 | по России
+                            .slider__item
+                                .portfolio-item
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                    .portfolio-item__title Комплексные поставки оборудования сетей связи и ЦОД
+                                    .portfolio-item__info 2019 | г. Казань
+                            .slider__item
+                                .portfolio-item
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/d-link.png');")
+                                    .portfolio-item__title Поставка и инсталляция оборудования
+                                    .portfolio-item__info 2019 | г. Москва
+                            .slider__item
+                                .portfolio-item
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                    .portfolio-item__title Поставка и внедрение оборудования для развития сети связи
+                                    .portfolio-item__info 2019 | г. Санкт-Петербург
+                section.container-fluid.pt-60.pt-md-0.pb-60.pb-md-30
+                    .row.align-items-center.pt-30
                         .col-6
                             .content-index
-                                p.h3.text-bold.content-index__title Принципы работы Телеком XXI
-                                p Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки.
+                                p.h2.text-bold.content-index__title Принципы работы Телеком XXI
+                                p.content-index__intro Компания Телеком XXI предоставляет полный спектр услуг, направленных 
+                                    | на&nbsp;достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что 
+                                    | заказ на&nbsp;комплексные работы сокращают издержки.
                         .col-6
                             .list.list_statictic.row.no-gutters
                                 .col-3.col-sm-12
                                     .list__item.text-center
                                         .list__title.text-blue 15
                                         .list__subtitle минут
-                                        .list__intro для ответа на вашу заявку
+                                        .list__intro для ответа на&nbsp;вашу&nbsp;заявку
                                 .col-3.col-sm-12
                                     .list__item.text-center
                                         .list__title.text-blue 3
@@ -88,7 +142,7 @@ html(lang="ru")
                                         .list__title.text-blue 365
                                         .list__subtitle дней
                                         .list__intro демонстрируем профессионализм
-                    .row.mt-60.mt-md-30
+                    .row.align-items-center.mt-60.mt-md-30
                         .col-6
                             .row
                                 .col-6
@@ -116,43 +170,25 @@ html(lang="ru")
                                         .preview__intro
                                             a.btn(href="#") Подробнее
                         .col-5
-                            p.h1.text-bold Комплексность, как&nbsp;способ экономии ресурсов
-                            p Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. 
-                            p.blockquote-icon.blockquote-icon_wallet Снижают расходы временные и денежные. Требуется меньше людей для отслеживания проекта. 
+                            .content-index
+                                p.h1.h1-lead.text-bold Комплексность, как&nbsp;способ экономии ресурсов
+                                p Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. 
+                                p.blockquote-icon.blockquote-icon_wallet Снижают расходы временные и денежные. Требуется меньше людей для отслеживания проекта. 
                 section.container-fluid
                     .item.item_default.item_large
-                        .row.align-items-center.justify-content-center
+                        .row.align-items-center.justify-content-around
                             .col-4.col-md-12
                                 p.h5.text-uppercase.text-bold.mb-15 Вместе мы создаем будущее!
                                 p.lead.text-light Предоставление инновационных совместных решений для обеспечения более эффективного способа работы наших клиентов.
                                 p
                                     a.link-cta.link-cta_light(href="#") Посмотреть каталог
-                            .col-7.col-md-12.mt-md-30
-                                .row.align-items-center.justify-content-between.justify-content-md-center
-                                    .col-4.col-md-6.mb-30
-                                        img.img-fluid.img-logo.img-logo_small(src="../img/logo/alslogo.png" atl="" title="")
-                                    .col-4.col-md-6.mb-30
-                                        img.img-fluid.img-logo.img-logo_small(src="../img/logo/huawei.png" atl="" title="")
-                                    .col-4.col-md-6.mb-30
-                                        img.img-fluid.img-logo.img-logo_small(src="../img/logo/AcmePacket.png" atl="" title="")
-                                    .col-4.col-md-6.mb-30
-                                        img.img-fluid.img-logo.img-logo_small(src="../img/logo/800px-Inspur_logo.svg.png" atl="" title="")
-                                    .col-4.col-md-6.mb-30
-                                        img.img-fluid.img-logo.img-logo_small(src="../img/logo/D-Link-Logo.png" atl="" title="")
-                                    .col-4.col-md-6.mb-30
-                                        img.img-fluid.img-logo.img-logo_small(src="../img/logo/Polycom_logo.png" atl="" title="")
-                                    .col-4.col-md-6.mb-md-30
-                                        img.img-fluid.img-logo.img-logo_small(src="../img/logo/logo-ip.png" atl="" title="")
-                                    .col-4.col-md-6.mb-md-30
-                                        img.img-fluid.img-logo.img-logo_small(src="../img/logo/Lenovo-new-logo-2015-1024x768.png" atl="" title="")
-                                    .col-4.col-md-6
-                                        img.img-fluid.img-logo.img-logo_small(src="../img/logo/1280px-Eaton_Corporation_logo.svg.png" atl="" title="")
                 section.container-fluid.pt-60.pt-md-30.pb-60.pb-md-30
                     .item.item_news
-                        p.item__title Актуальные новости
-                        .link-cta-group
-                            a.link-cta.link-cta_dark.link-cta_back(href="#") Назад
-                            a.link-cta.link-cta_dark(href="#") Вперед
+                        .item__row
+                            p.item__title Актуальные новости
+                            .link-cta-group
+                                span.link-cta.link-cta_dark.link-cta_back#arrowPrevNews Назад
+                                span.link-cta.link-cta_dark#arrowNextNews Вперед
                         .slider.slider_news#newsIndex
                             .preview.preview_news
                                 p.preview__title 1 Анализ и внедрение оборудования для развития сети связи
@@ -184,18 +220,11 @@ html(lang="ru")
                                     a(href="mailto:mail@mail.ru") mail@mail.ru
                                 p.heading-contact.heading-contact_location.mb-0 Как нас найти
                                 p Москва, ул. Правды, д.24, стр. 4, эт. 8, пом. I, ком. 32
-                                ul.list.list_networks
-                                    li.list__item
-                                        a.list__link.list__link_facebook(href="#")
-                                    li.list__item
-                                        a.list__link.list__link_vk(href="#")
-                                    li.list__item
-                                        a.list__link.list__link_google(href="#")
                         .col-4.col-xl-6.col-md-10.col-sm-12.mb-xl-30
                             .item.item_column.bg-light-blue
                                 p.h3.text-bold.mb-30 Задайте вопрос
                                 form.form.text-center(action="")
-                                    input.form-input.form-input_full(type="text" placeholder="Имя")
+                                    //- input.form-input.form-input_full(type="text" placeholder="Имя")
                                     input.form-input.form-input_full.phone(type="tel" placeholder="Контактный телефон")
                                     textarea.form-input.form-input_full(name="", rows="3", placeholder="Пишите здесь...")
                                     .form__agree.checkbox.justify-content-center.text-left
@@ -209,8 +238,6 @@ html(lang="ru")
                                 .map#mapSmall
             include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
-        
-
         
         script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkS1YFi2KvkMaaudj8A56Ova53LzyEsr4&callback=initMap")
         script(src="./js/mapsSmall.js")

@@ -52,7 +52,7 @@ html(lang="ru")
                                     a.btn.btn_send.btn_large(href="#") Узнать об акции
                 section.container-fluid.catalog
                     .row.no-gutters.catalog__header
-                        .col-8.col-md-12.mb-md-30.col-lg-6
+                        .col-8.col-md-12.mb-md-30.col-lg-6.d-flex.align-items-end
                             h1.h4.text-bold.mb-0.catalog__title Каталог товаров
                             span.catalog__count 121 товар
                         .col-4.col-md-12.col-lg-6
@@ -164,18 +164,11 @@ html(lang="ru")
                                         a(href="mailto:mail@mail.ru") mail@mail.ru
                                     p.heading-contact.heading-contact_location.mb-0 Как нас найти
                                     p Москва, ул. Правды, д.24, стр. 4, эт. 8, пом. I, ком. 32
-                                    ul.list.list_networks
-                                        li.list__item
-                                            a.list__link.list__link_facebook(href="#")
-                                        li.list__item
-                                            a.list__link.list__link_vk(href="#")
-                                        li.list__item
-                                            a.list__link.list__link_google(href="#")
                             .col-4.col-xl-6.col-md-10.col-sm-12.mb-xl-30
                                 .item.item_column.bg-light-blue
                                     p.h3.text-bold.mb-30 Задайте вопрос
                                     form.form.text-center(action="")
-                                        input.form-input.form-input_full(type="text" placeholder="Имя")
+                                        //- input.form-input.form-input_full(type="text" placeholder="Имя")
                                         input.form-input.form-input_full.phone(type="tel" placeholder="Контактный телефон")
                                         textarea.form-input.form-input_full(name="", rows="3", placeholder="Пишите здесь...")
                                         .form__agree.checkbox.justify-content-center.text-left
