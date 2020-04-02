@@ -54,6 +54,7 @@ $(document).ready(() =>{
     let $slickPortfolio = $('.slider#portfolioIndex');
     $slickPortfolio.slick({
         slidesToShow: 4,
+        slidesToScroll: 4,
         arrows      : false,
         dots        : true,
         
@@ -63,7 +64,7 @@ $(document).ready(() =>{
             breakpoint: 1200,
             settings  : {
               slidesToShow  : 3,
-              slidesToScroll: 1,
+              slidesToScroll: 3,
             }
           },
           {

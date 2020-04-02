@@ -5,12 +5,14 @@
         margin-right: 15px;
     }
     .catalog__count{
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 300;
         white-space: nowrap;
         margin-bottom: 2px;
+        color: $dark-blue;
     }
     .catalog__intro{
+        color: $dark-blue;
         padding: 20px 0 0;
         font-weight: 300;
     }
@@ -32,9 +34,12 @@
             display: block;
             border-radius: 10px;
             padding: 8px 14px;
+            color: $dark-blue;
 
             &--active{
                 @extend .bg-gradient;
+                color: $white;
+                font-weight: 700;
                 cursor: default;
                 &:hover, &:focus{
                     text-decoration: none;

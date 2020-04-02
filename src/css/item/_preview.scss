@@ -45,6 +45,11 @@
         }
     }
 }
+a.preview{
+    &:hover{
+        text-decoration: none;
+    }
+}
 
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .preview{

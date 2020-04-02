@@ -42,6 +42,13 @@
         justify-content: flex-end;
 
         padding: 40px;
+
+        p.text-small{
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: right;
+        }
+
         .contact-phone{
             font-size: 26px;
             font-weight: bold;

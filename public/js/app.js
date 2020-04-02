@@ -130,6 +130,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     var $slickPortfolio = (0, _jquery2.default)('.slider#portfolioIndex');
     $slickPortfolio.slick({
       slidesToShow: 4,
+      slidesToScroll: 4,
       arrows: false,
       dots: true,
 
@@ -138,7 +139,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
+          slidesToScroll: 3
         }
       }, {
         breakpoint: 768,

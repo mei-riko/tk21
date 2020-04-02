@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6,
 }
 * + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
 * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
-    margin-top: 2.5*$padding;
+    margin-top: 2.75*$padding;
 }
 .h1,h1{font-size: 2.75rem;}
 .h1-lead{font-size: 3rem;}
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6,
 p {
     font-size: 1rem;
     margin-top: 0;
-    margin-bottom: 2*$padding;
+    margin-bottom: 1.5*$padding;
     line-height: 1.8;
 
     &:last-child{
@@ -47,17 +47,20 @@ p {
 }
 ol, ul{
     padding: 0;
-    margin-bottom: 2*$padding;
-    padding-left: 2*$padding;
+    margin-bottom: 1.5*$padding;
+    padding-left: 1.5*$padding;
+    line-height: 1.8;
 }
 
 a{
     display: inline-block;
     outline: none;
     transition: .3s;
+    
     &:hover, &:focus{
         outline: none;
     }
+
     &.link-inverse{
         color: $link-hover-color;
         &:hover{
