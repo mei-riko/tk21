@@ -176,6 +176,28 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         }
       }]
     });
+    var $slickGalleryLogo = (0, _jquery2.default)('.slider.gallery_logo');
+    $slickGalleryLogo.slick({
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      arrows: false,
+      dots: true,
+
+      autoplay: false,
+      responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }, {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }]
+    });
   }
   (0, _jquery2.default)("#arrowPrevNews").on("click", function () {
     (0, _jquery2.default)('.slider#newsIndex').slick('slickPrev');

@@ -95,7 +95,6 @@
         height: 100%;
     }
 }
-
 .content-index{
     padding: 0 30px;
     .content-index__title{
@@ -195,7 +194,6 @@
 
             &_left{
                 text-align: left;
-
                 .content-item-circle {
                     left: 0;
                     right: auto;
@@ -217,18 +215,36 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .content-cta{
-        padding: 40px 0;
+        padding: 40px 0 60px;
         
         .content-cta__title{
-            font-size: 20px;
+            font-size: 21px;
             margin-bottom: 15px;
         }
         .content-cta__service{
-            flex: 0 0 100%;
-            max-width: 100%;
-            &_left{
-                margin-bottom: 30px;
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0;
+
+            .content-item{
+                padding-left: 34px;
+                &-circle{
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .content-item__title{
+                    font-size: 16px;
+                }
+                .content-item__options{
+                    font-size: 12px;
+                    line-height: 1.2;
+                }
             }
+        }
+        .content-cta__desc{
+            color:$light-grey;
+            line-height: 1.6;
         }
     }
 }

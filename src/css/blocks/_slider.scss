@@ -15,20 +15,58 @@
             outline: none;
         }
     }
+    .slick-list{
+        width: 100%;
+    }
 
-    &_portfolio{
-        &.slick-dotted.slick-slider{
-            margin-bottom: 40px;
+    &_dots{
+        &.slick-dotted{
             .slick-dots{
-                bottom: -40px;
-                li button{
-                    display: inline-block;
-                    &:before{
-                        font-size: 40px;
-                        color: $white;
+                li{
+                    &:first-child:last-child {
+                        display: none;
+                    }
+                    button{
+                        display: inline-block;
+                        &:before{
+                            font-size: 40px;
+                        }
                     }
                 }
             }
+        }
+    }
+    &_portfolio{
+        &.slick-dotted{
+            margin-bottom: 40px;
+            .slick-dots{
+                bottom: -40px;
+                li{
+                    button{
+                        &:before{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_logo{
+        &.slick-dotted{
+            margin-bottom: 0px;
+            .slick-dots{
+                bottom: -30px;
+                li{
+                    button{
+                        &:before{
+                            color: $dark-blue;
+                        }
+                    }
+                }
+            }
+        }
+        &.gallery_logo .gallery__item{
+            margin-top: 0;
         }
     }
     &_news{

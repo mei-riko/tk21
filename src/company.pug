@@ -5,7 +5,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         base(href="")
 
-        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet")
         title Company Page
         meta(name="description" content="")
         meta(name="keywords" content="")
@@ -13,6 +13,8 @@ html(lang="ru")
         link(rel="canonical" href="")
 
         link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
         link(href='./css/style.css', rel='stylesheet')
 
     body
@@ -34,22 +36,25 @@ html(lang="ru")
                                     | наших&nbsp;клиентов.
                                 p
                                     a.link-cta.link-cta_light.link-cta_catalog(href="#") Посмотреть каталог
-                            .col-6.col-lg-12.mt-lg-30
+                            .col-6.col-lg-12.mt-lg-60
                                 .list.list_statictic.row.no-gutters
                                     .col-4.col-sm-12
-                                        .list__item.text-center
-                                            .list__title 11
-                                            .list__subtitle лет
+                                        .list__item.list__item_row.text-center
+                                            .list__item__col
+                                                .list__title 11
+                                                .list__subtitle лет
                                             .list__intro на рынке информационных технологий
                                     .col-4.col-sm-12
-                                        .list__item.text-center
-                                            .list__title 165
-                                            .list__subtitle объектов
+                                        .list__item.list__item_row.text-center
+                                            .list__item__col
+                                                .list__title 165
+                                                .list__subtitle объектов
                                             .list__intro на данный момент завершено по всей России
                                     .col-4.col-sm-12
-                                        .list__item.text-center
-                                            .list__title 10
-                                            .list__subtitle вендоров
+                                        .list__item.list__item_row.text-center.last
+                                            .list__item__col
+                                                .list__title 10
+                                                .list__subtitle вендоров
                                             .list__intro мирового уровня в качестве партнеров и поставщиков
                 section.container.pt-30.pt-md-0.pb-30.pb-md-0
                     .row.justify-content-center.text-center
@@ -65,12 +70,12 @@ html(lang="ru")
                                 a.gallery__item(href="../img/02.png" data-fancybox data-caption="Caption for single image")
                                     img.img-fluid(src="../img/03.png" atl="" title="")
                         .col-9.col-md-12
-                            p Сотрудники компании – не продавцы, а инженеры, которые, успешно решают задачи обеспечения клиентов необходимой продукцией, проектирования сетей связи, их монтажа и обслуживания. Благодаря эффективной системе обмена опытом и мотивации наши инженеры проходят многоступенчатое обучение от ведущих вендоров.
+                            p.text-light Сотрудники компании – не продавцы, а инженеры, которые, успешно решают задачи обеспечения клиентов необходимой продукцией, проектирования сетей связи, их монтажа и обслуживания. Благодаря эффективной системе обмена опытом и мотивации наши инженеры проходят многоступенчатое обучение от ведущих вендоров.
                 section.container-fluid.pt-60.pt-md-30.pb-60.pb-md-30
                     .item.item_info-grey.item_large.text-center
                         p.h4.text-uppercase.text-bold.mb-15 Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями
-                        p.item__intro.lead Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.
-                        .gallery.gallery_logo.d-flex.align-items-center.justify-content-between.justify-content-md-center
+                        p.item__intro Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.
+                        .slider.slider_dots.slider_logo.gallery.gallery_logo
                             .gallery__item
                                 img.img-fluid(src="../img/logo1.png" atl="" title="")
                             .gallery__item
@@ -85,12 +90,12 @@ html(lang="ru")
                     .row.justify-content-center
                         .col-9.col-md-12.col-lg-12.text-center
                             h2.text-bold Надежный поставщик оборудования и&nbsp;системный интегратор
-                        .col-6.col-md-12.mb-md-30
+                        .col-6.col-md-12.mb-md-30.text-light
                             p "Телеком XXI&nbsp;век" — это&nbsp;возможность приобрести устройства связи, приборы и&nbsp;средства 
                                 | сопряжения от&nbsp;европейских производителей. Купить сетевое оборудование здесь – значит 
                                 | гарантировать высокий уровень и&nbsp;актуальность создаваемой системы связи на ближайшие годы. 
                                 | Все реализуемое оборудование для сети приобретается за рубежом и&nbsp;имеет сертификаты качества. 
-                        .col-6.col-md-12
+                        .col-6.col-md-12.text-light
                             p В его эффективности и надежности успели убедиться многие наши клиенты. Обеспечение высокого уровня связи и ее бесперебойности – их ключевые требования к нашей продукции. Отзывы и рекомендации позволяют нам убеждаться в том, что реализуемое нами оборудование для сети соответствует этим требованиям.
                 section.container-fluid.pt-60.pt-md-30.pb-30
                     .item.item_default.item_large
@@ -123,4 +128,5 @@ html(lang="ru")
             include chunks/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/jquery.fancybox.min.js")
+        script(src="./js/slick.min.js")
         script(src="./js/app.min.js")

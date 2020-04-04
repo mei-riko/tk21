@@ -65,7 +65,8 @@
         position: relative;
         margin: 0;
         padding-left: 28px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 16px;
         color: $grey;
 
         cursor: pointer;
@@ -87,8 +88,10 @@
         }
     }
     &__link{
+        display: inline;
         text-decoration: underline;
         color: $grey;
+        white-space: pre-line;
     }
 
     &_large{

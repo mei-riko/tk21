@@ -1,8 +1,12 @@
 .map{
     background: none;
+    position: relative;
     .item{
         position: relative;
         z-index: 11;
+    }
+    .gm-style-mtc{
+        display: none!important;
     }
 }
 #map{

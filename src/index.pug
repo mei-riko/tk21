@@ -70,15 +70,15 @@ html(lang="ru")
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="a" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(73, 101, 245)"></stop><stop offset="100%" stop-color="rgb(18,55,131)"></stop></linearGradient></defs><defs><linearGradient id="b" x1="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(18,55,131)"></stop><stop offset="100%" stop-color="rgb(73, 101, 245)"></stop></linearGradient></defs><circle cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#a)"></circle><circle class="circle-hover" cx="50" cy="50" r="42" fill="transparent" stroke-width="16" stroke="url(#b)"></circle></svg>
                                     .content-item__title Система
                                     .content-item__options краткое описание
-                                #hidden-content1(style="display:none;")
+                                #hidden-content1.fancybox-modal(style="display:none;")
                                     p Then simply create a link having data-src attribute that matches ID of the element you want to open (preceded by a hash mark (#); in this example - #hidden-content)
-                section.container-fluid.pt-60.pt-md-30.pb-60.pb-md-30
+                section.container-fluid.pt-30.pb-30.pb-sm-60
                     .row.justify-content-center
                         .col-10.col-md-12
                             .item.item_info.item_mobile.text-center
                                 p.h4.text-uppercase.text-bold.mb-30 Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями
                                 p.item__intro.lead Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.
-                                .gallery.gallery_logo.d-flex.align-items-center.justify-content-between.justify-content-lg-center
+                                .slider.slider_dots.slider_logo.gallery.gallery_logo
                                     .gallery__item
                                         img.img-fluid(src="../img/logo1.png" atl="" title="")
                                     .gallery__item
@@ -92,7 +92,7 @@ html(lang="ru")
                 section.bg-gradient
                     .container-fluid.pt-30.pb-30
                         p.portfolio-title.text-center.text-light Последние реализованные проекты
-                        .slider.slider_portfolio#portfolioIndex
+                        .slider.slider_dots.slider_portfolio#portfolioIndex
                             .slider__item
                                 .portfolio-item
                                     .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
@@ -148,34 +148,34 @@ html(lang="ru")
                                         .list__title.text-blue 365
                                         .list__subtitle дней
                                         .list__intro демонстрируем профессионализм
-                    .row.align-items-center.mt-60.mt-md-30.flex-lg-column-reverse.justify-content-center
+                    .row.align-items-center.mt-60.mt-md-30.flex-lg-column-reverse.justify-content-between
                         .col-6.col-sm-12.col-lg-8.mt-sm-30
-                            .row
-                                .col-6.col-sm-12
+                            .row.justify-content-center
+                                .col-5.col-xl-6.col-sm-12
                                     .preview.preview_page
                                         img.preview__icon(src="../img/border-none.svg")
                                         .preview__title Подготовительные работы
                                         .preview__intro
                                             a.btn(href="#") Подробнее
-                                .col-6.col-sm-12
+                                .col-5.col-xl-6.col-sm-12
                                     .preview.preview_page
                                         img.preview__icon(src="../img/border-outside.svg")
                                         .preview__title Строительство и монтаж
                                         .preview__intro
                                             a.btn(href="#") Подробнее
-                                .col-6.col-sm-12
+                                .col-5.col-xl-6.col-sm-12
                                     .preview.preview_page
                                         img.preview__icon(src="../img/border-inside.svg")
                                         .preview__title Поставка оборудования
                                         .preview__intro
                                             a.btn(href="#") Подробнее
-                                .col-6.col-sm-12
+                                .col-5.col-xl-6.col-sm-12
                                     .preview.preview_page
                                         img.preview__icon(src="../img/border-all.svg")
                                         .preview__title Техническая поддержка
                                         .preview__intro
                                             a.btn(href="#") Подробнее
-                        .col-5.col-sm-12.col-lg-10
+                        .col-6.col-sm-12.col-lg-10
                             .content-index.text-lg-center
                                 p.h1.h1-lead.text-bold Комплексность, как&nbsp;способ экономии ресурсов
                                 p Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. 

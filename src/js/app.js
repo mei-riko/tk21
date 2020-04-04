@@ -107,6 +107,31 @@ $(document).ready(() =>{
           }
         ]
     });
+    let $slickGalleryLogo = $('.slider.gallery_logo');
+    $slickGalleryLogo.slick({
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      arrows      : false,
+      dots        : true,
+      
+      autoplay  : false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings  : {
+            slidesToShow  : 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings  : {
+            slidesToShow  : 2,
+            slidesToScroll: 2,
+          }
+        }
+      ]
+  });
   }
   $("#arrowPrevNews").on("click", function(){
     $('.slider#newsIndex').slick('slickPrev');

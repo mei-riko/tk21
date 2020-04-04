@@ -62,10 +62,43 @@
 
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .list{
-        &_statictic{
+        &.list_statictic{
             .list__item{
                 padding: 15px;
                 height: auto;
+                &_row{
+                    padding: 0;
+                    border: none;
+
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    text-align: left;
+
+                    .list__item__col{
+                        flex: 0 0 80px;
+                        max-width: 80px;
+                        .list__title{
+                            font-size: 30px;
+                        }
+                        .list__subtitle{
+                            font-size: 12px;
+                        }
+                    }
+                    .list__intro{
+                        flex: 0 0 calc(100% - 90px);
+                        max-width: calc(100% - 90px);
+
+                        margin: 0;
+                    }
+
+                    &:not(.last){
+                        border-bottom: 1px solid #5b6fc3;
+                        padding-bottom: 15px;
+                        margin-bottom: 15px;
+                    }
+                }
             }
         }
     }

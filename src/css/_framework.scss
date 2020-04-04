@@ -172,6 +172,7 @@ a{
 .text-black{color: $black;}
 .text-grey{color: $grey;}
 .text-blue{color: $blue;}
+.text-dark-blue{color: $dark-blue;}
 
 .bg-gradient{
     background: $blue linear-gradient( 90deg, rgb(21,47,176) 0%, rgb(18,55,131) 100%);
@@ -188,7 +189,7 @@ a{
 .bg-light-blue{background-color: #dbe0ed;}
 
 .text-uppercase{text-transform: uppercase;}
-.text-light{font-weight: 300;}
+.text-light{font-weight: 300; p{font-weight: 300;} }
 .text-bold,strong,b{font-weight: 700;}
 .text-small,small,.small{font-size: 12px; line-height: 16px;}
 
@@ -343,13 +344,16 @@ a{
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .d-sm-none{display: none;}
+    .d-sm-block{display: block;}
     
-    .h1,.h1-lead,h1{font-size: 1.75rem;}
-    .h2,h2{font-size: 1.75rem;}
+    .h1,.h1-lead,h1{font-size: 1.7rem;}
+    .h2,h2,
     .h3,h3{font-size: 1.5rem;}
-    .h4,h4{font-size: 1.5rem;}
+    .h4,h4,
     .h5,h5{font-size: 1.25rem;}
     .h6,h6{font-size: 1rem;}
+
+    .lead{font-size: 1rem;}
 
     .text-sm-left{text-align: left;}
     .text-sm-center{text-align: center;}

@@ -1,0 +1,27 @@
+.fancybox-bg{
+    background-color: $dark-blue;
+}
+.fancybox-modal{
+    width: 560px;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 40px 30px;
+    padding-right: 74px;
+    .fancybox-button{
+        border-radius: 50%;
+        background: $light-blue;
+        right: 14px;
+        top: 14px;
+    }
+
+    p:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .fancybox-modal{
+        padding-left: 48px;
+    }
+}
+

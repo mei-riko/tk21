@@ -49,8 +49,15 @@
     }
     &_info{
         background-color: $white;
+        .item__intro{
+            font-weight: 300;
+        }
         &-grey{
             background-color: $light-grey;
+            .item__intro{
+                color: $dark-blue;
+                font-weight: 300;
+            }
         }   
     }
     &_news{
@@ -212,6 +219,14 @@
         }
         &_column{
             height: auto;
+        }
+        &_large{
+            .lead{
+                font-size: 1rem;
+            }
+            .slider.slider_dots{
+                margin-bottom: 20px;
+            }
         }
     }
 }
