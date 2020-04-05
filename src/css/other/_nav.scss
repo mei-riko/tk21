@@ -62,11 +62,35 @@
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .nav{
         &_header{
+            .nav__item{
+                flex: 0 0 100%;
+                max-width: 100%;
+
+                font-size: 18px;
+
+                padding: 10px 0;
+                padding-left: 44px;
+
+                background: url("../img/arrow-right-light.svg") no-repeat left center / 24px;
+
+                & + .nav__item{
+                    border-top: 1px solid $light-grey;
+                }
+            }
             &-top{
+                margin-bottom: 0;
                 .nav__item{
-                    margin-right: $padding;
-                    &.last{
-                        margin-right: 0;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+    
+                    font-size: 14px;
+                    padding: 4px 44px;
+                    background-color: $light-blue;
+                    color: $grey;
+                    border-radius: 6px;
+
+                    & + .nav__item{
+                        border-top: 1px solid $white;
                     }
                 }
             }
@@ -76,22 +100,9 @@
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .nav{
         &_header{
-            .nav__item{
-                font-size: 14px;
-                margin-right: 2*$padding;
-                &.last{
-                    margin-right: 0;
-                }
-            }
+            .nav__item{}
             &-top{
-                &-top{
-                    .nav__item{
-                        margin-right: 2.5*$padding;
-                        &.last{
-                            margin-right: 0;
-                        }
-                    }
-                }
+                .nav__item{}
             }
         }
     }
@@ -99,18 +110,9 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .nav{
         &_header{
-            .nav__item{
-                flex: 0 0 100%;
-                max-width: 100%;
-                font-size: 18px;
-                & + .nav__item{
-                    margin-top: 10px;
-                }
-            }
+            .nav__item{}
             &-top{
-                .nav__item{
-                    font-size: 14px;
-                }
+                .nav__item{}
             }
         }
     }

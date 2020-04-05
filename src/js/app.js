@@ -37,15 +37,15 @@ $(document).ready(() =>{
 	});
   
   // Show Btn
-  $("#categoryShow").on("click", function(){
+  $("#btnShow").on("click", function(){
     if( $(this).hasClass("active") ){
       $(this).removeClass("active");
-      $(".catalog .catalog__category").slideUp();
-      $(this).html("Показать категории");
+      $("#blockShow").slideUp();
+      $(this).html("Показать фильтры");
     }else{
       $(this).addClass("active");
-      $(".catalog .catalog__category").slideDown();
-      $(this).html("Скрыть категории");
+      $("#blockShow").slideDown();
+      $(this).html("Скрыть фильтры");
     }
     
   });
@@ -173,11 +173,16 @@ $(document).ready(() =>{
               dropdownActive.removeClass("header__nav--active");
     }
   });
-  // Hide Navigation on Desktop
+  // Resize Watch
   $(window).resize(function(){
     if ( $(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches ){
       $(".header__menu").removeClass("header__menu--active");
       $(".header__nav.header__nav--active").removeClass("header__nav--active");
+    }
+    if ( $(window).width() > 576 || !window.matchMedia('screen and (max-width: 576px)').matches ){
+      $("#btnShow").removeClass("active");
+      $("#blockShow").attr("style","");
+      $("#btnShow").html("Показать фильтры");
     }
   });
 });

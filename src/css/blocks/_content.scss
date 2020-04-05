@@ -226,7 +226,10 @@
             max-width: 50%;
             padding: 0;
             &_left{
-                padding-right: 20px;
+                padding-right: 10px;
+            }
+            &_right{
+                padding-left: 10px;
             }
             .content-item{
                 padding-left: 34px;

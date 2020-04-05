@@ -114,15 +114,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   });
 
   // Show Btn
-  (0, _jquery2.default)("#categoryShow").on("click", function () {
+  (0, _jquery2.default)("#btnShow").on("click", function () {
     if ((0, _jquery2.default)(this).hasClass("active")) {
       (0, _jquery2.default)(this).removeClass("active");
-      (0, _jquery2.default)(".catalog .catalog__category").slideUp();
-      (0, _jquery2.default)(this).html("Показать категории");
+      (0, _jquery2.default)("#blockShow").slideUp();
+      (0, _jquery2.default)(this).html("Показать фильтры");
     } else {
       (0, _jquery2.default)(this).addClass("active");
-      (0, _jquery2.default)(".catalog .catalog__category").slideDown();
-      (0, _jquery2.default)(this).html("Скрыть категории");
+      (0, _jquery2.default)("#blockShow").slideDown();
+      (0, _jquery2.default)(this).html("Скрыть фильтры");
     }
   });
   // Slider
@@ -240,11 +240,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       dropdownActive.removeClass("header__nav--active");
     }
   });
-  // Hide Navigation on Desktop
+  // Resize Watch
   (0, _jquery2.default)(window).resize(function () {
     if ((0, _jquery2.default)(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches) {
       (0, _jquery2.default)(".header__menu").removeClass("header__menu--active");
       (0, _jquery2.default)(".header__nav.header__nav--active").removeClass("header__nav--active");
+    }
+    if ((0, _jquery2.default)(window).width() > 576 || !window.matchMedia('screen and (max-width: 576px)').matches) {
+      (0, _jquery2.default)("#btnShow").removeClass("active");
+      (0, _jquery2.default)("#blockShow").attr("style", "");
+      (0, _jquery2.default)("#btnShow").html("Показать фильтры");
     }
   });
 });
