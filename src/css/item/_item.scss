@@ -146,6 +146,10 @@
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .item{
         padding: 30px 35px;
+        .link-cta_catalog{
+            margin-left: 30px;
+        }
+        
         &_sale{
             .item__title{
                 flex: 0 0 100%;
@@ -166,10 +170,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .item{
         padding: 30px;
-        .link-cta_catalog{
-            margin-left: 30px;
-        }
-        
+                
         &_info{
             padding: 24px 30px;
             border-radius: 14px;

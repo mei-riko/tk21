@@ -164,8 +164,15 @@
             // height: 100%;
             padding: 20px;
 
+            display: flex;
+            flex-direction: column-reverse;
+
             &--active{
                 transform: translateX(0%);
+            }
+
+            & > * {
+                flex: 1;
             }
         }
         .header__email{
