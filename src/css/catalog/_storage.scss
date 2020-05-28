@@ -17,18 +17,19 @@
         align-items: center;
 
         .filter-group{
+            flex: 0 0 50%;
+            max-width: 50%;
             flex-wrap: nowrap;
-            .filter{
-                &_select{
-                    max-width: 100%;
-                }
+
+            &__item{
+                width: 50%;
             }
         }
-        .filter{
-            &_check{
-                margin-left: 15px;
-            }
-        }
+        // .filter{
+        //     &_check{
+        //         margin-left: 20px;
+        //     }
+        // }
     }
     .storage__table{
         .table{
@@ -61,7 +62,9 @@
     .storage{
         .storage__filter{
             .filter-group{
+                flex: 0 0 100%;
                 max-width: 100%;
+
                 & + .filter_check{
                     margin-top: 20px;
                 }
@@ -78,15 +81,15 @@
         .storage__filter{
             .filter-group{
                 flex-wrap: wrap;
-                .filter_select{
+                &__item{
                     flex: 0 0 100%;
                     max-width: 100%;
                     min-width: auto;
-                    &.mt-sm-15{ margin-top: 15px; }
+                    margin-bottom: 10px;
                 }
-            }
-            .filter.not-last{
-                margin-right: 0px;
+                & + .filter_check{
+                    margin-top: 10px;
+                }
             }
         }
     }

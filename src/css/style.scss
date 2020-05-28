@@ -6,32 +6,57 @@
 @import "grid.scss";
 @import "position.scss";
 
-@import "other/breadcrumbs.scss";
-@import "other/button.scss";
+/*Для каталога и склада*/
+@import "catalog/catalog.scss";
+@import "catalog/storage.scss";
+@import "catalog/product.scss";
+
+/*Для текстового контента*/
+@import "content/breadcrumbs.scss";
+@import "content/content-item.scss";
+@import "content/content.scss";
+@import "content/heading.scss";
+@import "content/table.scss";
+
+/*Для фильтров*/
+@import "filter/filter.scss";
+@import "filter/filter_check.scss";
+@import "filter/filter_link.scss";
+@import "filter/filter_select.scss";
+@import "filter/filter-group.scss";
+
+/* Для форм */
+@import "form/form.scss";
+@import "form/search.scss";
+@import "form/button.scss";
+@import "form/toggle.scss";
+
+/* Для изображений */
+@import "image/gallery.scss";
+
+/* Различные информационные блоки */
+@import "item/item.scss";
+
+/* Для списков */
+@import "list/list.scss";
+@import "list/list_statictic.scss";
+
+/* Общие для всех страниц блоки */
 @import "other/fancybox.scss";
 @import "other/footer.scss";
-@import "other/form.scss";
 @import "other/header.scss";
+@import "other/map.scss";
 @import "other/nav.scss";
 @import "other/pagination.scss";
 
-@import "item/content.scss";
-@import "item/filter.scss";
-@import "item/gallery.scss";
-@import "item/heading.scss";
-@import "item/item.scss";
-@import "item/list.scss";
-@import "item/preview.scss";
-@import "item/product.scss";
-@import "item/table.scss";
+/* Превью страниц раздела или категории */
+@import "preview/preview.scss";
+@import "preview/portfolio.scss";
 
-@import "blocks/catalog.scss";
-@import "blocks/content.scss";
-@import "blocks/map.scss";
-@import "blocks/portfolio.scss";
-@import "blocks/slider.scss";
-@import "blocks/storage.scss";
+/* Слайдер (slick) */
+@import "slider/slider.scss";
 
+/* Индивидуально оформленные страницы */
 @import "page/error.scss";
 
 .content-area{

@@ -47,21 +47,28 @@
             <div class="container">
               <div class="storage__row">
                 <div class="filter-group">
-                  <select class="filter filter_select" data-title="type">
-                    <option></option>
-                    <option class="filter__item">Коммутатор</option>
-                    <option class="filter__item">Хранение данных</option>
-                  </select>
-                  <select class="filter filter_select" data-title="vendor">
-                    <option></option>
-                    <option class="filter__item">Rostelecom</option>
-                    <option class="filter__item">Huawei</option>
-                    <option class="filter__item">D-Link</option>
-                  </select>
+                  <div class="filter-group__item not-last">
+                    <select class="filter filter_select" data-title="msoption|tags">
+                      <option></option>
+                      <option class="filter__item">Коммутатор</option>
+                      <option class="filter__item">Хранение данных</option>
+                    </select>
+                  </div>
+                  <div class="filter-group__item">
+                    <select class="filter filter_select" data-title="ms|vendor">
+                      <option></option>
+                      <option class="filter__item">Rostelecom</option>
+                      <option class="filter__item">Huawei</option>
+                      <option class="filter__item">D-Link</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="filter filter_check">
-                  <div class="filter__item filter__item--active">Показать все</div>
-                  <div class="filter__item">По 50 товаров</div>
+                  <div class="filter__item filter__item--active" data-position="left">Показать все</div>
+                  <div class="toggle__item toggle__item--left">
+                    <div class="toggle__bullet"></div>
+                  </div>
+                  <div class="filter__item" data-position="right">По 50 товаров</div>
                 </div>
               </div>
             </div>
@@ -135,8 +142,9 @@
       </main>
       <footer class="footer">
         <div class="container">
-          <nav class="nav nav_footer"><a class="nav__item" href="#">Политика конфиденциальности</a><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Открытые вакансии</a><a class="nav__item" href="#">Услуги</a><a class="nav__item" href="#">Проектирование</a></nav>
-          <p class="mb-0 text-bold text-center">© 2007-2019. Все права защищены</p>
+          <nav class="nav nav_footer"><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Открытые вакансии</a><a class="nav__item" href="#">Услуги</a><a class="nav__item" href="#">Проектирование</a></nav>
+          <p class="mb-0 text-center text-bold">© 2007-2019. Все права защищены. </p>
+          <p class="mb-0 text-center"> <a class="text-light text-small footer__link" href="#">Ознакомиться с политикой конфиденциальности</a></p>
           <p class="text-small text-center text-light-grey">Сайт разработан <a class="footer__link" href="https://websoho.ru" title="Сайт студией «SOHO»">студией «SOHO»</a></p>
         </div>
       </footer>

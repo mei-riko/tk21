@@ -1,0 +1,32 @@
+.toggle{
+    &__item{
+        width: 70px;
+        height: 32px;
+
+        margin: 0 10px;
+
+        background: $light-blue;
+        border: 1px solid $light-grey;
+        border-radius: 18px;
+        
+        position: relative;
+        cursor: pointer;
+
+        &--left{
+            .toggle__bullet{left: 5px;}
+        }
+        &--right{
+            .toggle__bullet{left: 42px;}
+        }
+    }
+    &__bullet{
+        display: block;
+        height: 22px;
+        width: 22px;
+        border-radius: 15px;
+        background: darken($color: $light-blue, $amount: 10);
+        position: absolute;
+        top: 5px;
+        transition: left .5s ease-out;
+    }
+}

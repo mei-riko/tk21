@@ -40,3 +40,13 @@
         }
     }
 }
+
+table{
+    border: none;
+    td{
+        padding: 6px 15px;
+    }
+    tr:nth-child(2n){
+        background-color: $light-blue;
+    }
+}

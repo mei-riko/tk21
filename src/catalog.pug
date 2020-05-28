@@ -19,32 +19,31 @@ html(lang="ru")
         .content-area
             main.inside-area
                 include chunks/header.pug
-                section.container.pt-60.pb-60.pt-md-30.pb-md-30
+                section.container-fluid.pt-60.pb-60.pt-md-30.pb-md-30
                     .row.justify-content-center
-                        .col-9.col-md-12.col-lg-12
-                            h1.text-bold.text-center Поставка телекоммуникационного и&nbsp;сетевого оборудования
-                            p.text-light.text-center Телеком XXI - это поставка и запуск сетевого оборудования. Спектр реализуемой продукции 
+                        .col-8.col-md-12.col-lg-12
+                            h1.h1-lead.text-bold.text-center Поставка телекоммуникационного и&nbsp;сетевого оборудования
+                            p.lead.text-light.text-center Телеком XXI - это поставка и запуск сетевого оборудования. Спектр реализуемой продукции 
                                 | включает все необходимое для построения сети связи. Мы работаем с ведущими вендорами: мировыми лидерами по производству и поставке сетевого оборудования, поэтому гарантируем высокое качество и актуальность внедряемых решений. 
-                        .col-10.col-md-12.col-lg-12
-                            .row.justify-content-center.mt-60.mb-60.mt-sm-30.mb-sm-30
-                                .col-3.col-md-4.col-sm-6.mb-30
+                        .col-12.col-md-12.col-lg-12
+                            .row.justify-content-center.mt-60.mt-sm-30
+                                .col-2.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-4.col-sm-6.mb-30
+                                .col-2.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/huawei-color.png');")
-                                .col-3.col-md-4.col-sm-6.mb-30
+                                .col-2.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-4.col-sm-6.mb-30
+                                .col-2.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/huawei-color.png');")
-                                .col-3.col-md-4.col-sm-6.mb-30
+                                .col-2.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-4.col-sm-6.mb-30
-                                    .item.item_logo(style="background-image: url('../img/logo/huawei-color.png');")
-                                .col-3.col-md-4.col-sm-6.mb-30
-                                    .item.item_logo(style="background-image: url('../img/logo/d-link.png');")
-                                .col-3.col-md-4.col-sm-6.mb-30
+                                .col-2.col-md-4.col-sm-6.mb-30
                                     .item.item_logo(style="background-image: url('../img/logo/huawei-color.png');")
                                 .col-12.text-center
                                     a.link-inverse.link-underline(href="#") Все производители
+                section.container.pb-60.pb-md-30
+                    .row.justify-content-center
+                        .col-10.col-md-12.col-lg-12
                             .item.item_default.item_sale(style="background-image: url('../img/demo-sale.png'); background-size: 125px; background-position-x: calc(100% - 200px); background-position-y: 100%; ")
                                 p.item__title Бесплатный стоечный шкаф
                                 p.item__content Специальное предложение действительно при покупке товаров на сумму от 40 000 р.!
@@ -57,13 +56,15 @@ html(lang="ru")
                             span.catalog__count 121 товар
                         .col-4.col-md-12.col-lg-6
                             .catalog__show-btn#btnShow Показать фильтры 
-                            .filter-group#blockShow
-                                select.filter.filter_select.not-last(data-title="vendor")
-                                    option
-                                    option.filter__item Rostelecom
-                                    option.filter__item Huawei
-                                    option.filter__item D-Link
-                                a.filter.filter_link(href="#" data-dir="desc") Цена
+                            .filter-group.justify-content-end.justify-content-lg-start#blockShow
+                                .filter-group__item.not-last
+                                    select.filter.filter_select.not-last(data-title="ms|vendor")
+                                        option
+                                        option.filter__item Rostelecom
+                                        option.filter__item Huawei
+                                        option.filter__item D-Link
+                                .filter-group__item
+                                    a.filter.filter_link(href="#" data-dir="desc") Цена
                     .row
                         .col-2.col-sm-12.col-md-5.col-lg-4.col-xl-3
                             .catalog__category

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg8" inkscape:version="0.92.3 (2405546, 2018-03-11)" sodipodi:docname="eaton.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 615 160"
+	 style="enable-background:new 0 0 615 160;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#alpha);}
+	.st1{opacity:0.2;}
+	.st2{fill:#1175C7;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="1" id="alpha" width="1" x="0" y="0">
+	<feColorMatrix  id="feColorMatrix124" in="SourceGraphic" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0">
+		</feColorMatrix>
+</filter>
+<g id="g129" class="st0">
+	<g id="rect127_1_">
+		<rect x="133.9" y="32.3" class="st1" width="2245" height="2925.4"/>
+	</g>
+</g>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" fit-margin-bottom="0.5" fit-margin-left="0.5" fit-margin-right="0.5" fit-margin-top="0.5" id="base" inkscape:current-layer="layer1" inkscape:cx="79.010967" inkscape:cy="12.666744" inkscape:document-units="mm" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="1001" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:zoom="1.979899" pagecolor="#00ffff" showgrid="false" units="px">
+	</sodipodi:namedview>
+<g id="layer1" transform="translate(-0.4050392,-183.33155)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<path id="path674-5" inkscape:connector-curvature="0" class="st2" d="M217.4,220.1l12.4,44.7h-25.8L217.4,220.1z M194.8,296.2
+		l-11.3,37.1h66.1L239,296.2H194.8z M367.5,193.3h-127v39.9h40.1v100.1H345c-4-2.5-31.3-24.2-31.3-64.7
+		C313.7,234.9,334.1,202,367.5,193.3 M389.5,297.5c15,0,27-12.4,27-28.2c0-15.6-11.3-29.8-26.5-29.8c-15.3,0-27.2,14.1-27.2,29.8
+		C362.8,285,374,297.5,389.5,297.5 M522.7,281.3l-25.8-88h-66v140h41.2v-87.8h0.3l25.5,87.8h66.6v-140h-41.6v88H522.7z M131.2,333.3
+		l11.9-39.3H98.9v-11.9h47.8l11.4-37.6H98.9v-11.4h62.4l12-39.9H51.3v140L131.2,333.3z"/>
+</g>
+</svg>

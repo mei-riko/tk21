@@ -21,12 +21,6 @@
         align-items: center;
         padding-bottom: 20px;
         border-bottom: 3px solid $light-grey;
-        .filter.not-last {
-            margin-right: 15px;
-        }
-        .filter_select {
-            margin-right: 15px;
-        }
     }
     .catalog__category{
         padding: 20px 0;
@@ -69,33 +63,8 @@
         cursor: pointer;
     }
 }
-@media all and (max-width: map-get($grid-breakpoints, 'md')){
-    .catalog{
-        .catalog__header{}
-    }
-}
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .catalog{
-        .catalog__header{
-            .filter{
-                &_select {
-                    margin-right: 0;
-                    margin-bottom: 15px;
-                }
-                // Group
-                &-group{
-                    display: none;
-                    flex-wrap: wrap;
-
-                    padding-top: 15px;
-
-                    .filter{
-                        flex: 0 0 100%;
-                        max-width: 100%;
-                    }
-                }
-            }
-        }
         .catalog__show-btn{
             display: block;
         }

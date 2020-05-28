@@ -139,15 +139,48 @@ $(document).ready(() =>{
   $("#arrowNextNews").on("click", function(){
     $('.slider#newsIndex').slick('slickNext');
   });
+  // Animation Toggle Filter
+  function turnRight( item ){
+    $(".toggle__bullet").css("left", "42px");
+    $(".toggle__bullet").css("animation", "move .5s");
+    
+    item.removeClass("toggle__item--left");
+    item.addClass("toggle__item--right");
+
+    $(".filter_check .filter__item[data-position=left]").removeClass("filter__item--active");
+    $(".filter_check .filter__item[data-position=right]").addClass("filter__item--active");
+  }
+
+  function turnLeft( item ){
+    $(".toggle__bullet").css("left", "5px");
+    $(".toggle__bullet").css("animation", "moveL .4s");
+    
+    item.removeClass("toggle__item--right");
+    item.addClass("toggle__item--left");
+
+    $(".filter_check .filter__item[data-position=right]").removeClass("filter__item--active");
+    $(".filter_check .filter__item[data-position=left]").addClass("filter__item--active");
+  }
+
+  $(".toggle__item").on("click", function(){
+    if ( $(this).hasClass("toggle__item--left") === true){ turnRight( $(this) ); }
+    else if ( $(this).hasClass("toggle__item--right") === true){ turnLeft( $(this) ); }
+  });
+
+  $(".filter_check .filter__item").on("click", function(){
+    let toggle = $(this).parent().find(".toggle__item");
+    if( $(this).data("position") === "left" ){ turnLeft( $(this) ); }
+    if( $(this).data("position") === "right" ){ turnRight( $(this) ); }
+  });
 
   // Filter
   if( $('.filter').length > 0 ){
-    $('.filter.filter_select[data-title=type]').select2({
+    $('.filter.filter_select[data-title="msoption|tags"]').select2({
       placeholder: "Устройство",
       theme      : 'default filter filter_select not-last',
       width      : '100%'
     });
-    $('.filter.filter_select[data-title=vendor]').select2({
+    $('.filter.filter_select[data-title="ms|vendor"]').select2({
       placeholder: "Вендор",
       theme      : 'default filter filter_select mt-sm-15',
       width      : '100%'

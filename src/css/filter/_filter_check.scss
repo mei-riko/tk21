@@ -1,0 +1,54 @@
+.filter_check{
+    display: flex;
+    align-items: center;
+
+    color: $grey;
+
+    .filter__item{
+        cursor: pointer;
+        
+        &:last-child{
+            margin-right: 0px;
+        }
+
+        &--active{
+            color: $blue;
+            cursor: default;
+        }
+    }
+}
+
+@keyframes move{
+    0% {
+        width: 22px;
+        height:22px;
+        top:5px;
+    }
+    30% {
+        width: 42px;
+        height:12px;
+        top:10px;
+    }
+    100% {
+        width:22px;
+        height:22px;
+        top:5px;
+    }
+}
+@keyframes moveL{
+   0% {
+       width: 22px;
+       height:22px;
+       top:5px;
+   }
+   40% {
+       width: 42px;
+       height:12px;
+       top:10px;
+   }
+   100% {
+       width:22px;
+       height:22px;
+       top:5px;
+   }
+}

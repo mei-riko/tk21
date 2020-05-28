@@ -1,0 +1,27 @@
+.list_networks{
+        display: flex;
+        flex-wrap: wrap;
+        .list__item{
+            flex: 0 0 30px;
+            max-width: 100%;
+            height: 30px;
+
+            margin-right: 10px;
+        }
+        .list__link{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+
+            background: $white no-repeat center / contain;
+            &_facebook{
+                background-image: url("../img/facebook.svg");
+            }
+            &_vk{
+                background-image: url("../img/vk.svg");
+            }
+            &_google{
+                background-image: url("../img/google-plus.svg");
+            }
+        }
+    }

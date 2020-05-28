@@ -32,18 +32,22 @@ html(lang="ru")
                         .container
                             .storage__row
                                 .filter-group
-                                    select.filter.filter_select(data-title="type")
-                                        option
-                                        option.filter__item Коммутатор
-                                        option.filter__item Хранение данных
-                                    select.filter.filter_select(data-title="vendor")
-                                        option
-                                        option.filter__item Rostelecom
-                                        option.filter__item Huawei
-                                        option.filter__item D-Link
+                                    .filter-group__item.not-last
+                                        select.filter.filter_select(data-title="msoption|tags")
+                                            option
+                                            option.filter__item Коммутатор
+                                            option.filter__item Хранение данных
+                                    .filter-group__item
+                                        select.filter.filter_select(data-title="ms|vendor")
+                                            option
+                                            option.filter__item Rostelecom
+                                            option.filter__item Huawei
+                                            option.filter__item D-Link
                                 .filter.filter_check
-                                    .filter__item.filter__item--active Показать все
-                                    .filter__item По 50 товаров
+                                    .filter__item.filter__item--active(data-position="left") Показать все
+                                    .toggle__item.toggle__item--left
+                                        .toggle__bullet
+                                    .filter__item(data-position="right") По 50 товаров
                     .storage__table
                         .container
                             .table

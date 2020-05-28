@@ -33,6 +33,8 @@
         }
     }
     // Offset for MODx error blocks
+    .form-validation + .checkbox,
+    .form-validation + .form-input,
     .error + .checkbox,
     .error + .form-input{
         margin-top: $padding;
