@@ -36,6 +36,12 @@ $(document).ready(() =>{
 	  }
 	});
   
+  // Header Search
+  $("#search-nav").on("click", function(){
+    $("#search").slideToggle();
+    $(this).toggleClass("header__search--open");
+  });
+
   // Show Btn
   $("#btnShow").on("click", function(){
     if( $(this).hasClass("active") ){
@@ -131,7 +137,34 @@ $(document).ready(() =>{
           }
         }
       ]
-  });
+    });
+    let $slickPartnersLogo = $('.slider#partnersLogo');
+    $slickPartnersLogo.slick({
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      draggable   : false,
+      arrows      : false,
+      dots        : false,
+      
+      autoplay  : true,
+      autoplaySpeed: 1000,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings  : {
+            slidesToShow  : 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings  : {
+            slidesToShow  : 2,
+            slidesToScroll: 2,
+          }
+        }
+      ]
+    });
   }
   $("#arrowPrevNews").on("click", function(){
     $('.slider#newsIndex').slick('slickPrev');
@@ -196,14 +229,24 @@ $(document).ready(() =>{
         $(".header__nav").removeClass("header__nav--active");
     }
   });
-  $(document).mouseup(function (e){ // событие клика по веб-документу
+
+  // Событие клика по веб-документу 
+  $(document).mouseup(function (e){
     let dropdownActive = $(".header__nav.header__nav--active");  // элемент
+    let searchActive = $("#search");  // поиск
       
     if (!dropdownActive.is(e.target) // клик был не по блоку
           && dropdownActive.has(e.target).length === 0  // и не по его дочерним элементам
           && !$(".header__menu#mobile-nav").is(e.target) ) { 
               $(".header__menu").removeClass("header__menu--active");
               dropdownActive.removeClass("header__nav--active");
+    }
+
+    if (!searchActive.is(e.target) // клик был не по блоку
+          && searchActive.has(e.target).length === 0  // и не по его дочерним элементам
+        ) { 
+              $(".header__search").removeClass("header__search--open");
+              searchActive.slideUp();
     }
   });
   // Resize Watch

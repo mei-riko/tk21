@@ -1,0 +1,33 @@
+.form-input{
+    position: relative;
+
+    border: 1px solid $light-blue;
+    border-radius: 10px;
+    outline: none;
+    
+    box-shadow: none;
+
+    padding: 16px 24px;
+
+    background-color: $light-blue;
+
+    // For MODx error class
+    &.error{
+        border-color: $error;
+        color: $error;
+        &::placeholder{
+            color: $error;
+        }
+    }
+    // Offset form agree
+    & + .checkbox{
+        margin-top: $padding;
+    }
+    // Full Block
+    &_full{
+        width: 100%;
+        & + .form-input_full{
+            margin-top: $padding;
+        }
+    }
+}

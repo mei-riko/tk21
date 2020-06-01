@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+	<g transform="translate(-959.000000, -2348.000000)" stroke="#17398a" stroke-width="1.5">
+		<g transform="translate(960.000000, 2162.000000)">
+			<g transform="translate(0.000000, 180.000000)">
+				<g id="check-circle-07" transform="translate(0.000000, 7.000000)">
+					<path d="M13.3762932,8.26855047 C13.2926825,8.69123406 13.1680949,9.09917948 13.0068418,9.48807526 C12.677415,10.2825574 12.1949644,10.9975356 11.59625,11.59625 C10.42,12.7725 8.795,13.5 7,13.5 C3.41,13.5 0.5,10.59 0.5,7 C0.5,5.205 1.2275,3.58 2.40375,2.40375 C3.00246441,1.80503559 3.71744264,1.32258501 4.51192474,0.993158216 C5.27830296,0.675384509 6.11865982,0.5 7,0.5 C7.53215063,0.5 8.0493042,0.56385848 8.54432276,0.684437493" id="Path" opacity="0.4"></path>
+				
+					<polyline id="Path" points="5 6.5 7 8.5 14 1.5"></polyline>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

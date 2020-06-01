@@ -13,6 +13,7 @@
 
 /*Для текстового контента*/
 @import "content/breadcrumbs.scss";
+@import "content/content-icon.scss";
 @import "content/content-item.scss";
 @import "content/content.scss";
 @import "content/heading.scss";
@@ -26,20 +27,34 @@
 @import "filter/filter-group.scss";
 
 /* Для форм */
+@import "form/toggle.scss";
+@import "form/button.scss";
+@import "form/checkbox.scss";
+@import "form/form-input.scss";
 @import "form/form.scss";
 @import "form/search.scss";
-@import "form/button.scss";
-@import "form/toggle.scss";
 
 /* Для изображений */
 @import "image/gallery.scss";
 
 /* Различные информационные блоки */
 @import "item/item.scss";
+// style
+@import "item/item_offset.scss";
+@import "item/item_column.scss";
+@import "item/item_check.scss";
+// type
+@import "item/item_default.scss";
+@import "item/item_sale.scss";
+@import "item/item_logo.scss";
+@import "item/item_news.scss";
+@import "item/item_link.scss";
 
 /* Для списков */
 @import "list/list.scss";
 @import "list/list_statictic.scss";
+@import "list/list_network.scss";
+@import "list/list_check.scss";
 
 /* Общие для всех страниц блоки */
 @import "other/fancybox.scss";
@@ -58,6 +73,8 @@
 
 /* Индивидуально оформленные страницы */
 @import "page/error.scss";
+@import "page/designing.scss";
+
 
 .content-area{
     display: flex;

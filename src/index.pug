@@ -71,11 +71,12 @@ html(lang="ru")
                                     .content-item__title Система
                                     .content-item__options краткое описание
                                 #hidden-content1.fancybox-modal(style="display:none;")
-                                    p Then simply create a link having data-src attribute that matches ID of the element you want to open (preceded by a hash mark (#); in this example - #hidden-content)
+                                    .fancybox-text
+                                        p Then simply create a link having data-src attribute that matches ID of the element you want to open (preceded by a hash mark (#); in this example - #hidden-content)
                 section.container-fluid.pt-30.pb-30.pb-sm-60
                     .row.justify-content-center
                         .col-10.col-md-12
-                            .item.item_info.item_mobile.text-center
+                            .item.item_offset-mobile-none.text-center
                                 p.h4.text-uppercase.text-bold.mb-30 Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями
                                 p.item__intro.lead Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.
                                 .slider.slider_dots.slider_logo.gallery.gallery_logo
@@ -95,27 +96,27 @@ html(lang="ru")
                         .slider.slider_dots.slider_portfolio#portfolioIndex
                             .slider__item
                                 .portfolio-item
-                                    .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/huawei.svg');")
                                     .portfolio-item__title Анализ, поставка и внедрение оборудования для развития сети связи
                                     .portfolio-item__info 2019 | г. Казань
                             .slider__item
                                 .portfolio-item
-                                    .portfolio-item__logo(style="background-image: url('../img/logo/d-link.png');")
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/D-Link.svg');")
                                     .portfolio-item__title Модернизация и поставка электрооборудования
                                     .portfolio-item__info 2019 | по России
                             .slider__item
                                 .portfolio-item
-                                    .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/huawei.svg');")
                                     .portfolio-item__title Комплексные поставки оборудования сетей связи и ЦОД
                                     .portfolio-item__info 2019 | г. Казань
                             .slider__item
                                 .portfolio-item
-                                    .portfolio-item__logo(style="background-image: url('../img/logo/d-link.png');")
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/D-Link.svg');")
                                     .portfolio-item__title Поставка и инсталляция оборудования
                                     .portfolio-item__info 2019 | г. Москва
                             .slider__item
                                 .portfolio-item
-                                    .portfolio-item__logo(style="background-image: url('../img/logo/huawei-color.png');")
+                                    .portfolio-item__logo(style="background-image: url('../img/logo/huawei.svg');")
                                     .portfolio-item__title Поставка и внедрение оборудования для развития сети связи
                                     .portfolio-item__info 2019 | г. Санкт-Петербург
                 section.container-fluid.pt-60.pt-md-0.pb-60.pb-md-30
@@ -181,7 +182,7 @@ html(lang="ru")
                                 p Компания Телеком XXI предоставляет полный спектр услуг, направленных на достижение поставленных целей и решение целого ряда бизнес-задач. Написать, что заказ на комплексные работы сокращают издержки. 
                                 p.blockquote-icon.blockquote-icon_wallet.text-left Снижают расходы временные и денежные. Требуется меньше людей для отслеживания проекта. 
                 section.container-fluid
-                    .item.item_default.item_large
+                    .item.item_default.item_offset-lg
                         .row.align-items-center.justify-content-around
                             .col-4.col-md-12
                                 p.h5.text-uppercase.text-bold.mb-15 Вместе мы создаем будущее!
@@ -190,24 +191,24 @@ html(lang="ru")
                                     a.link-cta.link-cta_light.link-cta_catalog(href="#") Посмотреть каталог
                             .col-7.col-md-12.mt-md-30
                                 .row.align-items-center.justify-content-between.justify-content-md-center
-                                    .col-4.col-sm-6.col-md-4.mb-30
-                                        img.img-fluid.img-logo(src="../img/logo/alslogo.png" atl="" title="")
-                                    .col-4.col-sm-6.col-md-4.mb-30
-                                        img.img-fluid.img-logo(src="../img/logo/huawei.png" atl="" title="")
-                                    .col-4.col-sm-6.col-md-4.mb-30
-                                        img.img-fluid.img-logo(src="../img/logo/AcmePacket.png" atl="" title="")
-                                    .col-4.col-sm-6.col-md-4.mb-30
-                                        img.img-fluid.img-logo(src="../img/logo/800px-Inspur_logo.svg.png" atl="" title="")
-                                    .col-4.col-sm-6.col-md-4.mb-30
-                                        img.img-fluid.img-logo(src="../img/logo/D-Link-Logo.png" atl="" title="")
-                                    .col-4.col-sm-6.col-md-4.mb-30
-                                        img.img-fluid.img-logo(src="../img/logo/Polycom_logo.png" atl="" title="")
+                                    .col-4.col-md-6.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/Eaton_Corporation-white.svg" alt="" title="")
+                                    .col-4.col-md-6.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/huawei-white.svg" alt="" title="")
+                                    .col-4.col-md-6.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/Inspur-white.svg" alt="" title="")
+                                    .col-4.col-md-6.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/IPCOM-white.png" alt="" title="")
+                                    .col-4.col-md-6.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/D-Link-white.svg" alt="" title="")
+                                    .col-4.col-md-6.mb-30
+                                        img.img-fluid.img-logo(src="../img/logo/Lenovo-white.svg" alt="" title="")
                                     .col-4.col-md-6.mb-md-30
-                                        img.img-fluid.img-logo(src="../img/logo/logo-ip.png" atl="" title="")
+                                        img.img-fluid.img-logo(src="../img/logo/Microsoft-white.svg" alt="" title="")
                                     .col-4.col-md-6.mb-md-30
-                                        img.img-fluid.img-logo(src="../img/logo/Lenovo-new-logo-2015-1024x768.png" atl="" title="")
+                                        img.img-fluid.img-logo(src="../img/logo/dahua-white.png" alt="" title="")
                                     .col-4.col-md-6
-                                        img.img-fluid.img-logo(src="../img/logo/1280px-Eaton_Corporation_logo.svg.png" atl="" title="")
+                                        img.img-fluid.img-logo(src="../img/logo/Perimetrix-white.png" alt="" title="")
                 section.container-fluid.pt-60.pt-md-30.pb-60.pb-md-30
                     .item.item_news
                         .item__row

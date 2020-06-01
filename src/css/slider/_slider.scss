@@ -55,7 +55,7 @@
         &.slick-dotted{
             margin-bottom: 0px;
             .slick-dots{
-                bottom: -30px;
+                bottom: -40px;
                 li{
                     button{
                         &:before{
@@ -72,5 +72,17 @@
     &_news{
         margin-left: -20px;
         margin-right: -20px;
+    }
+
+    &_partners{
+        margin-left: -10px ;
+        margin-right: -10px ;
+        &__item{
+            padding: 20px;
+            margin: 0 10px;
+            .img-fluid{
+                width: 140px;
+            }
+        }
     }
 }

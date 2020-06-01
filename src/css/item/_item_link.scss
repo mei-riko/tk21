@@ -1,0 +1,15 @@
+.item_link{
+    border-left: 6px solid $blue;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    display: flex;
+    align-items: center;
+
+    height: 100px;
+    overflow: hidden;
+
+    .item__intro{
+        @extend .text-blue;
+    }
+}

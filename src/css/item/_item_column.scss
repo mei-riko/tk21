@@ -1,0 +1,8 @@
+.item_column{
+    height: 100%;
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .item_column{
+        height: auto;
+    }
+}

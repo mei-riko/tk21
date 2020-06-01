@@ -27,11 +27,17 @@
               <nav class="nav nav_header"><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Услуги</a><a class="nav__item last" href="#">Проектирование</a></nav>
             </div>
             <div class="header__contact">
-              <p class="mb-0 text-grey text-small d-lg-none">г. Москва, ул. Правды 24</p><a class="contact-phone" href="tel:*5025" title="Контактый телефон Телеком21 *5025">*5025</a>
+              <p class="mb-0 text-grey text-small d-lg-none">г. Москва, ул. Правды 24</p><a class="contact-phone" href="tel:+7 (495) 960-72-16" title="Контактый телефон Телеком21 +7 (495) 960-72-16">+7 (495) 960-72-16</a>
             </div>
-          </div><a class="header__email" href="mailto:#"></a><a class="header__search" href="#"></a>
+          </div><a class="header__email" href="mailto:#"></a><a class="header__search header__search--open" id="search-nav" href="#"></a>
           <div class="header__menu" id="mobile-nav"></div>
         </header>
+        <div class="search" id="search">
+          <form class="form form_search msearch2" action="" method="get" id="mse2_form">
+            <input class="form-input form-input_search form_search__input" type="text" name="" value="" placeholder="Поиск по сайту"/>
+            <button class="btn btn_search form_search__btn" type="submit">Найти </button>
+          </form>
+        </div>
         <section class="content-cta">
           <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
@@ -64,7 +70,9 @@
                   <div class="content-item__title">Система</div>
                   <div class="content-item__options">краткое описание</div></a>
                 <div class="fancybox-modal" id="hidden-content1" style="display:none;">
-                  <p>Then simply create a link having data-src attribute that matches ID of the element you want to open (preceded by a hash mark (#); in this example - #hidden-content)</p>
+                  <div class="fancybox-text">
+                    <p>Then simply create a link having data-src attribute that matches ID of the element you want to open (preceded by a hash mark (#); in this example - #hidden-content)</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -73,7 +81,7 @@
         <section class="container-fluid pt-30 pb-30 pb-sm-60">
           <div class="row justify-content-center">
             <div class="col-10 col-md-12">
-              <div class="item item_info item_mobile text-center">
+              <div class="item item_offset-mobile-none text-center">
                 <p class="h4 text-uppercase text-bold mb-30">Сотрудничаем с&nbsp;крупными и&nbsp;малыми организациями</p>
                 <p class="item__intro lead">Продажа телекоммуникационного оборудования, соответствующего современным стандартам, сделала нашу компанию привилегированным поставщиком для большого числа организаций. Наши клиенты – компании-интеграторы, предприятия строительной отрасли, телекоммуникационные компании разного уровня.</p>
                 <div class="slider slider_dots slider_logo gallery gallery_logo">
@@ -93,35 +101,35 @@
             <div class="slider slider_dots slider_portfolio" id="portfolioIndex">
               <div class="slider__item">
                 <div class="portfolio-item">
-                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/huawei-color.png');"></div>
+                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/huawei.svg');"></div>
                   <div class="portfolio-item__title">Анализ, поставка и внедрение оборудования для развития сети связи</div>
                   <div class="portfolio-item__info">2019 | г. Казань</div>
                 </div>
               </div>
               <div class="slider__item">
                 <div class="portfolio-item">
-                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/d-link.png');"></div>
+                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/D-Link.svg');"></div>
                   <div class="portfolio-item__title">Модернизация и поставка электрооборудования</div>
                   <div class="portfolio-item__info">2019 | по России</div>
                 </div>
               </div>
               <div class="slider__item">
                 <div class="portfolio-item">
-                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/huawei-color.png');"></div>
+                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/huawei.svg');"></div>
                   <div class="portfolio-item__title">Комплексные поставки оборудования сетей связи и ЦОД</div>
                   <div class="portfolio-item__info">2019 | г. Казань</div>
                 </div>
               </div>
               <div class="slider__item">
                 <div class="portfolio-item">
-                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/d-link.png');"></div>
+                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/D-Link.svg');"></div>
                   <div class="portfolio-item__title">Поставка и инсталляция оборудования</div>
                   <div class="portfolio-item__info">2019 | г. Москва</div>
                 </div>
               </div>
               <div class="slider__item">
                 <div class="portfolio-item">
-                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/huawei-color.png');"></div>
+                  <div class="portfolio-item__logo" style="background-image: url('../img/logo/huawei.svg');"></div>
                   <div class="portfolio-item__title">Поставка и внедрение оборудования для развития сети связи</div>
                   <div class="portfolio-item__info">2019 | г. Санкт-Петербург</div>
                 </div>
@@ -212,7 +220,7 @@
           </div>
         </section>
         <section class="container-fluid">
-          <div class="item item_default item_large">
+          <div class="item item_default item_offset-lg">
             <div class="row align-items-center justify-content-around">
               <div class="col-4 col-md-12">
                 <p class="h5 text-uppercase text-bold mb-15">Вместе мы создаем будущее!</p>
@@ -221,15 +229,15 @@
               </div>
               <div class="col-7 col-md-12 mt-md-30">
                 <div class="row align-items-center justify-content-between justify-content-md-center">
-                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/alslogo.png" atl="" title=""/></div>
-                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/huawei.png" atl="" title=""/></div>
-                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/AcmePacket.png" atl="" title=""/></div>
-                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/800px-Inspur_logo.svg.png" atl="" title=""/></div>
-                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/D-Link-Logo.png" atl="" title=""/></div>
-                  <div class="col-4 col-sm-6 col-md-4 mb-30"><img class="img-fluid img-logo" src="../img/logo/Polycom_logo.png" atl="" title=""/></div>
-                  <div class="col-4 col-md-6 mb-md-30"><img class="img-fluid img-logo" src="../img/logo/logo-ip.png" atl="" title=""/></div>
-                  <div class="col-4 col-md-6 mb-md-30"><img class="img-fluid img-logo" src="../img/logo/Lenovo-new-logo-2015-1024x768.png" atl="" title=""/></div>
-                  <div class="col-4 col-md-6"><img class="img-fluid img-logo" src="../img/logo/1280px-Eaton_Corporation_logo.svg.png" atl="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo" src="../img/logo/Eaton_Corporation-white.svg" alt="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo" src="../img/logo/huawei-white.svg" alt="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo" src="../img/logo/Inspur-white.svg" alt="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo" src="../img/logo/IPCOM-white.png" alt="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo" src="../img/logo/D-Link-white.svg" alt="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-30"><img class="img-fluid img-logo" src="../img/logo/Lenovo-white.svg" alt="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-md-30"><img class="img-fluid img-logo" src="../img/logo/Microsoft-white.svg" alt="" title=""/></div>
+                  <div class="col-4 col-md-6 mb-md-30"><img class="img-fluid img-logo" src="../img/logo/dahua-white.png" alt="" title=""/></div>
+                  <div class="col-4 col-md-6"><img class="img-fluid img-logo" src="../img/logo/Perimetrix-white.png" alt="" title=""/></div>
                 </div>
               </div>
             </div>

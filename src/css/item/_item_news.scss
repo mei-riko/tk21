@@ -1,0 +1,30 @@
+.item_news{
+    border: 1px solid $light-grey;
+    .item__row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: -35px;
+        margin-bottom: $padding;
+
+        .item__title{
+            text-transform: uppercase;
+            color: $grey;
+            letter-spacing: 1px;
+            margin-bottom: 0;
+        }
+        .link-cta-group{
+            padding: 30px 0;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .item_news{
+        .item__row{
+            margin-top: 0;
+        }
+    }
+}

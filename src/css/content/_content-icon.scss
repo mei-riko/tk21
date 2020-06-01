@@ -1,0 +1,36 @@
+.content-icon{
+    position: relative;
+    padding-left: 100px;
+
+    width: 320px;
+    max-width: 100%;
+
+    &:before{
+        content: '';
+        display: block;
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        transform: translateX(-20px) translateY(20px);
+
+        width: 60px;
+        height: 60px;
+
+        border-radius: 30px;
+
+        background-color: $light-blue;
+        opacity: .3;
+    }
+    &__img{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        width: 80px;
+    }
+    &__title{
+        margin-bottom: 6px;
+    }
+}

@@ -4,24 +4,31 @@
 .fancybox-modal{
     width: 560px;
     max-width: 100%;
-    border-radius: 20px;
-    padding: 40px 30px;
-    padding-right: 74px;
-    .fancybox-button{
-        border-radius: 50%;
-        background: $light-blue;
-        right: 14px;
-        top: 14px;
-    }
+    border-radius: 0px;
+    padding: 30px;
+
+    background-color: $light-blue;
 
     p:last-of-type{
         margin-bottom: 0;
     }
+    .fancybox-button{
+        right: 2px;
+        top: 2px;
+        padding: 4px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.fancybox-text{
+    padding: 40px;
+    background-color: $white;
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    .fancybox-modal{
-        padding-left: 48px;
+    .fancybox-text{
+        padding: 20px;
     }
 }
 
