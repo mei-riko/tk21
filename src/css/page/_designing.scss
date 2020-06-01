@@ -9,8 +9,6 @@
 
         margin-top: 18px;
     }
-    &__row{
-    }
     &__border-left{
         position: relative;
         &:before{
@@ -59,13 +57,36 @@
             content: '';
             display: block;
             width: 1px;
-            height: calc(50% - 24px);
+            height: 78px;
 
             background-color: $light-blue;
             opacity: .4;
             position: absolute;
             right: 13px;
-            top: 0;
+            top: 1px;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .designing{
+        &__border-left{
+            &:before{
+                display: none;
+            }
+        }
+        &__border-left-bottom{
+            &:before{
+                display: none;
+            }
+            &:after{
+                display: none;
+            }
+        }
+        &__border-right{
+            &:before{
+                display: none;
+            }
         }
     }
 }

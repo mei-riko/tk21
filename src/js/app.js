@@ -150,15 +150,23 @@ $(document).ready(() =>{
       autoplaySpeed: 1000,
       responsive: [
         {
+          breakpoint: 1200,
+          settings  : {
+            slidesToShow  : 5,
+            slidesToScroll: 1,
+          }
+        },
+        {
           breakpoint: 992,
           settings  : {
-            slidesToShow  : 3,
-            slidesToScroll: 3,
+            slidesToShow  : 4,
+            slidesToScroll: 1,
           }
         },
         {
           breakpoint: 768,
           settings  : {
+            draggable     : true,
             slidesToShow  : 2,
             slidesToScroll: 2,
           }
@@ -244,7 +252,8 @@ $(document).ready(() =>{
 
     if (!searchActive.is(e.target) // клик был не по блоку
           && searchActive.has(e.target).length === 0  // и не по его дочерним элементам
-        ) { 
+          && !$(".header__search#search-nav").is(e.target)
+          ) { 
               $(".header__search").removeClass("header__search--open");
               searchActive.slideUp();
     }

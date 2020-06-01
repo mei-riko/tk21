@@ -13,3 +13,9 @@
         @extend .text-blue;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .item_link{
+        height: auto;
+    }
+}

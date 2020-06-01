@@ -42,6 +42,9 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .item_offset{
+        &-sm{
+            padding: 20px;
+        }
         &-lg{
             padding: 40px 35px;
             .img-logo{
@@ -54,6 +57,7 @@
     .item_offset{
         &-mobile-none{
             padding: 0;
+            border:none;
         }
         &-lg{
             .lead{

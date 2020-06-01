@@ -6,6 +6,9 @@
 
     background-repeat: no-repeat;
 
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     .item__title{
         @extend .h4;
         text-transform: uppercase;

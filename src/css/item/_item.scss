@@ -6,19 +6,13 @@
         line-height: 1.2;
     }
     &__intro{
-        width: 860px;
         max-width: 100%;
-        margin: 0 auto;
-
         font-weight: 300;
 
-        &.lead{
-            width: 1100px;
+        &_slider{
+            width: 920px;
+            margin: 0 auto 30px;
         }
-        & + .gallery_logo{
-            margin-top: 40px;
-        }
-
         &_lh{
             line-height: 1.4;
         }
