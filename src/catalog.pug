@@ -12,6 +12,9 @@ html(lang="ru")
         meta(name="robots" content="")
         link(rel="canonical" href="")
 
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css")
+        script(src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js")
+
         link(href='./css/style.css', rel='stylesheet')
 
     body
@@ -48,7 +51,7 @@ html(lang="ru")
                                 p.item__title Бесплатный стоечный шкаф
                                 p.item__content Специальное предложение действительно при покупке товаров на сумму от 40 000 р.!
                                 .item__cta
-                                    a.btn.btn_send.btn_large(href="#") Узнать об акции
+                                    a.btn.btn_send.btn_large.item_sale__btn(href="#") Узнать об акции
                 section.container-fluid.catalog
                     .row.no-gutters.catalog__header
                         .col-8.col-md-12.mb-md-30.col-lg-6.d-flex.align-items-end
@@ -56,7 +59,7 @@ html(lang="ru")
                             span.catalog__count 121 товар
                         .col-4.col-md-12.col-lg-6
                             .catalog__show-btn#btnShow Показать фильтры 
-                            .filter-group.justify-content-end.justify-content-lg-start#blockShow
+                            .filter-group.filter-group_hidden-sm.justify-content-end.justify-content-lg-start#blockShow
                                 .filter-group__item.not-last
                                     select.filter.filter_select.not-last(data-title="ms|vendor")
                                         option

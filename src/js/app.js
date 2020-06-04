@@ -138,6 +138,31 @@ $(document).ready(() =>{
         }
       ]
     });
+    let $slickService = $('.slider.slider_service');
+    $slickService.slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      arrows      : false,
+      dots        : true,
+      
+      autoplay  : false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings  : {
+            slidesToShow  : 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings  : {
+            slidesToShow  : 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    });
     let $slickPartnersLogo = $('.slider#partnersLogo');
     $slickPartnersLogo.slick({
       slidesToShow: 7,
@@ -217,14 +242,16 @@ $(document).ready(() =>{
   // Filter
   if( $('.filter').length > 0 ){
     $('.filter.filter_select[data-title="msoption|tags"]').select2({
-      placeholder: "Устройство",
-      theme      : 'default filter filter_select not-last',
-      width      : '100%'
+      placeholder            : "Устройство",
+      theme                  : 'default filter filter_select not-last',
+      width                  : '100%',
+      minimumResultsForSearch: -1
     });
     $('.filter.filter_select[data-title="ms|vendor"]').select2({
-      placeholder: "Вендор",
-      theme      : 'default filter filter_select mt-sm-15',
-      width      : '100%'
+      placeholder            : "Вендор",
+      theme                  : 'default filter filter_select mt-sm-15',
+      width                  : '100%',
+      minimumResultsForSearch: -1
     });
   }
   // Mobile Navbar

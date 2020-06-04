@@ -14,7 +14,24 @@
     margin-right: -10px;
     
     &__item{
-        max-width: 50%;
+        display: inline-block;
         padding: 0 10px;
+        max-width: 50%;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .filter-group{
+        &_hidden-sm{
+            display: none;
+            .filter-group__item{
+                margin-top: 10px;
+                max-width: 100%;
+                width: 100%;
+                .filter{
+                    width: 100%;
+                }
+            }
+        }
     }
 }

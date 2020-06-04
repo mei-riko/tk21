@@ -120,6 +120,10 @@
             color: $link-hover-inverse;
         }
     }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){

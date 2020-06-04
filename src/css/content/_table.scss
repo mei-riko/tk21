@@ -42,11 +42,24 @@
 }
 
 table{
+    max-width: 100%;
     border: none;
     td{
         padding: 6px 15px;
+        word-break: break-word;
+        p{
+            word-break: break-word;
+        }
     }
     tr:nth-child(2n){
         background-color: $light-blue;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    table{
+        td{
+            width: 50%;
+        }
     }
 }

@@ -59,3 +59,20 @@
         }
     }
 }
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #e5e4f1;
+}
+.ui-widget-content .ui-state-active{
+    background-color: #eef0f5;
+    color:#17398a;
+    border: 1px solid #e5e4f1;
+}
+.search-item{
+    padding: 20px;
+}
+.search-result{
+    max-width: 100%;
+    width: 970px;
+    margin: 6px auto 0;
+}

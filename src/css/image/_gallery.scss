@@ -48,11 +48,11 @@ a.gallery__item-link{
     }
 }
 
-@media all and (max-width: map-get($grid-breakpoints, 'md')){
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .gallery{
         &_logo{
             .gallery__item{
-                height: 50px;
+                height: 60px;
             }
         }
     }

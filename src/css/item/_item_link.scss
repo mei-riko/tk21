@@ -1,5 +1,5 @@
 .item_link{
-    border-left: 6px solid $blue;
+    border-left: 6px solid $grey;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 
@@ -12,6 +12,10 @@
     .item__intro{
         @extend .text-blue;
     }
+}
+a.item_link{
+    border-left-color: $blue;
+    cursor: pointer;
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'md')){

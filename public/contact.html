@@ -18,16 +18,22 @@
               <nav class="nav nav_header"><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Услуги</a><a class="nav__item last" href="#">Проектирование</a></nav>
             </div>
             <div class="header__contact">
-              <p class="mb-0 text-grey text-small d-lg-none">г. Москва, ул. Правды 24</p><a class="contact-phone" href="tel:*5025" title="Контактый телефон Телеком21 *5025">*5025</a>
+              <p class="mb-0 text-grey text-small d-lg-none">г. Москва, ул. Правды 24</p><a class="contact-phone" href="tel:+7 (495) 960-72-16" title="Контактый телефон Телеком21 +7 (495) 960-72-16">+7 (495) 960-72-16</a>
             </div>
-          </div><a class="header__email" href="mailto:#"></a><a class="header__search" href="#"></a>
+          </div><a class="header__email" href="mailto:#"></a><a class="header__search" id="search-nav" href="#"></a>
           <div class="header__menu" id="mobile-nav"></div>
         </header>
+        <div class="search" id="search">
+          <form class="form form_search msearch2" action="" method="get" id="mse2_form">
+            <input class="form-input form-input_search form_search__input" type="text" name="" value="" placeholder="Поиск по сайту"/>
+            <button class="btn btn_search form_search__btn" type="submit">Найти </button>
+          </form>
+        </div>
         <section class="map">
           <div class="container">
             <div class="row">
               <div class="col-5 col-md-12 col-lg-6">
-                <div class="item item_info mt-30 mb-30">
+                <div class="item item_info mt-30 mb-30 bg-white">
                   <h1 class="h3 text-bold">Контакты</h1>
                   <p>Есть вопросы? Отправьте нам сообщение, и&nbsp;мы обязательно ответим как&nbsp;можно скорее</p>
                   <p class="heading-contact heading-contact_location mb-0">Как нас найти</p>
@@ -64,8 +70,9 @@
       </main>
       <footer class="footer">
         <div class="container">
-          <nav class="nav nav_footer"><a class="nav__item" href="#">Политика конфиденциальности</a><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Открытые вакансии</a><a class="nav__item" href="#">Услуги</a><a class="nav__item" href="#">Проектирование</a></nav>
-          <p class="mb-0 text-bold text-center">© 2007-2019. Все права защищены</p>
+          <nav class="nav nav_footer"><a class="nav__item" href="#">Каталог</a><a class="nav__item" href="#">Склад</a><a class="nav__item" href="#">Открытые вакансии</a><a class="nav__item" href="#">Услуги</a><a class="nav__item" href="#">Проектирование</a></nav>
+          <p class="mb-0 text-center text-bold">© 2007-2019. Все права защищены. </p>
+          <p class="mb-0 text-center"> <a class="text-light text-small footer__link" href="#">Ознакомиться с политикой конфиденциальности</a></p>
           <p class="text-small text-center text-light-grey">Сайт разработан <a class="footer__link" href="https://websoho.ru" title="Сайт студией «SOHO»">студией «SOHO»</a></p>
         </div>
       </footer>
